@@ -8,22 +8,22 @@ ourHistory.add({
     vision: {
         type: Types.Text,
         required: true,
-        index: true,
+        initial: true,
     },
     mission: {
         type: Types.Text,
         required: true,
-        index: true,
+        initial: true,
     },
     value: {
         type: Types.Text,
         required: true,
-        index: true,
+        initial: true,
     },
-    know_our_histpry: {
+    know_our_history: {
         type: Types.Text,
         required: true,
-        index: true,
+        initial: true,
     }
 })
 
