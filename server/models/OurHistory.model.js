@@ -2,9 +2,9 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const ourHistory = new keystone.List('ourHistory')
+const OurHistory = new keystone.List('QuemSomos')
 
-ourHistory.add({
+OurHistory.add({
     vision: {
         type: Types.Text,
         required: true,
@@ -27,4 +27,4 @@ ourHistory.add({
     }
 })
 
-ourHistory.register();
+OurHistory.register();
