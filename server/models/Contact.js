@@ -1,5 +1,5 @@
 const keystone = require('keystone');
-cont { Types } = keystone.Field;
+const { Types } = keystone.Field;
 
 const Contact = new keystone.List('Contact');
 
