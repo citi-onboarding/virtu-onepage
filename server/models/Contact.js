@@ -1,9 +1,7 @@
 const keystone = require('keystone');
 const { Types } = keystone.Field;
 
-const Contact = new keystone.List('Contact', {
-	map: { name: 'adress' }
-  });
+const Contact = new keystone.List('Contact');
 
 Contact.add ({
 	instagramLink: {
