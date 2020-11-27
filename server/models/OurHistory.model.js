@@ -5,22 +5,22 @@ const { Types } = keystone.Field;
 const OurHistory = new keystone.List('QuemSomos')
 
 OurHistory.add({
-    vision: {
+    Visao: {
         type: Types.Text,
         required: true,
         initial: true,
     },
-    mission: {
+    Missao: {
         type: Types.Text,
         required: true,
         initial: true,
     },
-    value: {
+    Valores: {
         type: Types.Text,
         required: true,
         initial: true,
     },
-    know_our_history: {
+    Nossa_historia: {
         type: Types.Text,
         required: true,
         initial: true,
