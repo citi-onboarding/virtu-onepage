@@ -2,7 +2,7 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 const Contact = new keystone.List('Contact', {
-	map: { name: 'email' }
+	map: { name: 'adress' }
   });
 
 Contact.add ({
