@@ -20,7 +20,7 @@ OurHistory.add({
         required: true,
         initial: true,
     },
-    Nossa_historia: {
+    NossaHistoria: {
         type: Types.Text,
         required: true,
         initial: true,
