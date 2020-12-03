@@ -16,6 +16,18 @@
     line-height: 22px;
 }
 
+.footer-section .hearth-icon {
+    width: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.footer-section .code_icon {
+    width: 17px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
 .footer-section img {
     width: 90px;
 }
