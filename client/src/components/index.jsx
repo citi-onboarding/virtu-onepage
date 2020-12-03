@@ -1,1 +1,7 @@
-export { default as PostList } from './PostList';
+import PostList from './PostList';
+import Footer from './Footer';
+
+export {
+    PostList,
+    Footer
+};
