@@ -1,13 +1,14 @@
 import React from 'react'
-import Box from './Title'
 
 
-
-const Box = () => (
+export default class Box extends React.Component{
+render(){
+return(
 <section id="ourhistory">
-<h2>hello</h2>
+<h2>{this.props.title}</h2>
 
 </section>
-)
 
-export default Box;
+)
+}
+}
