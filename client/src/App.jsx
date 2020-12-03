@@ -1,10 +1,11 @@
 import {
-  Footer
+  Footer, OurHistory
 } from './components';
 
 function App() {
   return (
     <>
+    <OurHistory />
       <Footer/>
     </>
   );
