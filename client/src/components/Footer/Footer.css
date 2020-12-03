@@ -1,5 +1,5 @@
 .footer-section {
-    background-color: #991200;
+    background-color: var(--red-dark);
     display: flex;
     justify-content: space-around;
     align-items: center;
