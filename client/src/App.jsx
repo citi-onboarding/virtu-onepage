@@ -1,10 +1,12 @@
 import {
-  Footer
+  Footer,
+  Blog
 } from './components';
 
 function App() {
   return (
     <>
+      <Blog />
       <Footer/>
     </>
   );
