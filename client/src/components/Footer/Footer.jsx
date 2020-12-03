@@ -17,7 +17,7 @@ function Footer() {
           <img src={hearth} alt="coracao" className="hearth-icon" />
            and 
           <img src={code_logo} alt="code" className="code_icon" />
-           by Citi
+           by CITi
         </p>
       </div>
   )
