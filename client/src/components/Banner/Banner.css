@@ -1,17 +1,26 @@
 
 .banner-section {
     height: 100vh;
+    position: relative;
 
-    background: url('../../assets/background.png') no-repeat center center / cover;
-
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr;
 }
 
-.background-img {
+::before {
+    content: '';
+
+    background-image: url('../../assets/background.png');
+    background-size: cover;
+    background-position: top center;
+
     position: absolute;
-    height: 1080px;
-    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    opacity: 0.05;
     z-index: -1;
 }
 
@@ -19,6 +28,7 @@
     width: 360px;
     height:  228px;
 
+    grid-column: 2;
     padding-top: 180px;
 
     display: flex;
@@ -55,7 +65,7 @@
 
     cursor: pointer;
 
-    box-shadow: 0px 4px 4px black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
     border-radius: 17.5px;
     border: none;
 }
@@ -79,7 +89,10 @@
 .banner-section .rectangle {
     background: linear-gradient(162.52deg, rgba(204, 23, 1, 0.8) 0%, rgba(153, 18, 0, 0.8) 99.99%, rgba(153, 18, 0, 0.8) 100%);
 
-    width: 420px;
+    grid-column: 4;
+    width: 22vw;
+    max-width: 420px;
+    min-width: 240px;
 
     display: flex;
     justify-content: center;
@@ -87,6 +100,8 @@
 }
 
 #logo-white {
-    width: 57.1%;
+
+    width: 65%;
+    max-width: 240px;
     opacity: 1; 
 }
