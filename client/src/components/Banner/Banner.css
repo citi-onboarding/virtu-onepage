@@ -11,8 +11,9 @@
     content: '';
 
     background-image: url('../../assets/background.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
 
     position: absolute;
     top: 0;
@@ -91,7 +92,6 @@
 
     grid-column: 4;
     width: 22vw;
-    max-width: 420px;
     min-width: 240px;
 
     display: flex;
@@ -101,7 +101,75 @@
 
 #logo-white {
 
-    width: 65%;
+    width: 57.1%;
     max-width: 240px;
     opacity: 1; 
+}
+
+@media(max-width: 768px) {
+    ::before {
+        content: '';
+    
+        background-image: url('../../assets/background\ 2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    
+        opacity: 0.05;
+        z-index: -1;
+    } 
+    
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+   
+
+    .banner-section .text {
+        display: grid;
+        grid-template-columns: 0.8fr auto 1fr;
+        grid-template-rows: auto auto auto;
+
+        padding-top: 0;
+        padding-bottom: 239px;
+    }
+
+    .banner-section .text h1{
+        grid-column: 2;
+        grid-row: 1;
+
+        line-height: 33.6px;
+        font-size: 28px;
+
+        width: 74.1vw;
+    }
+
+    .banner-section .text p {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .banner-section .text button {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .banner-section .rectangle {
+        margin-bottom: 114px;
+        width: 100vw;
+        justify-content: none;
+    }
+
+    #logo-white {
+        height: 58.6%;
+        width: auto;
+    }
 }
