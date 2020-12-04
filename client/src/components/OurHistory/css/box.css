@@ -29,3 +29,17 @@
   line-height: 19.2px;
   margin: 15px 0;
 }
+
+@media screen and (max-width: 1200px){
+	.box-single{
+	width: 25%;
+}
+
+}
+
+@media screen and (max-width: 1120px){
+	.box-single{
+	width: 26%;
+}
+
+}
