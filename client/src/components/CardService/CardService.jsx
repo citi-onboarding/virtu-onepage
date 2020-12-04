@@ -2,13 +2,16 @@ import React from 'react';
 
 import './CardService.css'
 
-function CardService({ title, description, icon }) {
+function CardService({ title, description, image }) {
     return (
         <div className="card-service">
-        <img src={icon} alt={title}/>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>Saber mais</p>
+            <div className="cs-title-image-container">
+                <img src={image} alt={title}/>
+                <h2>{title}</h2>
+            </div>
+            <p>{description}</p>
+            <p>Saber mais</p>
+
         </div>
     );
 }

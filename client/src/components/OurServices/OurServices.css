@@ -1,0 +1,21 @@
+.our-services-container {
+    height: 845px;
+}
+
+/* .our-services-container .card-services-container-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1140px;
+} */
+
+.our-services-container .red-section-top {
+    width: 30%;
+    height: 292px;
+    background-color: var(--salmon);
+    border-radius: 0px 50px 10px 0px;
+}
+
+.our-services-container .red-section-top h1 {
+    color: white;
+}
