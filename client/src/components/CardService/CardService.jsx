@@ -2,7 +2,7 @@ import React from 'react';
 
 import './CardService.css'
 
-function CardService({ title, description, image }) {
+function CardService({ title, description, image, textColor, borderColor }) {
     return (
         <div className="card-service">
             <div className="cs-title-image-container">

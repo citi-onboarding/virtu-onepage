@@ -1,13 +1,15 @@
 .our-services-container {
     height: 845px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* .our-services-container .card-services-container-top {
+.our-services-container .card-services-container-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1140px;
-} */
+}
 
 .our-services-container .red-section-top {
     width: 30%;
@@ -18,4 +20,12 @@
 
 .our-services-container .red-section-top h1 {
     color: white;
+}
+
+.our-services-container .red-section-bottom {
+    width: 30%;
+    height: 292px;
+    /* right: 0; */
+    background-color: var(--salmon);
+    border-radius: 10px 0px 0px 50px;
 }

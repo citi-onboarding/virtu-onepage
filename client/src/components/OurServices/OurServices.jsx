@@ -1,6 +1,7 @@
 import React from 'react';
 import CardService from '../CardService'
 import tasks from '../../assets/tasks 1.svg'
+import tasks_white from '../../assets/tasks 1 white.svg'
 
 import './OurServices.css'
 
@@ -55,6 +56,13 @@ function OurServices() {
                 />
             </div>
             
+            <div className="red-section-bottom">
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks_white}
+                />
+            </div>
         </div>
     );
 }
