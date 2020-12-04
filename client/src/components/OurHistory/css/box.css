@@ -3,17 +3,29 @@
 
 
 .box-single{
-	border: 2px solid #ccc;
 	text-align: center;
-	margin: 0 auto;
-	width: 25%;
+	margin: 25px auto;
+	width: 26%;
 	height: auto;
-	padding: 30px;
+	border-radius: 10px;
+	color: #F5F5F5;
+	padding: 30px 8px;
+	line-height: 20px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	bottom: -52px;
 }
 
+.box-single img{
+	margin: 5px 0;
+}
 .box-single h2{
-	color: #F5F5F5;
 	font-size: 22px; 
-	font-weight: normal;
 	line-height: 26.4px;
+	margin: 15px 0;
+}
+
+.box-single p{
+  font-size: 16px;
+  line-height: 19.2px;
+  margin: 15px 0;
 }
