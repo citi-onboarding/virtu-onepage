@@ -110,7 +110,7 @@
     ::before {
         content: '';
     
-        background-image: url('../../assets/background\ 2.png');
+        /* background-image: url('../../assets/background\ 2.png'); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
