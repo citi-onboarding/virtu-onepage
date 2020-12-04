@@ -90,6 +90,16 @@
 	margin: 15px auto;
 }
 
+.box-single h2{
+	font-size: 20px; 
+	line-height: 24px;
+}
+
+.box-single p{
+  font-size: 14px;
+  line-height: 16.8px;;
+}
+
 
 }
 

@@ -168,4 +168,8 @@ width: 44%;
 text-align: right;
 }
 
+ .call h1{
+ 	font-size: 28px;
+ 	line-height: 33.6px;
+ }
 }
