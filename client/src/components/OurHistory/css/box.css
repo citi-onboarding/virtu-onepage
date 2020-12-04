@@ -15,11 +15,16 @@
 	bottom: -52px;
 }
 
+.box-single:last-child, .box-single:first-child{
+background: rgb(204,23,1);
+background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
+}
 .box-single img{
 	margin: 5px 0;
 }
 .box-single h2{
 	font-size: 22px; 
+	font-weight: normal;
 	line-height: 26.4px;
 	margin: 15px 0;
 }

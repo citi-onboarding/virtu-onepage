@@ -23,8 +23,7 @@ const text = [
 ]
 
 const bgColor = [
-'#D55140',
-'linearGradient(#cc1701 90%, #991200 90%)'
+'#D55140'
 ]
 
 const position = [
@@ -41,9 +40,9 @@ const OurHistory = () => (
 </div>
 <div className="img-right"><img src={vector_right} alt="vector"/></div>
 <div className="box-parent">
-<Box title={titles[0]} icons={icons[0]} text={text[0]} bgColor={bgColor[0]} position={position[0]} />
+<Box title={titles[2]} icons={icons[2]} text={text[0]}  position={position[0]} />
 <Box title={titles[0]} icons={icons[0]} text={text[0]} bgColor={bgColor[0]}/>
-<Box title={titles[0]} icons={icons[0]} text={text[0]} bgColor={bgColor[0]} position={position[0]} />
+<Box title={titles[1]} icons={icons[1]} text={text[0]} position={position[0]} />
 </div>
 <div className="img-mid"><img src={vector_mid} alt="vector" /></div>
 </div>
