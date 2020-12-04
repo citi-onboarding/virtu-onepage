@@ -1,0 +1,19 @@
+
+/* Style box single */
+
+
+.box-single{
+	border: 2px solid #ccc;
+	text-align: center;
+	margin: 0 auto;
+	width: 25%;
+	height: auto;
+	padding: 30px;
+}
+
+.box-single h2{
+	color: #F5F5F5;
+	font-size: 22px; 
+	font-weight: normal;
+	line-height: 26.4px;
+}
