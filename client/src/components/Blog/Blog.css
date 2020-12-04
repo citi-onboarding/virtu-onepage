@@ -1,0 +1,7 @@
+body {
+    background-color: var(--white-dark);
+}
+
+.blog-section {
+    height: 100vh;
+}
