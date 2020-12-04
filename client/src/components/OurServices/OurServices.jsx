@@ -61,6 +61,8 @@ function OurServices() {
                     title="Pesquisa de Opinião"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     image={tasks_white}
+                    textColor="white"
+                    borderColor="white"
                 />
             </div>
         </div>
