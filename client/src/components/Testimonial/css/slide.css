@@ -1,0 +1,31 @@
+.nav-galeria{
+	overflow: hidden;
+	width: 80%;
+	background-color: green;
+}
+
+.nav-galeria-wraper{
+	/*
+		via js=>width
+	*/
+}
+
+.mini-img-wraper{
+	float: left;
+	padding:9px;
+	background-color: #ccc;
+	width: 30%;
+	/*
+		via js=>width
+	*/
+}
+
+
+.mini-client-img{
+	width: 100%;
+	cursor: pointer;
+	padding-top:70%;
+	background-position: center;
+	background-size: cover;
+	background-color:blue;
+}

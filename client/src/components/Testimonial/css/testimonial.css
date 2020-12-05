@@ -4,7 +4,6 @@ font-family: acumin-pro, sans-serif;
 
 .container{
 	max-width: 1200px;
-	padding: 0 2%;
 	margin: 0 auto;
 }
 
@@ -15,12 +14,12 @@ section{
 .parent-box{
 	display: flex;
 	flex-wrap: nowrap;
-	padding: 0 100px;
 }
 
 .box-right{
 	text-align: left;
 	width: 46%;
+	margin-left: 20px;
 }
 
 .parent-box h1{
@@ -29,7 +28,7 @@ line-height: 38.4px;
 
 }
 .box-right h2{
-	margin-top: 100px;
+	margin-top: 80px;
 	font-size: 22px;
 	line-height: 26.4px;
 }
