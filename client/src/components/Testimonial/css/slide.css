@@ -14,17 +14,21 @@
 	float: left;
 	padding:9px;
 	background-color: #ccc;
-	width: 30%;
+	width: 33%;
 	/*
 		via js=>width
 	*/
 }
 
+.mini-img-wraper h2{
+	margin-top: 10px;
+}
 
 .mini-client-img{
 	width: 100%;
 	cursor: pointer;
 	padding-top:70%;
+	border-radius: 10px;
 	background-position: center;
 	background-size: cover;
 	background-color:blue;

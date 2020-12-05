@@ -1,5 +1,9 @@
 import React from 'react'
 import './css/slide.css'
+import './js/slide.js'
+import './js/index.js'
+
+
 import img_1 from './images/image 3.svg'
 import img_2 from './images/image 4.svg' 
 
