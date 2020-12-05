@@ -3,17 +3,42 @@ font-family: acumin-pro, sans-serif;
 }
 
 .container{
-	max-width: 1920px;
+	max-width: 1200px;
 	padding: 0 2%;
 	margin: 0 auto;
 }
 
+section{
+	margin: 300px 0;
+}
+
+.parent-box{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 0 100px;
+}
+
+.box-right{
+	text-align: left;
+	width: 46%;
+}
+
+.parent-box h1{
+font-size: 32px;
+line-height: 38.4px;
+
+}
 .box-right h2{
+	margin-top: 100px;
 	font-size: 22px;
 	line-height: 26.4px;
 }
 
-.box-riht p{
+.box-right p{
 	font-size: 18px;
     line-height: 21.6px;
+    margin-bottom: 10px;
+}
+.box-right #p-2{
+	margin-bottom: 23px;
 }
