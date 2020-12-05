@@ -5,14 +5,22 @@ import lines from '../../assets/Grupo 5.png'
 
 import './Blog.css';
 
+const title = [
+  'Conheça nosso blog'
+]
+
+const subtitle = [
+  'Visitar blog'
+]
+
 function Blog() {
   return (
       <div className="blog-section">
         <div className="head">
-          <img src={lines} alt="linhas abstratas"/>
+          <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
-            <h1>Conheça nosso blog</h1>
-            <a href="">Visitar blog</a>
+            <h1>{title}</h1>
+            <a href="">{subtitle}</a>
           </div>
           <img id="circle" src={circle} alt=""/>
         </div>

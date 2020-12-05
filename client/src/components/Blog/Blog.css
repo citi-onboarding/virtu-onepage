@@ -8,8 +8,35 @@ body {
 
 .blog-section .head {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #circle {
     width: 93.5px;
+    margin-left: 215px;
+}
+
+#lines {
+    width: 150px;
+    margin-right: 184px;
+}
+
+.blog-section .head .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-section .head .title h1 {
+    font-size: 38px;
+    font-family: 'Acumin Pro';
+    margin-bottom: 30px;
+}
+
+.blog-section .head .title a {
+    font-size: 18px;
+    font-family: 'Acumin Pro';  
+    color: black;
 }
