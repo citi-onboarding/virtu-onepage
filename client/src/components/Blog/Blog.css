@@ -5,3 +5,11 @@ body {
 .blog-section {
     height: 100vh;
 }
+
+.blog-section .head {
+    display: flex;
+}
+
+#circle {
+    width: 93.5px;
+}

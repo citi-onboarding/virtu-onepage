@@ -14,7 +14,7 @@ function Blog() {
             <h1>Conheça nosso blog</h1>
             <a href="">Visitar blog</a>
           </div>
-          <img src={circle} alt=""/>
+          <img id="circle" src={circle} alt=""/>
         </div>
       </div>
   )
