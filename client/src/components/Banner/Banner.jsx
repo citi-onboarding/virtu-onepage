@@ -6,12 +6,20 @@ import './Banner.css';
 
 import logo_white from '../../assets/virtu-logo 2.svg'
 
+const text = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+]
+
+const title = [
+  'Aplicamos ciência e construímos resultados'
+]
+
 function Banner() {
   return (
       <div className="banner-section">
         <div className="text">
-          <h1>Aplicamos ciência e construímos resultados</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h1>{title}</h1>
+          <p>{text}</p>
           <button><h3 className = "button-text">Nossos serviços</h3></button>
         </div>
         <div className="rectangle">
