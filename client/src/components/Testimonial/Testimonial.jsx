@@ -1,12 +1,12 @@
 import React from 'react'
 
-import './css/testimonial.css'
+import './css/Testimonial.css'
 
 
 const Testimonial = () => (
 <section id="testimonial">
 <div className="container">
-
+    <h1> alo</h1>
 </div>{/*container*/}
 </section>
 )

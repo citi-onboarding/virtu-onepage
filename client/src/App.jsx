@@ -1,10 +1,11 @@
 import {
-  Footer
+  Testimonial, Footer
 } from './components';
 
 function App() {
   return (
     <>
+      <Testimonial />
       <Footer/>
     </>
   );
