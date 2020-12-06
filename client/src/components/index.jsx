@@ -3,5 +3,5 @@ import Blog from './Blog';
 
 export {
     Footer,
-    Blog
+    Blog,
 };

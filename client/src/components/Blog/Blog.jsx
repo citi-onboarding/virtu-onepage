@@ -3,7 +3,7 @@ import React from 'react';
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
 
-import { Datas } from './components/Blog/Datas';
+import { Datas } from './Blog';
 
 import './Blog.css';
 
