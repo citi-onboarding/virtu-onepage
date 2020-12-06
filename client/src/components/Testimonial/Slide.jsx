@@ -1,13 +1,25 @@
 import React from 'react'
+import Slider from "react-slick"
 import './css/slide.css'
 import './js/slide.js'
 import './js/index.js'
-
+import "~slick-carousel/slick/slick.css"
+import "~slick-carousel/slick/slick-theme.css"
 
 import img_1 from './images/image 3.svg'
 import img_2 from './images/image 4.svg' 
 
-
+const  photos = [
+ 	{
+ 		photo1: img_1
+ 	},
+ 	{
+ 		photo1: img_2
+ 	},
+ 	{
+ 		photo1: img_3
+ 	},
+]
 export default class Slide extends React.Component{
 render(){
 return(
