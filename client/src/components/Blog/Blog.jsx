@@ -3,7 +3,7 @@ import React from 'react';
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
 
-import { Datas } from './Blog';
+import Datas from './Datas'
 
 import './Blog.css';
 
@@ -13,6 +13,14 @@ const title = [
 
 const subtitle = [
   'Visitar blog'
+]
+
+const titleBlog = [
+  'Título do blog título do blog título do blog'
+]
+
+const text = [
+  'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 ]
 
 function Blog() {
@@ -27,7 +35,9 @@ function Blog() {
           <img id="circle" src={circle} alt=""/>
         </div>
         <div className="carousel">
-          <Datas />
+          <Datas title={titleBlog} text={text} />
+          <Datas title={titleBlog} text={text} />
+          <Datas title={titleBlog} text={text} />
         </div>
       </div>
   )

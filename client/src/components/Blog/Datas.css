@@ -1,0 +1,20 @@
+.datas h2 {
+    font-size: 22px;
+    font-family: 'Acumin Pro';
+    font-weight: 600px;
+    line-height: 26.4px;
+}
+
+.datas p {
+    font-size: 16px;
+    font-family: 'Acumin Pro';
+    font-weight: 400px;
+    line-height: 19.2px;
+}
+
+.datas a {
+    font-size: 16px;
+    font-family: 'Acumin Pro';
+    font-weight: 400px;
+    color: black;
+}

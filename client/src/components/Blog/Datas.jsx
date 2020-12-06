@@ -2,16 +2,15 @@ import React from 'react';
 
 import './Datas.css';
 
-function Datas() {
-    return (
-        <div className="data">
-            <div>
-            <h2>props.title</h2>
-            <p>props.text</p>
-            <a href="">Ler post completo</a>
-          </div>
-        </div>
+export default class Datas extends React.Component{
+    render(){
+    return(
+    <div className="datas">
+        <h2>{this.props.title}</h2>
+        <p>{this.props.text}</p>
+        <a href="{this.props.link}">Ler o post completo</a>
+    </div>
     )
-}
-
-export default Datas;
+    }
+    }
+    
