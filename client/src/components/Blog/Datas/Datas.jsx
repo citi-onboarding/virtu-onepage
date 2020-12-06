@@ -6,9 +6,9 @@ function Datas() {
     return (
         <div className="data">
             <div>
-            <h2>props.text</h2>
+            <h2>props.title</h2>
             <p>props.text</p>
-            <a href="">props.text</a>
+            <a href="">Ler post completo</a>
           </div>
         </div>
     )
