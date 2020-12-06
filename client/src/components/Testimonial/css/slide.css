@@ -2,22 +2,14 @@
 	overflow: hidden;
 	width: 80%;
 	background-color: green;
+	padding-top: 20px;
 }
 
-.nav-galeria-wraper{
-	/*
-		via js=>width
-	*/
-}
 
 .mini-img-wraper{
-	float: left;
 	padding:9px;
 	background-color: #ccc;
-	width: 33%;
-	/*
-		via js=>width
-	*/
+	width: 30%;
 }
 
 .mini-img-wraper h2{
@@ -31,5 +23,19 @@
 	border-radius: 10px;
 	background-position: center;
 	background-size: cover;
-	background-color:blue;
+	background-color: blue;
+}
+
+.slick-cloned > div, .slick-active > div{
+	margin: 2px;
+}
+
+.slick-slide{
+	transform: scale(0.8);
+	transition: all ease 0.5%;
+}
+
+
+.slick-current{
+	transform: scale(1);
 }
