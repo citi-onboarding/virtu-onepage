@@ -48,13 +48,15 @@ text-align: center;
 }
 
 .img-right{
-	margin: 30px 0;
+	 position: relative;
+    top: -370px;
+
 }
 .img-right img{
 transform: translateX(8px) rotate(-90deg) translateY(1px);
 position: absolute;
-right: -18%;
-width: 45%;
+right: -21%;
+    width: 54%
 }
 
 @media screen and (max-width: 1200px){
@@ -64,8 +66,8 @@ width: 45%;
  }
 
 .img-right img{
-right: -18%;
-width: 47%;
+right: -22%;
+width: 55%;
 }
 
 .call{
@@ -86,8 +88,8 @@ width: 47%;
  }
 
 .img-right img{
-right: -17%;
-width: 45%;
+right: -19%;
+width: 50%;
 transform: translateX(8px) rotate(-90deg) translateY(10px);
 }
 
@@ -96,51 +98,43 @@ transform: translateX(8px) rotate(-90deg) translateY(10px);
 
 @media screen and (max-width: 1024px){
  .box-parent{
- 	flex-wrap: nowrap;
  	padding-left: 20px;
  }
 
 .img-right img{
-right: -16%;
-width: 44%;
+right: -15%;
+width: 45%;
 }
 
 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
 .img-right img{
-right: -16%;
-width: 44%;
-
+display: none;
 }
 .call{
  	width: 80%;
  }
-
-
 
 }
 
 
 @media screen and (max-width: 980px){
-.img-right img{
-right: -16%;
-width: 44%;
-}
-
 .img-left{
 	bottom: -70px;
 	margin-left: 35px;
 }
-
-.call{
- 	width: 80%;
- }
-
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 780px){
+.box-parent{
+ 	flex-wrap: wrap;
+ }
+.img-mid{
+text-align: right;
+}
+
 .img-left{
 	bottom: -20px;
 	margin-left: 43px;
@@ -151,23 +145,8 @@ width: 44%;
  }
 
 }
-@media screen and (max-width: 880px){
-
-.box-parent{
- 	flex-wrap: wrap;
- }
-
-.img-right img{
- display: none;
-}
-
-}
 
 @media screen and (max-width: 500px){
-.img-mid{
-text-align: right;
-}
-
  .call h1{
  	font-size: 28px;
  	line-height: 33.6px;

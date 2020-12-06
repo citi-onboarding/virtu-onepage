@@ -43,15 +43,15 @@ background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
 }
 
 @media screen and (max-width: 1120px){
-	.box-single{
+.box-single{
 	width: 26%;
 }
 
 }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1050px){
 .box-single{
-	width: 50%;
+	width: 30%;
 }
 
 }
@@ -67,12 +67,12 @@ background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 780px){
 
 .box-single{
-	width: 40%;
+	width: 51%;
 	top: 0;
-	margin: 15px 15px;
+	margin: 15px auto;
 }
 
 
@@ -81,8 +81,7 @@ background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
 @media screen and (max-width: 550px){
 
 .box-single{
-	width: 53%;
-	margin: 15px auto;
+	width: 67%;
 }
 
 
@@ -112,7 +111,7 @@ background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
 @media screen and (max-width: 430px){
 
 .box-single{
-	width: 80%;
+	width: 85%;
 }
 
 

@@ -38,7 +38,7 @@ const OurHistory = () => (
 <h1>Conheça nossa história</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div className="img-right"><img src={vector_right} alt="vector"/></div>
+
 <div className="box-parent">
 <Box title={titles[2]} icons={icons[2]} text={text[0]}  position={position[0]} />
 <Box title={titles[0]} icons={icons[0]} text={text[0]} bgColor={bgColor[0]}/>
@@ -46,6 +46,7 @@ const OurHistory = () => (
 </div>
 <div className="img-mid"><img src={vector_mid} alt="vector" /></div>
 </div>
+<div className="img-right"><img src={vector_right} alt="vector"/></div>
 </section>
 )
 
