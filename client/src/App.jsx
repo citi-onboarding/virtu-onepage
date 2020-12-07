@@ -1,13 +1,14 @@
 import {
-  Footer, OurHistory
+  Footer, OurHistory, NavBar
 } from './components';
 
 
 function App() {
   return (
     <>
+    <NavBar />
     <OurHistory />
-      <Footer/>
+    <Footer/>
     </>
   );
 }
