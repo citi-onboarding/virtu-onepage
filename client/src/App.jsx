@@ -1,12 +1,13 @@
 import {
+  Banner,
   Footer, OurHistory
 } from './components';
-
 
 function App() {
   return (
     <>
-    <OurHistory />
+      <Banner/>
+      <OurHistory />
       <Footer/>
     </>
   );
