@@ -5,14 +5,16 @@ import {
 
 
 
-  Banner
+  Banner,
+  Footer, OurHistory
 } from './components';
 
 function App() {
   return (
     <>
-
       <Banner/>
+      <OurHistory />
+      <Footer/>
     </>
   );
 }

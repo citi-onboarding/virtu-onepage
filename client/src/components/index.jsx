@@ -3,10 +3,6 @@ import Footer from './Footer';
 import Banner from './Banner';
 
 export {
-
-
-
-
-    
-    Banner,
+    Banner, 
+    Footer, OurHistory
 };
