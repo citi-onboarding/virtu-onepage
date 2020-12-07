@@ -10,16 +10,25 @@ import img_2 from './images/image 4.svg'
 import img_3 from './images/image 5.svg'
 
 const  photos = [
- 	{
- 		photo: img_1
- 	},
- 	{
- 		photo: img_2
- 	},
- 	{
- 		photo1: img_3
- 	},
+ 	img_1, img_2, img_3
 ]
+
+const NameofClient = [
+    'Isabela Souza', 'Outra pessoa'
+]
+
+const FuncofClient = [
+	'Candidata a vereadora', 'Outra função'
+]
+
+const Service = [
+	'Pesquisa de opinião', 'outro serviço'
+] 
+
+const Description = [
+	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+]
+
 
 export default class Slide extends React.Component{
 render(){
@@ -40,37 +49,38 @@ return(
 <div className="nav-galeria" >
 	<Slider  {...settings}>
 		<div className="mini-img-wraper">
-				<div className="mini-client-img">1</div>
-				<h2>{this.props.Name}</h2>
-				<p>{this.props.Func}</p>
+				<div className="mini-client-img"></div>
+				<h2>{NameofClient[0]}</h2>
+				<p>{NameofClient[0]}</p>
 		</div>
 		<div className="mini-img-wraper">
 				<div className="mini-client-img">1</div>
-				<h2>{this.props.Name}</h2>
-				<p>{this.props.Func}</p>
+				<h2>{NameofClient[1]}</h2>
+				<p>{FuncofClient[1]}</p>
 		</div>
 		<div className="mini-img-wraper">
 				<div className="mini-client-img">2</div>
-				<h2>{this.props.Name}</h2>
-				<p>{this.props.Func}</p>
+				<h2>{NameofClient[1]}</h2>
+				<p>{FuncofClient[1]}</p>
 		</div>
 		<div className="mini-img-wraper">
 				<div className="mini-client-img">3</div>
-				<h2>{this.props.Name}</h2>
-				<p>{this.props.Func}</p>
+				<h2>{NameofClient[1]}</h2>
+				<p>{FuncofClient[1]}</p>
 		</div>
 		<div className="mini-img-wraper">
 				<div className="mini-client-img">4</div>
-				<h2>{this.props.Name}</h2>
-				<p>{this.props.Func}</p>
+				<h2>{NameofClient[1]}</h2>
+				<p>{FuncofClient[1]}</p>
 		</div>
 		<div className="mini-img-wraper">
 				<div className="mini-client-img">5</div>
-				<h2>{this.props.Name}</h2>
-				<p>{this.props.Func}</p>
+				<h2>{NameofClient[1]}</h2>
+				<p>{FuncofClient[1]}</p>
 		</div>
 	</ Slider>
 </div>
+
 )
 }
 }
