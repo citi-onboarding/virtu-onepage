@@ -1,12 +1,15 @@
 import {
-  Footer, OurHistory, NavBar
+  Footer, 
+  OurHistory, 
+  NavBar,
+  Banner,
 } from './components';
-
 
 function App() {
   return (
     <>
     <NavBar />
+    <Banner/>
     <OurHistory />
     <Footer/>
     </>
