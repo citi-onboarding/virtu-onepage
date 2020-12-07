@@ -1,0 +1,24 @@
+.mini-img-wraper{
+	padding:9px;
+	background-color: #ccc;
+	width: 100%;
+	cursor: pointer;
+}
+
+.mini-img-wraper h2{
+	margin-top: 10px;
+}
+
+.mini-client-img{
+	width: 100%;
+	padding-top:70%;
+	border-radius: 10px;
+	/*background-image: url('../images/image 3.svg');*/
+	background-position: center;
+	background-size: cover;
+	background-color: blue;
+}
+
+.mini-client-img:first-child{
+	background-image: url('../images/image 3.svg');
+}

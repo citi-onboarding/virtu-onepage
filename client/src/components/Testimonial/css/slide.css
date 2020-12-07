@@ -2,37 +2,16 @@
 	overflow: hidden;
 	width: 80%;
 	background-color: green;
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
-
-.mini-img-wraper{
-	padding:9px;
-	background-color: #ccc;
-	width: 30%;
-}
-
-.mini-img-wraper h2{
-	margin-top: 10px;
-}
-
-.mini-client-img{
-	width: 100%;
-	cursor: pointer;
-	padding-top:70%;
-	border-radius: 10px;
-	/*background-image: url('../images/image 4.svg');*/
-	background-position: center;
-	background-size: cover;
-	background-color: blue;
-}
 
 .slick-cloned > div, .slick-active > div{
 	margin: 2px;
 }
 
 .slick-slide{
-	transform: scale(0.8);
+	transform: scale(0.85);
 	transition: all ease 0.5%;
 }
 

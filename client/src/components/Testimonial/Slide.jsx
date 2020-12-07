@@ -1,6 +1,7 @@
-
 import React, { Component } from "react"
 import Slider from "react-slick"
+import SlideCard from './Slide-card'
+
 import './css/slide.css'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -9,26 +10,14 @@ import img_1 from './images/image 3.svg'
 import img_2 from './images/image 4.svg' 
 import img_3 from './images/image 5.svg'
 
-const  photos = [
- 	img_1, img_2, img_3
-]
-
-const NameofClient = [
+const Name = [
     'Isabela Souza', 'Outra pessoa'
 ]
 
-const FuncofClient = [
+const Func = [
 	'Candidata a vereadora', 'Outra função'
+
 ]
-
-const Service = [
-	'Pesquisa de opinião', 'outro serviço'
-] 
-
-const Description = [
-	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
-]
-
 
 export default class Slide extends React.Component{
 render(){
@@ -48,37 +37,40 @@ render(){
 return(
 <div className="nav-galeria" >
 	<Slider  {...settings}>
-		<div className="mini-img-wraper">
-				<div className="mini-client-img"></div>
-				<h2>{NameofClient[0]}</h2>
-				<p>{NameofClient[0]}</p>
-		</div>
-		<div className="mini-img-wraper">
-				<div className="mini-client-img">1</div>
-				<h2>{NameofClient[1]}</h2>
-				<p>{FuncofClient[1]}</p>
-		</div>
-		<div className="mini-img-wraper">
-				<div className="mini-client-img">2</div>
-				<h2>{NameofClient[1]}</h2>
-				<p>{FuncofClient[1]}</p>
-		</div>
-		<div className="mini-img-wraper">
-				<div className="mini-client-img">3</div>
-				<h2>{NameofClient[1]}</h2>
-				<p>{FuncofClient[1]}</p>
-		</div>
-		<div className="mini-img-wraper">
-				<div className="mini-client-img">4</div>
-				<h2>{NameofClient[1]}</h2>
-				<p>{FuncofClient[1]}</p>
-		</div>
-		<div className="mini-img-wraper">
-				<div className="mini-client-img">5</div>
-				<h2>{NameofClient[1]}</h2>
-				<p>{FuncofClient[1]}</p>
-		</div>
+	<SlideCard 
+
+	  image={img_1}
+      NameofClient={Name[0]}
+      FuncofClient={Func[0]}
+
+
+	/>
+	<SlideCard 
+
+	  image={img_1}
+      NameofClient={Name[0]}
+      FuncofClient={Func[0]}
+
+
+	/>
+	<SlideCard 
+
+	  image={img_1}
+      NameofClient={Name[0]}
+      FuncofClient={Func[0]}
+
+
+	/>
+	<SlideCard 
+
+	  image={img_1}
+      NameofClient={Name[0]}
+      FuncofClient={Func[0]}
+
+
+	/>
 	</ Slider>
+
 </div>
 
 )
