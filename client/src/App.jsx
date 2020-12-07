@@ -1,10 +1,4 @@
 import {
-
-
-
-
-
-
   Banner,
   Footer, OurHistory
 } from './components';
