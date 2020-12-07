@@ -14,10 +14,11 @@
 
 .card-service .cs-title-image-container {
     position: absolute;
-    top: -40px;
+    top: -35px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    justify-self: center;
     width: 80%;
     z-index: 1;
 }
@@ -25,6 +26,10 @@
 .card-service .cs-title-image-container h2 {
     max-width: 150px;
     color: var(--red-bright);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+
 }
 
 /* .card-service p+p {

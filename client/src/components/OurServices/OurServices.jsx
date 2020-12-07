@@ -2,6 +2,7 @@ import React from 'react';
 import CardService from '../CardService'
 import tasks from '../../assets/tasks 1.svg'
 import tasks_white from '../../assets/tasks 1 white.svg'
+import group_focal from '../../assets/education 1.png'
 
 import './OurServices.css'
 
@@ -18,9 +19,9 @@ function OurServices() {
                     image={tasks}
                 />
                 <CardService
-                    title="Pesquisa de Opinião"
+                    title="Grupo focal"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
+                    image={group_focal}
                 />
 
                 <CardService
