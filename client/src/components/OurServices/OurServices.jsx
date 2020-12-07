@@ -2,9 +2,11 @@ import React from 'react';
 import CardService from '../CardService'
 import tasks from '../../assets/tasks 1.svg'
 import tasks_white from '../../assets/tasks 1 white.svg'
-import group_focal from '../../assets/education 1.png'
+import group_focal from '../../assets/education 1SVG.svg'
 
 import './OurServices.css'
+
+const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
 function OurServices() {
     return (
@@ -15,47 +17,47 @@ function OurServices() {
             
                 <CardService
                     title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    description={lorem}
                     image={tasks}
                 />
                 <CardService
                     title="Grupo focal"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    description={lorem}
                     image={group_focal}
                 />
 
                 <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Memorandum"
+                    description={lorem}
                     image={tasks}
                 />
                 <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Consultoria de campanha"
+                    description={lorem}
                     image={tasks}
                 />
                 <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Fortalecimento Institucional"
+                    description={lorem}
                     image={tasks}
                 />
 
             
                 <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Acomp. dos poderes"
+                    description={lorem}
                     image={tasks}
                 />
                 <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Capacitação Institucional"
+                    description={lorem}
                     image={tasks}
                 />
 
                 <div className="red-section-bottom">
                     <CardService
                         title="Pesquisa de Opinião"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        description={lorem}
                         image={tasks_white}
                         textColor="white"
                         borderColor="white"
