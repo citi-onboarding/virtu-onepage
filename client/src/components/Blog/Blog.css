@@ -45,3 +45,11 @@ body {
     font-family: 'Acumin Pro';  
     color: black;
 }
+
+.blog-section .carousel {
+    display: flex;
+}
+
+.slick-slider, .slick-initialized {
+    width: 100vh;
+}
