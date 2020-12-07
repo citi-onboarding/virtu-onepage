@@ -1,14 +1,18 @@
 import {
-  Banner,
-  Footer
+
+
+
+
+
+
+  Banner
 } from './components';
 
 function App() {
   return (
     <>
-    
+
       <Banner/>
-      <Footer/>
     </>
   );
 }
