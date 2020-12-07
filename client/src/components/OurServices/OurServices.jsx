@@ -11,60 +11,55 @@ function OurServices() {
             <div className="red-section-top">
                 <h1>Saiba quais serviços que nós oferecemos</h1>
             </div>
-
-            <div className="card-s>ervices-container-top">
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-            </div>
-
-            <div className="card-services-container2-center">
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-            </div>
-
-            <div className="card-services-container-bottom">
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks}
-                />
-            </div>
             
-            <div className="red-section-bottom">
                 <CardService
                     title="Pesquisa de Opinião"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    image={tasks_white}
-                    textColor="white"
-                    borderColor="white"
+                    image={tasks}
                 />
-            </div>
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks}
+                />
+
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks}
+                />
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks}
+                />
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks}
+                />
+
+            
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks}
+                />
+                <CardService
+                    title="Pesquisa de Opinião"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    image={tasks}
+                />
+
+                <div className="red-section-bottom">
+                    <CardService
+                        title="Pesquisa de Opinião"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        image={tasks_white}
+                        textColor="white"
+                        borderColor="white"
+                    />
+                </div>            
         </div>
     );
 }

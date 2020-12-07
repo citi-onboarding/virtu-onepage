@@ -1,18 +1,19 @@
 .our-services-container {
     height: 845px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.our-services-container .card-services-container-top {
+/* .our-services-container .card-services-container-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1140px;
-}
+} */
 
 .our-services-container .red-section-top {
-    width: 30%;
+    /* width: 30%; */
     height: 292px;
     background-color: var(--salmon);
     border-radius: 0px 50px 10px 0px;
@@ -23,9 +24,11 @@
 }
 
 .our-services-container .red-section-bottom {
-    width: 30%;
+    /* width: 30%; */
+
     height: 292px;
     /* right: 0; */
     background-color: var(--salmon);
     border-radius: 10px 0px 0px 50px;
+    padding: 55px 64px;
 }
