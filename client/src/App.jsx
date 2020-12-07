@@ -6,6 +6,7 @@ import {
 function App() {
   return (
     <>
+    
       <Banner/>
       <Footer/>
     </>

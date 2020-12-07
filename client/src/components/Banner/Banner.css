@@ -146,4 +146,26 @@
     #logo-white {
         height: 58%;
     }
+
+.banner-section .text {
+    width: 87vw;
+}
+
+.banner-section .text h1 {
+    font-size: 28px;
+}
+
+.banner-section .text p {
+    font-size: 14px;
+}
+
+.banner-section .text button h3 {
+    font-size: 16px;
+}
+}
+
+@media(max-width: 450px) {
+    .banner-section .text {
+        margin: 0;
+    }
 }
