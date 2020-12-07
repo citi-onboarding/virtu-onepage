@@ -1,0 +1,118 @@
+
+/* Style box single */
+
+
+.box-single{
+	text-align: center;
+	margin: 25px 30px;
+	width: 23%;
+	height: auto;
+	border-radius: 10px;
+	color: #F5F5F5;
+	padding: 30px 8px;
+	line-height: 20px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	bottom: -52px;
+}
+
+.box-single:last-child, .box-single:first-child{
+background: rgb(204,23,1);
+background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
+}
+.box-single img{
+	margin: 5px 0;
+}
+.box-single h2{
+	font-size: 22px; 
+	font-weight: normal;
+	line-height: 26.4px;
+	margin: 15px 0;
+}
+
+.box-single p{
+  font-size: 16px;
+  line-height: 19.2px;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 1200px){
+	.box-single{
+	width: 25%;
+}
+
+}
+
+@media screen and (max-width: 1120px){
+.box-single{
+	width: 26%;
+}
+
+}
+
+@media screen and (max-width: 1050px){
+.box-single{
+	width: 30%;
+}
+
+}
+
+@media screen and (max-width: 880px){
+
+.box-single{
+	width: 30%;
+	margin: 0 auto;
+	position: none;
+}
+
+
+}
+
+@media screen and (max-width: 780px){
+
+.box-single{
+	width: 51%;
+	top: 0;
+	margin: 15px auto;
+}
+
+
+}
+
+@media screen and (max-width: 550px){
+
+.box-single{
+	width: 67%;
+}
+
+
+}
+
+@media screen and (max-width: 500px){
+
+.box-single{
+	width: 70%;
+	margin: 15px auto;
+}
+
+.box-single h2{
+	font-size: 20px; 
+	line-height: 24px;
+}
+
+.box-single p{
+  font-size: 14px;
+  line-height: 16.8px;;
+}
+
+
+}
+
+
+@media screen and (max-width: 430px){
+
+.box-single{
+	width: 85%;
+}
+
+
+}
