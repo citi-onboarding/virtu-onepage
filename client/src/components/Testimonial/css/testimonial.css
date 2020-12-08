@@ -23,22 +23,16 @@ display: inline-block;
 
 }
 
+.Arrows{
+	margin: 30px 0;
+}
 .arrow_right, .arrow_left{
 	cursor: pointer;
+	z-index: 3;
 }
 .arrow_right{
 	position: relative;
 	top: 8px;
-}
-
-.Arrows span{
-	height: 12px;
-	width: 12px;
-	margin: 0 5px;
-	background-color: #ccc;
-	display: inline-block;
-	border-radius: 6px;
-	position: relative;
-	top: -8px;
-	cursor: pointer;
+	left: 180px;
+	text-align: right;
 }

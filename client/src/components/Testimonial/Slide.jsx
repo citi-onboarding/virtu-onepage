@@ -5,7 +5,7 @@ import SlideCard from './Slide-card'
 
 import './css/slide.css'
 import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+
 import icon_right from '../../assets/Group 4SVG.svg'
 import img_1 from './images/image 3.svg'
 import img_2 from './images/image 4.svg' 
@@ -26,7 +26,8 @@ render(){
 	 const settings = {
       className: "",
       centerMode: false,
-      dots: false,
+      dots: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,

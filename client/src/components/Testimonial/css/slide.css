@@ -1,7 +1,8 @@
+
 .nav-galeria{
-	overflow: hidden;
-	width: 70%;
+	width: 60%;
 	padding-left: 60px;
+	height: 100%;
 }
 
 
@@ -27,4 +28,33 @@
     margin: 15px 0;
     position: relative;
     top: -25px;
+}
+.slick-dots{
+	position: relative;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    top: -11px;
+    left: -749px;
+    list-style: none;
+    z-index: 1;
+    text-align: center;
+}
+ul.slick-dots li{
+	display: inline-block;
+}
+ul.slick-dots li button{
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	background-color:#ccc;
+	display: inline-block;
+	border-radius: 10px;
+	position: relative;
+	top: -8px;
+	cursor: pointer;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color:#ccc;
 }

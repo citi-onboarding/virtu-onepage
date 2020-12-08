@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import ReactDOM from 'react'
 import Slide from './Slide'
 import './css/testimonial.css'
 import ClientDescription from './Client-Description'
@@ -20,7 +21,7 @@ const Service = [
 ] 
 
 const Description = [
-	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '4'
 ]
 
 function Testimonial(){
@@ -60,8 +61,8 @@ const ArrowBack= () =>{
  GetLastPosition(Description)
 }
 
-function GetLastPosition(){
-	const Last= BackPosition !== 0?BackPosition-1:BackPosition+1
+function GetLastPosition(Array){
+	const Last= BackPosition <= Array.length && BackPosition !== 0?BackPosition-1:Array.length-1
 	setBackPosition(Last)
 }
 
@@ -72,7 +73,23 @@ React.useEffect(()=>{
 	setDescription(Description[BackPosition])
 }, 
 [BackPosition])
-
+function animation(Array){
+	var op = 1
+	var timer = setInterval(function(){
+		if(op<=0.1){
+			clearInterval(timer)
+			Array.style.display = 'none'
+		}else{
+			Array.style.opacity = op
+			Array.style.filter = 'alpha(opacity='+ op * 100 +")"
+			op-=op*0.1
+		}
+	}, 500)
+}
+function change(){
+let boto = document.querySelector('slick-active')
+boto.setAttribute('id', 'user')
+}
 return(
 <section id="testimonial">
 	<div className="container">
@@ -86,9 +103,8 @@ return(
                       Description={currentDescription}
       			     /> 	
       			<div className="Arrows">
-      				<img className="arrow_left" src={arrow_left} onClick={ArrowBack} />	
-      				<span></span><span></span><span></span>
-      				<img className="arrow_right" src={arrow_right} onClick={ArrowForw} />
+      				<img className="arrow_left" src={arrow_left} onClick={ArrowBack} alt="Arrow left" />	
+      				<img className="arrow_right" src={arrow_right} onClick={ArrowForw} alt="Arrow right" />
       			</div>	
 			</div>
  						<Slide />
