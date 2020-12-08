@@ -1,14 +1,17 @@
 import {
+  Footer, 
+  OurHistory, 
+  NavBar,
   Banner,
-  Footer, OurHistory
 } from './components';
 
 function App() {
   return (
     <>
-      <Banner/>
-      <OurHistory />
-      <Footer/>
+    <NavBar />
+    <Banner/>
+    <OurHistory />
+    <Footer/>
     </>
   );
 }

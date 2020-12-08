@@ -1,9 +1,9 @@
 import Footer from './Footer';
 import OurHistory from './OurHistory'
+import NavBar from './NavBar'
 
 import Banner from './Banner';
 
 export {
-    Banner, 
-    Footer, OurHistory
+    Footer, OurHistory, NavBar, Banner
 };
