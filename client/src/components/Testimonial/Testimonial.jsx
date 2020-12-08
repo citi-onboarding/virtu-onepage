@@ -4,10 +4,6 @@ import Slide from './Slide'
 import './css/testimonial.css'
 import ClientDescription from './Client-Description'
 
-
-import arrow_left from '../../assets/arrow leftSVG.svg'
-import arrow_right from '../../assets/arrow rightSVG.svg'
-
 const Name = [
     'Isabela Souza', 'Jorge Andre','Mariana marques', 'Ana maria'
 ]
@@ -21,7 +17,7 @@ const Service = [
 ] 
 
 const Description = [
-	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '4'
+	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
 ]
 
 function Testimonial(){
@@ -73,23 +69,13 @@ React.useEffect(()=>{
 	setDescription(Description[BackPosition])
 }, 
 [BackPosition])
-function animation(Array){
-	var op = 1
-	var timer = setInterval(function(){
-		if(op<=0.1){
-			clearInterval(timer)
-			Array.style.display = 'none'
-		}else{
-			Array.style.opacity = op
-			Array.style.filter = 'alpha(opacity='+ op * 100 +")"
-			op-=op*0.1
-		}
-	}, 500)
-}
-function change(){
-let boto = document.querySelector('slick-active')
-boto.setAttribute('id', 'user')
-}
+{/*React.useEffect(()=>{
+	window.document.querySelector('.slick-next').addEventListener('click', () =>{
+		ArrowForw()
+}, [])
+	
+})*/}
+
 return(
 <section id="testimonial">
 	<div className="container">
@@ -102,10 +88,7 @@ return(
                       Service={currentService}
                       Description={currentDescription}
       			     /> 	
-      			<div className="Arrows">
-      				<img className="arrow_left" src={arrow_left} onClick={ArrowBack} alt="Arrow left" />	
-      				<img className="arrow_right" src={arrow_right} onClick={ArrowForw} alt="Arrow right" />
-      			</div>	
+      			<div className="Arrows"></div>	
 			</div>
  						<Slide />
        </div>
@@ -113,4 +96,5 @@ return(
 </section>
 )
 }
+
 export default Testimonial

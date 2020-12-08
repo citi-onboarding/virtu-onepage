@@ -28,11 +28,11 @@ display: inline-block;
 }
 .arrow_right, .arrow_left{
 	cursor: pointer;
-	z-index: 3;
+	z-index: 4;
 }
 .arrow_right{
 	position: relative;
 	top: 8px;
-	left: 180px;
+	left: 100px;
 	text-align: right;
 }

@@ -27,7 +27,7 @@ render(){
       className: "",
       centerMode: false,
       dots: true,
-      arrows: false,
+      arrows: true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -54,11 +54,19 @@ return(
 	<SlideCard 
 
 	
-      NameofClient={Name[0]}
+      NameofClient={Name[1]}
       FuncofClient={Func[0]}
 
 
 	/>
+  <SlideCard 
+
+  
+      NameofClient={Name[1]}
+      FuncofClient={Func[0]}
+
+
+  />
 	<SlideCard 
 
 	
@@ -67,30 +75,7 @@ return(
 
 
 	/>
-	<SlideCard 
 
-	
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-
-
-	/>
-    <SlideCard 
-
-  
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-
-
-  />
-    <SlideCard 
-
-  
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-
-
-  />
 	</ Slider>
 
 </div>
