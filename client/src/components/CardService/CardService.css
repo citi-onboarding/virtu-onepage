@@ -9,7 +9,7 @@
     border: 2px solid var(--red-bright);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    padding: 16px 24px;
+    padding: 28px;
 }
 
 .card-service .cs-title-image-container {
@@ -32,7 +32,14 @@
 
 }
 
-/* .card-service p+p {
+.card-service p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.card-service p+p {
     display: block;
+    width: 100%;
     text-align: right;
-} */
+    margin-top: 15px;
+}
