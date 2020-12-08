@@ -5,21 +5,23 @@
   grid-template-columns: 0.5fr 1fr 0.5fr auto 0.5fr;
 }
 
-::before {
+.banner-section::before {
   content: "";
+
+  height: 100vh;
 
   background-image: url("../../assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 
   position: absolute;
-  top: 0;
+  top:75px;
   bottom: 0;
   right: 0;
   left: 0;
 
-  opacity: 0.05;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -108,7 +110,7 @@
 }
 
 @media (max-width: 768px) {
-  ::before {
+  .banner-section::before {
     content: "";
 
     background-image: url("../../assets/background\ 2.png");
@@ -122,7 +124,7 @@
     right: 0;
     left: 0;
 
-    opacity: 0.05;
+    opacity: 0.5;
     z-index: -1;
   }
 
