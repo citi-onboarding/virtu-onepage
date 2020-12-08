@@ -1,0 +1,221 @@
+.banner-section {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr auto 0.5fr;
+}
+
+.banner-section::before {
+  content: "";
+
+  height: 100vh;
+
+  background-image: url("../../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  position: absolute;
+  top:75px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.banner-section .text {
+  width: 360px;
+  height: 228px;
+
+  grid-column: 2;
+  padding-top: 255px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.banner-section .text h1 {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  color: var(--red-bright);
+}
+
+.banner-section .text p {
+  font-family: acumin-pro, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+
+  padding-top: 30px;
+
+  line-height: 19px;
+}
+
+.banner-section .text button {
+  background: var(--red-bright);
+
+  width: 61%;
+  margin-top: 30px;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17.5px;
+  border: none;
+}
+
+.banner-section .text button h3 {
+  color: white;
+
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: acumin-pro, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.banner-section .rectangle {
+  background: linear-gradient(
+    162.52deg,
+    rgba(204, 23, 1, 0.8) 0%,
+    rgba(153, 18, 0, 0.8) 99.99%,
+    rgba(153, 18, 0, 0.8) 100%
+  );
+
+  grid-column: 4;
+  width: 22vw;
+  min-width: 240px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-white {
+  width: 57.1%;
+  max-width: 240px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .banner-section::before {
+    content: "";
+
+    background-image: url("../../assets/background\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  .banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .banner-section .text {
+    height: auto;
+    padding-top: 75px;
+    width: 87vw;
+  }
+
+  .banner-section .rectangle {
+    height: 171px;
+    width: 100%;
+  }
+
+  #logo-white {
+    height: 58%;
+  }
+
+  .banner-section .text h1 {
+    font-size: 28px;
+    width: 50vw;
+  }
+
+  .banner-section .text p {
+    font-size: 14px;
+    width: 38vw;
+  }
+
+  .banner-section .text button h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 705px) {
+  .banner-section .text p {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 655px) {
+  .banner-section .text h1 {
+    width: 60vw;
+  }
+  .banner-section .text p {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 595px) {
+  .banner-section .text p {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 595px) {
+  .banner-section .text h1 {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-section .text {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-section .text h1 {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 330px) {
+  .banner-section .text h1 {
+    font-size: 26px;
+  }
+
+  .banner-section .text p {
+    align-self: flex-start;
+  }
+
+  .banner-section .text button {
+    align-self: flex-start;
+  }
+}
+
+
+

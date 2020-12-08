@@ -1,13 +1,19 @@
 import {
-  Footer,
+  Footer, 
+  OurHistory, 
+  NavBar,
+  Banner,
   OurServices
 } from './components';
 
 function App() {
   return (
     <>
-      <OurServices/>
-      <Footer/>
+    <NavBar />
+    <Banner/>
+    <OurServices/>
+    <OurHistory />
+    <Footer/>
     </>
   );
 }
