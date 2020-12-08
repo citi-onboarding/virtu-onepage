@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import virtu_logo from "../../assets/virtu-logo 3.svg";
 import menu from "../../assets/Menu.svg";
@@ -7,20 +7,33 @@ import ex from "../../assets/Ex.png";
 import "./NavBar.css";
 
 function NavBar() {
+  
+const [ToggleMenu, setToggleMenu] = useState(true);
 
-  const OpenClose = () => {
-    const [MobileMenu, setMobileMenu] = useState(false);
-  }
+useEffect(() => {
+  
+document.querySelector('.myMenu')
+
+  }, []);
 
   return (
     <> 
-
-
     <header className="navbar-section">
       <div className="connect">
         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
         <div className="sections">
-          <img onClick = {() => setMobileMenu(!MobileMenu)} className="menu" src={menu} alt="Menu"/>
+          <div className="icon">
+            <img className="myMenu" 
+            src = {() => {
+              ToggleMenu ? {menu} : {ex}
+            }}
+            alt="Menu"
+            onClick = {() => {
+              setToggleMenu(!ToggleMenu)
+            }}
+            /> 
+          </div>
+         
           <ul className="list">
             <li>
               <a className = "current" href="">Quem Somos</a>
