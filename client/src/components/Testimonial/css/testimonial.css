@@ -16,28 +16,29 @@ section{
 	flex-wrap: nowrap;
 }
 
-.box-right{
-	text-align: left;
-	width: 46%;
-	margin-left: 20px;
-}
-
 .parent-box h1{
 font-size: 32px;
 line-height: 38.4px;
+display: inline-block;
 
 }
-.box-right h2{
-	margin-top: 80px;
-	font-size: 22px;
-	line-height: 26.4px;
+
+.arrow_right, .arrow_left{
+	cursor: pointer;
+}
+.arrow_right{
+	position: relative;
+	top: 8px;
 }
 
-.box-right p{
-	font-size: 18px;
-    line-height: 21.6px;
-    margin-bottom: 10px;
-}
-.box-right #p-2{
-	margin-bottom: 23px;
+.Arrows span{
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	background-color: #ccc;
+	display: inline-block;
+	border-radius: 6px;
+	position: relative;
+	top: -8px;
+	cursor: pointer;
 }

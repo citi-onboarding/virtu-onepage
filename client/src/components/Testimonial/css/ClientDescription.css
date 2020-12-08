@@ -1,0 +1,19 @@
+.box-right h2{
+	margin-top: 80px;
+	font-size: 22px;
+	line-height: 26.4px;
+}
+
+.box-right p{
+	font-size: 18px;
+    line-height: 21.6px;
+    margin-bottom: 10px;
+}
+.box-right #p-2{
+	margin-bottom: 23px;
+}
+.box-right{
+	text-align: left;
+	width: 46%;
+	margin-left: 20px;
+}

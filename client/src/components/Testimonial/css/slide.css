@@ -1,21 +1,30 @@
 .nav-galeria{
 	overflow: hidden;
-	width: 80%;
-	background-color: green;
-	padding-top: 50px;
+	width: 70%;
+	padding-left: 60px;
 }
 
 
 .slick-cloned > div, .slick-active > div{
-	margin: 2px;
+	margin: -10px;
 }
 
 .slick-slide{
-	transform: scale(0.85);
+	transform: scale(0.8);
 	transition: all ease 0.5%;
 }
 
 
 .slick-current{
-	transform: scale(1);
+	transform: scale(0.95);
+}
+.slick-prev{
+	display: none;
+}
+
+.icon_right{
+	text-align: right;
+    margin: 15px 0;
+    position: relative;
+    top: -25px;
 }
