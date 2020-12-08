@@ -119,7 +119,7 @@
     background-position: center center;
 
     position: absolute;
-    top: 0;
+    top: 75px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -139,6 +139,7 @@
     height: auto;
     padding-top: 0;
     margin-right: 30px;
+    width: 87vw;
   }
 
   .banner-section .rectangle {
@@ -150,20 +151,45 @@
     height: 58%;
   }
 
-  .banner-section .text {
-    width: 87vw;
-  }
-
   .banner-section .text h1 {
     font-size: 28px;
+    width: 50vw;
   }
 
   .banner-section .text p {
     font-size: 14px;
+    width: 38vw;
   }
 
   .banner-section .text button h3 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 705px) {
+  .banner-section .text p {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 655px) {
+  .banner-section .text h1 {
+    width: 60vw;
+  }
+  .banner-section .text p {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 595px) {
+  .banner-section .text p {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 595px) {
+  .banner-section .text h1 {
+    width: 70vw;
   }
 }
 
@@ -172,3 +198,5 @@
     margin: 0;
   }
 }
+
+
