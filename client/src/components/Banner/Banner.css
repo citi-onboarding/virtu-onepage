@@ -168,7 +168,7 @@
 
 @media (max-width: 705px) {
   .banner-section .text p {
-    width: 10vw;
+    width: 45vw;
   }
 }
 
@@ -196,6 +196,12 @@
 @media (max-width: 450px) {
   .banner-section .text {
     margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-section .text h1 {
+    width: 95vw;
   }
 }
 
