@@ -35,13 +35,13 @@
     display: block;
     width: 100%;
     top: -76px;
-    left: -1055px;
+    left: -775px;
     list-style: none;
     z-index: 1;
     text-align: center;
 }
 ul.slick-dots li{
-	float: right;
+	display: inline-block;
 }
 ul.slick-dots li button{
 	height: 14px;
@@ -65,24 +65,25 @@ ul.slick-dots li button{
 }
 
 .slick-next, .slick-prev{
-	padding: 16px;
+	padding: 17px;
 	background-image: url(../images/arrow rightSVG.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	border: 0;
 	outline: 0;
+	background-color: white;
 	background-position: center;
 	position: relative;
     right: 400px;
     cursor: pointer;
-    top: -48px;
+    top: -46px;
     z-index: 1;
 }
 
 .slick-prev{
 	background-image: url('../images/arrow leftSVG.svg');
-	left: -527px;
+	left: -500px;
     position: relative;
-    top: 190px;
+    top: 203px;
     padding: 13px;
 }
