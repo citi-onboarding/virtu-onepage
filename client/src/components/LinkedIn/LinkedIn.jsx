@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
+import arrow_left from '../../assets/arrow leftSVG.svg'
+import arrow_right from '../../assets/arrow rightSVG.svg'
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"
@@ -10,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Datas from './Datas'
 
 import './LinkedIn.css';
+import './Carousel.css';
 
 const title = [
   'Conheça nosso LinkedIn'
