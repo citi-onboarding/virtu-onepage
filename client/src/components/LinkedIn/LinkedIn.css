@@ -47,9 +47,9 @@ body {
 }
 
 .LinkedIn-section .carousel {
-    display: flex;
-}
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 
-.slick-slider, .slick-initialized {
-    width: 100vh;
+    /* width: 67%; */
 }

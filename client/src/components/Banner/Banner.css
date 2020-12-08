@@ -6,7 +6,7 @@
     grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr;
 }
 
-::before {
+.banner-section::before {
     content: '';
 
     background-image: url('../../assets/background.png');
@@ -107,7 +107,7 @@
 
 @media(max-width: 768px) {
 
-    ::before {
+    .banner-section::before {
         content: '';
     
         background-image: url('../../assets/background\ 2.png');
