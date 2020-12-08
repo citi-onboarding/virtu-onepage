@@ -2,7 +2,7 @@ body {
     background-color: var(--white-dark);
 }
 
-.blog-section {
+.LinkedIn-section {
     height: 100vh;
 
     display: flex;
@@ -11,7 +11,7 @@ body {
     align-items: space-around;
 }
 
-.blog-section .head {
+.LinkedIn-section .head {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,26 +27,26 @@ body {
     margin-right: 184px;
 }
 
-.blog-section .head .title {
+.LinkedIn-section .head .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.blog-section .head .title h1 {
+.LinkedIn-section .head .title h1 {
     font-size: 38px;
     font-family: 'Acumin Pro';
     margin-bottom: 30px;
 }
 
-.blog-section .head .title a {
+.LinkedIn-section .head .title a {
     font-size: 18px;
     font-family: 'Acumin Pro';  
     color: black;
 }
 
-.blog-section .carousel {
+.LinkedIn-section .carousel {
     display: flex;
 }
 

@@ -1,7 +1,7 @@
 import Footer from './Footer';
-import Blog from './Blog';
+import LinkedIn from './LinkedIn';
 
 export {
     Footer,
-    Blog,
+    LinkedIn,
 };

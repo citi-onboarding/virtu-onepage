@@ -1,12 +1,12 @@
 import {
   Footer,
-  Blog
+  LinkedIn
 } from './components';
 
 function App() {
   return (
     <>
-      <Blog />
+      <LinkedIn />
       <Footer/>
     </>
   );

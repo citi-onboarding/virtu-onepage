@@ -10,18 +10,18 @@ import Slider from 'react-slick';
 
 import Datas from './Datas'
 
-import './Blog.css';
+import './LinkedIn.css';
 
 const title = [
-  'Conheça nosso blog'
+  'Conheça nosso LinkedIn'
 ]
 
 const subtitle = [
-  'Visitar blog'
+  'Visitar LinkedIn'
 ]
 
-const titleBlog = [
-  'Título do blog título do blog título do blog',
+const titleLinkedIn = [
+  'Título do LinkedIn título do LinkedIn título do LinkedIn',
 ]
 
 const text = [
@@ -32,7 +32,7 @@ const link = [
   'https://react-slick.neostack.com/docs/get-started/'
 ]
 
-class Blog extends Component {
+class LinkedIn extends Component {
   
   render() {
 
@@ -46,7 +46,7 @@ class Blog extends Component {
     }
     
     return (
-      <div className="blog-section">
+      <div className="LinkedIn-section">
         <div className="head">
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
@@ -57,9 +57,9 @@ class Blog extends Component {
         </div>
         <div className="carousel">
           <Slider {...settings}>
-            <Datas title={titleBlog} text={text} link={link}/>
-            <Datas title={titleBlog} text={text} link={link}/> 
-            <Datas title={titleBlog} text={text} link={link}/>
+            <Datas title={titleLinkedIn} text={text} link={link}/>
+            <Datas title={titleLinkedIn} text={text} link={link}/> 
+            <Datas title={titleLinkedIn} text={text} link={link}/>
           </Slider>
           
         </div>
@@ -68,4 +68,4 @@ class Blog extends Component {
   }
 }
 
-export default Blog;
+export default LinkedIn;
