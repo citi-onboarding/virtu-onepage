@@ -75,7 +75,6 @@
   color: white;
 
   height: 35px;
-  padding-top: 3px;
 
   display: flex;
   justify-content: center;
@@ -203,5 +202,20 @@
     width: 95vw;
   }
 }
+
+@media (max-width: 330px) {
+  .banner-section .text h1 {
+    font-size: 26px;
+  }
+
+  .banner-section .text p {
+    align-self: flex-start;
+  }
+
+  .banner-section .text button {
+    align-self: flex-start;
+  }
+}
+
 
 
