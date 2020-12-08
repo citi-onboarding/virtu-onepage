@@ -1,16 +1,19 @@
 import {
+  Footer, 
+  OurHistory, 
+  NavBar,
   Banner,
-  Footer, OurHistory,
-  LinkedIn
+  LinkedIn,
 } from './components';
 
 function App() {
   return (
     <>
-      <Banner/>
-      <OurHistory />
-      <LinkedIn />
-      <Footer/>
+    <NavBar />
+    <Banner/>
+    <OurHistory />
+    <LinkedIn />
+    <Footer/>
     </>
   );
 }
