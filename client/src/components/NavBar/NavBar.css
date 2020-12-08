@@ -17,6 +17,7 @@ html {
   grid-template-columns: 15% 70% 15%;
   align-items: center;
 
+  position: relative;
 }
 
 #logo {
@@ -49,4 +50,54 @@ html {
 
   text-decoration: none;
   cursor: pointer;
+}
+
+.navbar-section .connect .menu {
+  display: none;
+  cursor: pointer;
+} 
+
+@media (max-width: 1200px) {
+  .navbar-section {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-section {
+    grid-template-columns: 7% 86% 7%;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-section {
+    grid-template-columns: 5% 90% 5%;
+  }
+}
+
+@media (max-width: 860px) {
+  .navbar-section {
+    grid-template-columns: 3% 94% 3%;
+  }
+}
+
+@media (max-width: 810px) {
+  .navbar-section {
+    grid-template-columns: 1% 98% 1%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-section {
+    grid-template-columns: 9% 82% 9%;
+  }
+
+  .navbar-section .connect .sections .list {
+    display: none;
+  }
+
+  .navbar-section .connect .menu {
+    display: block;
+  } 
 }

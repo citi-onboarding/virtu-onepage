@@ -1,6 +1,7 @@
 import React from "react";
 
 import virtu_logo from "../../assets/virtu-logo 3.svg";
+import menu from "../../assets/Menu.png";
 
 import "./NavBar.css";
 
@@ -10,6 +11,7 @@ function NavBar() {
       <div className="connect">
         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
         <div className="sections">
+          <img className="menu" src={menu} alt="Menu"/>
           <ul className="list">
             <li>
               <a className = "current" href="">Quem Somos</a>
