@@ -8,15 +8,30 @@ import "./NavBar.css";
 
 function NavBar() {
 
+  const [Mode, setMode] = useState(true);
+  const menu = {menu};
+  const ex = {ex};
+  let temporary = {menu};
+
+  function toggleIcon(Mode) {
+    return Mode ? {menu} : {ex}
+  }
+
   return (
     <> 
     <header className="navbar-section">
       <div className="connect">
         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
         <div className="sections">
-          <div className="icon">
+          <div 
+          className="icon"
+          onClick= { () => {
+            setMode(!Mode);
+            temporary = toggleIcon(Mode);
+          }
+        }>
             <img className="myMenu" 
-            src = {menu}
+            src = {temporary}
             alt="Menu"
             /> 
           </div>
