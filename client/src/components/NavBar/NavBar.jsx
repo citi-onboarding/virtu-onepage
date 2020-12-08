@@ -10,9 +10,9 @@ function NavBar() {
       <div className="connect">
         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
         <div className="sections">
-          <ul>
+          <ul className="list">
             <li>
-              <a href="">Quem Somos</a>
+              <a className = "current" href="">Quem Somos</a>
             </li>
             <li>
               <a href="">Serviços</a>
@@ -24,9 +24,7 @@ function NavBar() {
               <a href="">Depoimentos</a>
             </li>
             <li>
-              <a id="last" href="">
-                Fale Conosco
-              </a>
+              <a href=""> Fale Conosco</a>
             </li>
           </ul>
         </div>
