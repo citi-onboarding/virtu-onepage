@@ -43,3 +43,9 @@
     text-align: right;
     margin-top: 15px;
 }
+
+@media(max-width: 768px) {
+    .card-service {
+        height: 167px;
+    }
+}
