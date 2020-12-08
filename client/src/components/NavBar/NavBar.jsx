@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import virtu_logo from "../../assets/virtu-logo 3.svg";
 import menu from "../../assets/Menu.svg";
@@ -6,18 +6,21 @@ import ex from "../../assets/Ex.png";
 
 import "./NavBar.css";
 
-const icons = [
-  {menu},
-  {ex}
-]
-
 function NavBar() {
+
+  const OpenClose = () => {
+    const [MobileMenu, setMobileMenu] = useState(false);
+  }
+
   return (
+    <> 
+
+
     <header className="navbar-section">
       <div className="connect">
         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
         <div className="sections">
-          <img className="menu" src={icons[0]} alt="Menu"/>
+          <img onClick = {() => setMobileMenu(!MobileMenu)} className="menu" src={menu} alt="Menu"/>
           <ul className="list">
             <li>
               <a className = "current" href="">Quem Somos</a>
@@ -38,6 +41,7 @@ function NavBar() {
         </div>
       </div>
     </header>
+    </>
   );
 }
 
