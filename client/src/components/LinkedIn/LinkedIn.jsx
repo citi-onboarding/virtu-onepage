@@ -4,6 +4,7 @@ import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
 import arrow_left from '../../assets/arrow leftSVG.svg'
 import arrow_right from '../../assets/arrow rightSVG.svg'
+import pointed from '../../assets/Caminho 5SVG.svg'
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"
@@ -48,13 +49,13 @@ class LinkedIn extends Component {
           </div>
           <img id="circle" src={circle} alt=""/>
         </div>
+        <img id="pointed" src={pointed} alt=""/>
         <div className="carousel">
           <Slider>
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/> 
             <Datas title={titleLinkedIn} text={text} link={link}/>
           </Slider>
-          
         </div>
       </div>
     )

@@ -2,6 +2,12 @@ body {
     background-color: var(--white-dark);
 }
 
+#pointed {
+    display: none;
+    position: absolute;
+    transform: translateX(8px) rotate(+90deg) translateY(450px);
+}
+
 .LinkedIn-section {
     height: 100vh;
 
