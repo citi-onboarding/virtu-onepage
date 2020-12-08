@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
 
-import "~slick-carousel/slick/slick.css"; 
-import "~slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import Slider from 'react-slick';
 
@@ -37,12 +37,29 @@ class LinkedIn extends Component {
   render() {
 
     const settings = {
-      className: "center",
-      centerMode: true,
-      infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 3,
-      speed: 500
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
     }
     
     return (
