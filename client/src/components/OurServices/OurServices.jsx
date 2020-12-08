@@ -15,54 +15,61 @@ function OurServices() {
                 <h1>Saiba quais serviços que nós oferecemos</h1>
             </div>
             
+            <CardService
+                title="Pesquisa de Opinião"
+                description={lorem}
+                image={tasks}
+                id="c0"
+            />
+            <CardService
+                title="Grupo focal"
+                description={lorem}
+                image={group_focal}
+                id="c1"
+            />
+
+            <CardService
+                title="Memorandum"
+                description={lorem}
+                image={tasks}
+                id="c2"
+            />
+            <CardService
+                title="Consultoria de campanha"
+                description={lorem}
+                image={tasks}
+                id="c3"
+            />
+            <CardService
+                title="Fortalecimento Institucional"
+                description={lorem}
+                image={tasks}
+                id="c4"
+            />
+
+        
+            <CardService
+                title="Acomp. dos poderes"
+                description={lorem}
+                image={tasks}
+                id="c5"
+            />
+            <CardService
+                title="Capacitação Institucional"
+                description={lorem}
+                image={tasks}
+                id="c6"
+            />
+
+            <div className="red-section-bottom">
                 <CardService
                     title="Pesquisa de Opinião"
                     description={lorem}
-                    image={tasks}
+                    image={tasks_white}
+                    textColor="white"
+                    borderColor="white"
                 />
-                <CardService
-                    title="Grupo focal"
-                    description={lorem}
-                    image={group_focal}
-                />
-
-                <CardService
-                    title="Memorandum"
-                    description={lorem}
-                    image={tasks}
-                />
-                <CardService
-                    title="Consultoria de campanha"
-                    description={lorem}
-                    image={tasks}
-                />
-                <CardService
-                    title="Fortalecimento Institucional"
-                    description={lorem}
-                    image={tasks}
-                />
-
-            
-                <CardService
-                    title="Acomp. dos poderes"
-                    description={lorem}
-                    image={tasks}
-                />
-                <CardService
-                    title="Capacitação Institucional"
-                    description={lorem}
-                    image={tasks}
-                />
-
-                <div className="red-section-bottom">
-                    <CardService
-                        title="Pesquisa de Opinião"
-                        description={lorem}
-                        image={tasks_white}
-                        textColor="white"
-                        borderColor="white"
-                    />
-                </div>            
+            </div>            
         </div>
     );
 }
