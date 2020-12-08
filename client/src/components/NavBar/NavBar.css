@@ -53,7 +53,7 @@ html {
   cursor: pointer;
 }
 
-.navbar-section .connect .menu {
+.navbar-section .connect .myMenu {
   display: none;
   cursor: pointer;
 } 
@@ -104,7 +104,7 @@ html {
     display: none;
   }
 
-  .navbar-section .connect .menu {
+  .navbar-section .connect .myMenu {
     display: block;
   } 
 }

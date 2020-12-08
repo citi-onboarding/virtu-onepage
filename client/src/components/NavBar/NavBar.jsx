@@ -7,14 +7,6 @@ import ex from "../../assets/Ex.png";
 import "./NavBar.css";
 
 function NavBar() {
-  
-const [ToggleMenu, setToggleMenu] = useState(true);
-
-useEffect(() => {
-  
-document.querySelector('.myMenu')
-
-  }, []);
 
   return (
     <> 
@@ -24,13 +16,8 @@ document.querySelector('.myMenu')
         <div className="sections">
           <div className="icon">
             <img className="myMenu" 
-            src = {() => {
-              ToggleMenu ? {menu} : {ex}
-            }}
+            src = {menu}
             alt="Menu"
-            onClick = {() => {
-              setToggleMenu(!ToggleMenu)
-            }}
             /> 
           </div>
          
