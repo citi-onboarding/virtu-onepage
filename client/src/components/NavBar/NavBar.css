@@ -17,7 +17,8 @@ html {
   grid-template-columns: 15% 70% 15%;
   align-items: center;
 
-  position: relative;
+  position: fixed;
+  z-index: 2;
 }
 
 #logo {
@@ -58,14 +59,20 @@ html {
 } 
 
 @media (max-width: 1200px) {
-  .navbar-section {
-    grid-template-columns: 10% 80% 10%;
+  .navbar-section .connect .sections a {
+  margin-left: 25px;
+}
+}
+
+@media (max-width: 1100px) {
+  .navbar-section .connect .sections a {
+    margin-left: 20px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   .navbar-section {
-    grid-template-columns: 7% 86% 7%;
+    grid-template-columns: 10% 80% 10%;
   }
 }
 
@@ -75,15 +82,15 @@ html {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 810px) {
   .navbar-section {
     grid-template-columns: 3% 94% 3%;
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 780px) {
   .navbar-section {
-    grid-template-columns: 1% 98% 1%;
+    grid-template-columns: auto auto auto;
   }
 }
 

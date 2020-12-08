@@ -30,7 +30,7 @@
   height: 228px;
 
   grid-column: 2;
-  padding-top: 180px;
+  padding-top: 255px;
 
   display: flex;
   flex-direction: column;
@@ -137,7 +137,7 @@
 
   .banner-section .text {
     height: auto;
-    padding-top: 0;
+    padding-top: 75px;
     width: 87vw;
   }
 
