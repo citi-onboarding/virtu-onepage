@@ -39,6 +39,11 @@ html {
   list-style: none;
 }
 
+.navbar-section .connect .sections .icon {
+  display: none;
+  cursor: pointer;
+}
+
 .navbar-section .connect .sections a {
     font-family: acumin-pro, sans-serif;
     font-style: normal;
@@ -52,11 +57,6 @@ html {
   text-decoration: none;
   cursor: pointer;
 }
-
-.navbar-section .connect .myMenu {
-  display: none;
-  cursor: pointer;
-} 
 
 @media (max-width: 1200px) {
   .navbar-section .connect .sections a {
@@ -104,7 +104,7 @@ html {
     display: none;
   }
 
-  .navbar-section .connect .myMenu {
+  .navbar-section .connect .sections .icon {
     display: block;
-  } 
+  }
 }

@@ -8,14 +8,7 @@ import "./NavBar.css";
 
 function NavBar() {
 
-  const [Mode, setMode] = useState(true);
-  const menu = {menu};
-  const ex = {ex};
-  let temporary = {menu};
-
-  function toggleIcon(Mode) {
-    return Mode ? {menu} : {ex}
-  }
+  const [mode, setMode] = useState({menu});
 
   return (
     <> 
@@ -23,17 +16,10 @@ function NavBar() {
       <div className="connect">
         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
         <div className="sections">
-          <div 
-          className="icon"
-          onClick= { () => {
-            setMode(!Mode);
-            temporary = toggleIcon(Mode);
-          }
-        }>
-            <img className="myMenu" 
-            src = {temporary}
-            alt="Menu"
-            /> 
+          <div className="icon" onClick = {() => setMode(!mode)} >
+  
+           { mode ?  <img src={menu} alt="Menu"/>  : <img src={ex} alt="Sair" /> }
+            
           </div>
          
           <ul className="list">
