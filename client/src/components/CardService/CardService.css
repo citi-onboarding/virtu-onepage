@@ -9,7 +9,7 @@
     border: 2px solid var(--red-bright);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    padding: 28px;
+    padding: 56px 28px 49px 28px;
 }
 
 .card-service .cs-title-image-container {
@@ -25,15 +25,11 @@
 }
 
 .card-service .cs-title-image-container h2 {
-    max-width: 150px;
+    max-width: 140px;
     color: var(--red-bright);
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
-}
-
-.card-service .cs-title-image-container img {
-    /* background-color: white; */
 }
 
 .card-service p {

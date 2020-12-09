@@ -73,7 +73,8 @@ function OurServices() {
                     image={tasks_white}
                     textColor="white"
                     borderColor="white"
-                    bckColor="var(--salmon)"
+                    bckColor="#D55140"
+                    id="white-card"
                 />
             </div>            
         </div>
