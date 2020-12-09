@@ -5,6 +5,8 @@ import lines from '../../assets/Grupo 5.png'
 import arrow_left from '../../assets/arrow leftSVG.svg'
 import arrow_right from '../../assets/arrow rightSVG.svg'
 import pointed from '../../assets/Caminho 5SVG.svg'
+import pointed from '../../assets/Caminho 5SVG.svg'
+
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"
@@ -46,10 +48,10 @@ class LinkedIn extends Component {
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 2
+        slidesToShow: 3,
       }
     },
     {
@@ -75,16 +77,18 @@ class LinkedIn extends Component {
           </div>
           <img id="circle" src={circle} alt=""/>
         </div>
-        <img id="pointed" src={pointed} alt=""/>
         <div className="carousel">
           <Slider className="slider" {...settings}>
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/> 
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/>
-            <Datas title={titleLinkedIn} text={text} link={link}/> 
-            <Datas title={titleLinkedIn} text={text} link={link}/>
           </Slider>
+          <div className="navigate">
+            <img src={arrow_left} alt="Seta à Esquerda"/>
+
+            <img src={arrow_right} alt="Seta à Direita"/>
+          </div>
         </div>
       </div>
     )
