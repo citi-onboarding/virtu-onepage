@@ -88,7 +88,7 @@ width: 55%;
  }
 
 .img-right img{
-right: -19%;
+/* right: -19%; */
 width: 50%;
 transform: translateX(8px) rotate(-90deg) translateY(10px);
 }
