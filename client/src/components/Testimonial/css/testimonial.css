@@ -1,7 +1,6 @@
 *{
 font-family: acumin-pro, sans-serif;
 }
-
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -15,23 +14,30 @@ section{
 	display: flex;
 	flex-wrap: nowrap;
 }
-
 .parent-box h1{
 font-size: 32px;
 line-height: 38.4px;
 display: inline-block;
 }
+@media screen and (max-width: 1024px){
+	.parent-box{
+		padding: 0 40px;
+	}
+}
+@media screen and (max-width: 850px){
+.parent-box{
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+}
+.parent-box{
+		padding: 0px;
+	}
+}
 
-.Arrows{
-	margin: 30px 0;
+@media screen and (max-width: 540px){
+.parent-box h1 {
+    font-size: 28px;
+	line-height: 34px;
 }
-.arrow_right, .arrow_left{
-	cursor: pointer;
-	z-index: 4;
-}
-.arrow_right{
-	position: relative;
-	top: 8px;
-	left: 100px;
-	text-align: right;
 }

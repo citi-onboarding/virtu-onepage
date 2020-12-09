@@ -2,7 +2,6 @@
 .nav-galeria{
 	width: 60%;
 	padding-left: 60px;
-	height: 100%;
 }
 
 
@@ -15,9 +14,9 @@
 	transition: all ease 0.5%;
 }
 
-
-.slick-current{
+.slick-current {
 	transform: scale(0.95);
+	position: relative;
 }
 .slick-prev{
 	display: none;
@@ -25,7 +24,7 @@
 
 .icon_right{
 	text-align: right;
-    margin: 15px 0;
+    margin: 11px 0;
     position: relative;
     top: -25px;
 }
@@ -35,7 +34,7 @@
     display: block;
     width: 113px;
     top: -76px;
-    left: -500px;
+    left: -505px;
     z-index: 3;
     list-style: none;
     text-align: center;
@@ -76,7 +75,7 @@ ul.slick-dots li button{
 	background-color: white;
 	background-position: center;
 	position: relative;
-    right: 405px;
+    right: 402px;
     cursor: pointer;
     top: -46px;
     z-index: 333;
@@ -86,7 +85,42 @@ ul.slick-dots li button{
 	background-image: url('../images/arrow leftSVG.svg');
 	left: -525px;
     position: relative;
-    top: 203px;
+    top: 200px;
     padding: 13px;
+}
+
+@media screen and (max-width: 1180px){
+.slick-dots{
+    bottom: 3px;
+    width: 113px;
+    left: -471px;
+}
+.slick-next, .slick-prev{
+    right: 370px;
+    top: -45px;
+}
+.slick-prev{
+	left: -490px;
+    top: 197px;
+    padding: 13px;
+}
+
+}
+
+@media screen and (max-width: 850px){
+.nav-galeria{
+	width: 84%;
+	padding-left: 0px;
+}
+
+
+.icon_right{
+    margin: -37px 0;
+    top: -230px;
+}
+
+.icon_right img{
+	width: 29%;
+}
 }
 

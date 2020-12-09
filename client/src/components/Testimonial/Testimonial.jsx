@@ -39,6 +39,7 @@ function GetPosition (Array) {
 	const pos = position + 1 === Array.length?0:position + 1
 	setPosition(pos)
 }
+
 React.useEffect(()=>{
 	setName(Name[position])
 	setFunc(Func[position])

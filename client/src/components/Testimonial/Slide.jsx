@@ -12,8 +12,6 @@ import img_2 from './images/image 4.svg'
 import img_3 from './images/image 5.svg'
 import img_4 from './images/image 3.svg'
 
-
-
 const Name = [
     'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
 ]
@@ -30,7 +28,7 @@ export default class Slide extends React.Component{
 
 render(){
 	 const settings = {
-      className: "",
+      className: "center",
       centerMode: false,
       dots: true,
       arrows: true,
@@ -41,8 +39,26 @@ render(){
       infinite: true,
       centerPadding: "60px",
       adaptiveHeight: false,
-      speed: 500
-    }
+      speed: 500,
+     responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+   }
 return(
 <div className="nav-galeria" >
 <div  className="icon_right">

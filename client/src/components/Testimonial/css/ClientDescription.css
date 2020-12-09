@@ -18,3 +18,39 @@
 	width: 46%;
 	margin-left: 20px;
 }
+
+@media screen and (max-width: 1024px){
+	.box-right{
+	text-align: left;
+	width: 46%;
+	margin-left: 20px;
+}
+.Description-wraper{
+	padding-top: 7px;
+}
+}
+@media screen and (max-width: 850px){
+.box-right {
+    width: 84%;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 680px){
+.box-right h2 {
+    margin-top: 52px;
+}
+
+}
+
+@media screen and (max-width: 540px){
+.box-right h2{
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.box-right p{
+	font-size: 16px; 
+	line-height: 19px;
+}
+
+}
