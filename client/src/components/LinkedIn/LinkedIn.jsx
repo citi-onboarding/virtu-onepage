@@ -4,8 +4,8 @@ import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
 import arrow_left from '../../assets/arrow leftSVG.svg'
 import arrow_right from '../../assets/arrow rightSVG.svg'
-import pointed from '../../assets/Caminho 5SVG.svg'
-import pointed from '../../assets/Caminho 5SVG.svg'
+import elipse1 from '../../assets/Caminho 5SVG.svg'
+import elipse2 from '../../assets/Caminho 5SVG.svg'
 
 
 import Slider from 'react-slick';
