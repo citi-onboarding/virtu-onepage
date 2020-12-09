@@ -71,6 +71,14 @@ React.useEffect(()=>{
 }, 
 [BackPosition])
 
+React.useEffect(()=>{
+	
+	window.document.querySelector('.slick-next').addEventListener('click', ArrowForw)
+	return () =>{
+		window.removeEventListener('click', ArrowForw)
+	}
+})
+
 return(
 <section id="testimonial">
 	<div className="container">
@@ -82,6 +90,7 @@ return(
                       FuncofClient={currentFunc}
                       Service={currentService}
                       Description={currentDescription}
+                      Function={ArrowForw}
       			     /> 	
       			<div className="Arrows"></div>	
 			</div>

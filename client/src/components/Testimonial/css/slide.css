@@ -32,7 +32,8 @@
 	position: relative;
     bottom: 3px;
     display: block;
-    width: 113px;
+    background-color: green;
+    width: 50%;
     top: -76px;
     left: -505px;
     z-index: 3;
@@ -65,7 +66,7 @@ ul.slick-dots li button{
 	font-size: 0;
 }
 
-.slick-next, .slick-prev{
+.Next{
 	padding: 17px;
 	background-image: url(../images/arrow rightSVG.svg);
 	background-repeat: no-repeat;
@@ -81,7 +82,7 @@ ul.slick-dots li button{
     z-index: 333;
 }
 
-.slick-prev{
+.Prev{
 	background-image: url('../images/arrow leftSVG.svg');
 	left: -525px;
     position: relative;
@@ -89,6 +90,8 @@ ul.slick-dots li button{
     padding: 13px;
 }
 
+
+/*
 @media screen and (max-width: 1180px){
 .slick-dots{
     bottom: 3px;
@@ -106,6 +109,8 @@ ul.slick-dots li button{
 }
 
 }
+
+*/
 
 @media screen and (max-width: 850px){
 .nav-galeria{
