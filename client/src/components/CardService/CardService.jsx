@@ -2,12 +2,12 @@ import React from 'react';
 
 import './CardService.css'
 
-function CardService({ title, description, image, textColor, borderColor, id }) {
+function CardService({ title, description, image, textColor, borderColor, bckColor }) {
     return (
-        <div className="card-service" id={id} style={{borderColor: borderColor}} >
+        <div className="card-service" style={{borderColor: borderColor}} >
             <div className="cs-title-image-container" >
-                <img src={image} alt={title}/>
-                <h2 style={{color: textColor}} >{title}</h2>
+                <img src={image} alt={title} style={{backgroundColor: bckColor}} />
+                <h2 style={{color: textColor, backGroundColor: bckColor}} >{title}</h2>
             </div>
             <p style={{color: textColor}} >{description}</p>
             <p style={{color: textColor}} >Saber mais</p>

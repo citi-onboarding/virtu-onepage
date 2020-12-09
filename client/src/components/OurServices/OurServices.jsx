@@ -19,32 +19,32 @@ function OurServices() {
                 title="Pesquisa de Opinião"
                 description={lorem}
                 image={tasks}
-                id="c0"
+                bckColor="white"
             />
             <CardService
                 title="Grupo focal"
                 description={lorem}
                 image={group_focal}
-                id="c1"
+                bckColor="white"
             />
 
             <CardService
                 title="Memorandum"
                 description={lorem}
                 image={tasks}
-                id="c2"
+                bckColor="white"
             />
             <CardService
                 title="Consultoria de campanha"
                 description={lorem}
                 image={tasks}
-                id="c3"
+                bckColor="white"
             />
             <CardService
                 title="Fortalecimento Institucional"
                 description={lorem}
                 image={tasks}
-                id="c4"
+                bckColor="white"
             />
 
         
@@ -52,13 +52,13 @@ function OurServices() {
                 title="Acomp. dos poderes"
                 description={lorem}
                 image={tasks}
-                id="c5"
+                bckColor="white"
             />
             <CardService
                 title="Capacitação Institucional"
                 description={lorem}
                 image={tasks}
-                id="c6"
+                bckColor="white"
             />
 
             <div className="red-section-bottom">
@@ -68,6 +68,7 @@ function OurServices() {
                     image={tasks_white}
                     textColor="white"
                     borderColor="white"
+                    bckColor="var(--salmon)"
                 />
             </div>            
         </div>
