@@ -38,6 +38,32 @@ const link = [
 class LinkedIn extends Component {
   
   render() {
+    const settings = {
+      centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+    };
+    
     
     return (
       <div className="LinkedIn-section">
@@ -51,7 +77,10 @@ class LinkedIn extends Component {
         </div>
         <img id="pointed" src={pointed} alt=""/>
         <div className="carousel">
-          <Slider>
+          <Slider className="slider" {...settings}>
+            <Datas title={titleLinkedIn} text={text} link={link}/>
+            <Datas title={titleLinkedIn} text={text} link={link}/> 
+            <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/> 
             <Datas title={titleLinkedIn} text={text} link={link}/>
@@ -61,5 +90,6 @@ class LinkedIn extends Component {
     )
   }
 }
+
 
 export default LinkedIn;
