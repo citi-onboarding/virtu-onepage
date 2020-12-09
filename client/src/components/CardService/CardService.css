@@ -48,4 +48,13 @@
     .card-service {
         height: 167px;
     }
+
+    .card-service h2 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 }
