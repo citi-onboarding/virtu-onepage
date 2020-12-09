@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
-import arrow_left from '../../assets/arrow leftSVG.svg'
+import arrow_left from '../../assets/Vector (2).svg'
 import arrow_right from '../../assets/arrow rightSVG.svg'
-import elipse1 from '../../assets/Caminho 5SVG.svg'
-import elipse2 from '../../assets/Caminho 5SVG.svg'
+import elipse1 from '../../assets/Ellipse 3.png'
+import elipse2 from '../../assets/Ellipse 2.png'
 
 
 import Slider from 'react-slick';
@@ -84,11 +84,16 @@ class LinkedIn extends Component {
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/>
           </Slider>
-          <div className="navigate">
-            <img src={arrow_left} alt="Seta à Esquerda"/>
-
+          <div className="set-center">
+            <div className="navigate">
+            <img src={arrow_left} id="left" alt="Seta à Esquerda"/>
+            <img src={elipse1} alt=""/>
+            <img src={elipse2} alt=""/>
+            <img src={elipse1} alt=""/>
             <img src={arrow_right} alt="Seta à Direita"/>
+            </div>
           </div>
+          
         </div>
       </div>
     )

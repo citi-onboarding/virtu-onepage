@@ -2,12 +2,6 @@ body {
     background-color: var(--white-dark);
 }
 
-#pointed {
-    display: none;
-    position: absolute;
-    transform: translateX(8px) rotate(+90deg) translateY(450px);
-}
-
 .LinkedIn-section {
     height: 100vh;
 
@@ -52,10 +46,24 @@ body {
     color: black;
 }
 
-/* .LinkedIn-section .carousel { */
-    /* display: flex;
+.LinkedIn-section .carousel {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; */
+}
 
-    /* width: 67%; */
-/* } */
+.LinkedIn-section .carousel .set-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkedIn-section .carousel .set-center .navigate {
+    width: 120px;
+
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
