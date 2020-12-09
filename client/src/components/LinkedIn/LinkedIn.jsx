@@ -38,13 +38,18 @@ const link = [
 ]
 
 class LinkedIn extends Component {
-  
+
   render() {
     const settings = {
       centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
+      dots: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      prevArrow: 
+      <span className="prev-arrow" ><i></i></span>,
+      nextArrow: 
+      <span className="next-arrow" ><i></i></span>,
+      responsive: [
     {
       breakpoint: 768,
       settings: {
@@ -60,7 +65,7 @@ class LinkedIn extends Component {
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 0
       }
     }
   ]
@@ -84,7 +89,7 @@ class LinkedIn extends Component {
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/>
           </Slider>
-          <div className="set-center">
+          {/* <div className="set-center">
             <div className="navigate">
             <img src={arrow_left} id="left" alt="Seta à Esquerda"/>
             <img src={elipse1} alt=""/>
@@ -93,7 +98,7 @@ class LinkedIn extends Component {
             <img src={arrow_right} alt="Seta à Direita"/>
             </div>
           </div>
-          
+           */}
         </div>
       </div>
     )
