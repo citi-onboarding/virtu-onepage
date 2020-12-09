@@ -35,7 +35,8 @@
     display: block;
     width: 113px;
     top: -76px;
-    left: -486px;
+    left: -500px;
+    z-index: 3;
     list-style: none;
     text-align: center;
 }
@@ -46,7 +47,7 @@ ul.slick-dots li button{
 	height: 14px;
 	width: 14px;
 	margin: 0 5px;
-	background-color:#ccc;
+	background: rgba(153, 18, 0, 0.5);
 	display: inline-block;
 	border-radius: 10px;
 	position: relative;
@@ -56,7 +57,9 @@ ul.slick-dots li button{
 	border:0;
 }
 .slick-dots li.slick-active button{
-    background-color: black;
+    background: rgba(153, 18, 0, 0.75);
+    height: 16px;
+    width: 16px;
 }
 
 .slick-dots li button, .slick-next, .slick-prev{
@@ -73,16 +76,17 @@ ul.slick-dots li button{
 	background-color: white;
 	background-position: center;
 	position: relative;
-    right: 380px;
+    right: 405px;
     cursor: pointer;
     top: -46px;
-    z-index: 1;
+    z-index: 333;
 }
 
 .slick-prev{
 	background-image: url('../images/arrow leftSVG.svg');
-	left: -510px;
+	left: -525px;
     position: relative;
     top: 203px;
     padding: 13px;
 }
+

@@ -69,12 +69,6 @@ React.useEffect(()=>{
 	setDescription(Description[BackPosition])
 }, 
 [BackPosition])
-{/*React.useEffect(()=>{
-	window.document.querySelector('.slick-next').addEventListener('click', () =>{
-		ArrowForw()
-}, [])
-	
-})*/}
 
 return(
 <section id="testimonial">

@@ -10,14 +10,20 @@ import icon_right from '../../assets/Group 4SVG.svg'
 import img_1 from './images/image 3.svg'
 import img_2 from './images/image 4.svg' 
 import img_3 from './images/image 5.svg'
+import img_4 from './images/image 3.svg'
+
 
 
 const Name = [
-    'Isabela Souza', 'Outra pessoa'
+    'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
 ]
 
 const Func = [
-	'Candidata a vereadora', 'Outra função'
+	'Candidata a vereadora', 'Outra função', 'Candidato a prefeito', 'Governadora'
+]
+
+const Image = [
+  img_1, img_2, img_3, img_4
 ]
 
 export default class Slide extends React.Component{
@@ -48,6 +54,7 @@ return(
 	
       NameofClient={Name[0]}
       FuncofClient={Func[0]}
+      Image={Image[0]}
 
 
 	/>
@@ -55,24 +62,24 @@ return(
 
 	
       NameofClient={Name[1]}
-      FuncofClient={Func[0]}
-
+      FuncofClient={Func[1]}
+      Image={Image[1]}
 
 	/>
   <SlideCard 
 
   
-      NameofClient={Name[1]}
-      FuncofClient={Func[0]}
-
+      NameofClient={Name[2]}
+      FuncofClient={Func[2]}
+      Image={Image[2]}
 
   />
 	<SlideCard 
 
 	
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-
+      NameofClient={Name[3]}
+      FuncofClient={Func[3]}
+      Image={Image[3]}
 
 	/>
 
