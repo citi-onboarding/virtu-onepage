@@ -9,7 +9,8 @@ import building1 from '../../assets/building 1SVG.svg'
 import building2 from '../../assets/building 2SVG.svg'
 import contract from '../../assets/contract 1SVG.svg'
 
-import './OurServices.css'
+import './styles/OurServices.css'
+import './styles/responsive.css'
 
 const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
