@@ -3,6 +3,11 @@ import CardService from '../CardService'
 import tasks from '../../assets/tasks 1.svg'
 import tasks_white from '../../assets/tasks 1 white.svg'
 import group_focal from '../../assets/education 1SVG.svg'
+import information from '../../assets/information 1SVG.svg'
+import conference from '../../assets/conference 1SVG.svg'
+import building1 from '../../assets/building 1SVG.svg'
+import building2 from '../../assets/building 2SVG.svg'
+import contract from '../../assets/contract 1SVG.svg'
 
 import './OurServices.css'
 
@@ -31,19 +36,19 @@ function OurServices() {
             <CardService
                 title="Memorandum"
                 description={lorem}
-                image={tasks}
+                image={information}
                 bckColor="white"
             />
             <CardService
                 title="Consultoria de campanha"
                 description={lorem}
-                image={tasks}
+                image={conference}
                 bckColor="white"
             />
             <CardService
                 title="Fortalecimento Institucional"
                 description={lorem}
-                image={tasks}
+                image={building1}
                 bckColor="white"
             />
 
@@ -51,13 +56,13 @@ function OurServices() {
             <CardService
                 title="Acomp. dos poderes"
                 description={lorem}
-                image={tasks}
+                image={contract}
                 bckColor="white"
             />
             <CardService
                 title="Capacitação Institucional"
                 description={lorem}
-                image={tasks}
+                image={building2}
                 bckColor="white"
             />
 
