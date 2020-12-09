@@ -45,10 +45,6 @@ class LinkedIn extends Component {
       dots: true,
       centerPadding: '60px',
       slidesToShow: 3,
-      prevArrow: 
-      <span className="prev-arrow" ><i></i></span>,
-      nextArrow: 
-      <span className="next-arrow" ><i></i></span>,
       responsive: [
     {
       breakpoint: 768,
@@ -62,7 +58,7 @@ class LinkedIn extends Component {
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 0

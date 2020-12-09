@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     right: 5px;
-
 }
 
 .slick-initialized .slick-cloned {
@@ -76,4 +75,8 @@
     box-sizing: none;
     box-shadow: none;
     border-radius: none;
+}
+
+.slick-prev:before {
+    content: '←';
 }
