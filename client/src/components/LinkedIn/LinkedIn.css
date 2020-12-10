@@ -67,3 +67,11 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
+
+.LinkedIn-section .carousel .arrows {
+    width: 91px;
+
+    display: flex;
+    justify-content: space-between;
+}

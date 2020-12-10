@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
-import arrow_left from '../../assets/Vector (2).svg'
+import arrow_left from '../../assets/Vector (3).svg'
 import arrow_right from '../../assets/arrow rightSVG.svg'
 import elipse1 from '../../assets/Ellipse 3.png'
 import elipse2 from '../../assets/Ellipse 2.png'
@@ -85,16 +85,21 @@ class LinkedIn extends Component {
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/>
           </Slider>
-          {/* <div className="set-center">
-            <div className="navigate">
-            <img src={arrow_left} id="left" alt="Seta à Esquerda"/>
-            <img src={elipse1} alt=""/>
-            <img src={elipse2} alt=""/>
-            <img src={elipse1} alt=""/>
-            <img src={arrow_right} alt="Seta à Direita"/>
-            </div>
+          <div className="set-center">
+            <div className="arrows">
+            <img 
+            src={arrow_left} 
+            alt="Anterior"
+            onClick={event}
+            />
+            <img 
+            src={arrow_right} 
+            alt=""
+            onClick={event}
+            />
           </div>
-           */}
+          </div>
+          
         </div>
       </div>
     )

@@ -6,6 +6,11 @@
     margin-top: 45px;
 }
 
+.slick-slider .slick-arrow {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .slick-list {
     padding: 0;
 }
@@ -77,18 +82,16 @@
     border-radius: none;
 }
 
-
 .slick-next::before, .slick-prev::before {
 	padding: 17px;
 	background-image: url('../../assets/arrow rightSVG.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	border: 0;
-	outline: 0;
+    outline: 0;
+    opacity: 0.75;
+    display: none;
 	background-position: center;
-    position: relative;
-    top: 200px;
-    left: 800px;
     cursor: pointer;
     z-index: 1;
 }
@@ -98,13 +101,29 @@
     font-size: 25px;
     line-height: 1;
     opacity: 1;
+    display: none;
     color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev::before{
-	background-image: url('../../assets/Vector (3).svg');
-    position: relative;
-    right: 50px
+    background-image: url('../../assets/Vector (3).svg');
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
 }
