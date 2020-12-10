@@ -1,0 +1,7 @@
+#contact-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 210px;
+}

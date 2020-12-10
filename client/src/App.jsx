@@ -3,6 +3,7 @@ import {
   OurHistory, 
   NavBar,
   Banner,
+  Contact,
 } from './components';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <NavBar />
     <Banner/>
     <OurHistory />
+    <Contact/>
     <Footer/>
     </>
   );
