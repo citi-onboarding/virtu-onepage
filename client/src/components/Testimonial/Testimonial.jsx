@@ -5,19 +5,20 @@ import './css/testimonial.css'
 import ClientDescription from './Client-Description'
 
 const Name = [
-    'Isabela Souza', 'Jorge Andre','Mariana marques', 'Ana maria'
+    'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
 ]
 
 const Func = [
-	'Candidata a vereadora', 'Candidato a prefeito', 'N sei', 'n sei'
+	'Candidata a vereadora', 'Outra função', 'Candidato a prefeito', 'Governadora'
 ]
 
+
 const Service = [
-	'Pesquisa de opinião', 'outro serviço', 'outro serviço', 'n seiiii'
+	'Pesquisa de opinião', 'outro serviço1', 'outro serviço2', 'outro serviço3'
 ] 
 
 const Description = [
-	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '4Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 ]
 
 function Testimonial(){
@@ -76,6 +77,14 @@ React.useEffect(()=>{
 	window.document.querySelector('.slick-next').addEventListener('click', ArrowForw)
 	return () =>{
 		window.removeEventListener('click', ArrowForw)
+	}
+})
+
+React.useEffect(()=>{
+	
+	window.document.querySelector('.slick-prev').addEventListener('click', ArrowBack)
+	return () =>{
+		window.removeEventListener('click', ArrowBack)
 	}
 })
 

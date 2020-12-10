@@ -32,18 +32,20 @@
 	position: relative;
     bottom: 3px;
     display: block;
-    background-color: green;
-    width: 50%;
-    top: -76px;
-    left: -505px;
+    background-color: #ffffff05;
+    width: 28%;
+    top: -20px;
+    left: -528px;
     z-index: 3;
-    list-style: none;
+    list-style-type: none;
     text-align: center;
 }
-ul.slick-dots li{
+
+ul.dot-container li{
 	display: inline-block;
+	margin: 15px 5px;
 }
-ul.slick-dots li button{
+ul.dot-container li button{
 	height: 14px;
 	width: 14px;
 	margin: 0 5px;
@@ -67,50 +69,104 @@ ul.slick-dots li button{
 }
 
 .Next{
-	padding: 17px;
 	background-image: url(../images/arrow rightSVG.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	border: 0;
 	outline: 0;
-	background-color: white;
+	background-color: #ffffff05;
 	background-position: center;
-	position: relative;
-    right: 402px;
+	position: absolute;
+	bottom: 10px;
+	padding: 20px;
+	right: -8px;
+	bottom: 7px;
     cursor: pointer;
-    top: -46px;
     z-index: 333;
 }
 
 .Prev{
-	background-image: url('../images/arrow leftSVG.svg');
-	left: -525px;
-    position: relative;
-    top: 200px;
-    padding: 13px;
+	background-image: url('../images/arrowLeft.svg');
+	position: absolute;
+	left: 0;
+	top: 8px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 333;
 }
 
 
-/*
-@media screen and (max-width: 1180px){
+
+@media screen and (max-width: 1135px){
 .slick-dots{
     bottom: 3px;
-    width: 113px;
-    left: -471px;
-}
-.slick-next, .slick-prev{
-    right: 370px;
-    top: -45px;
-}
-.slick-prev{
-	left: -490px;
-    top: 197px;
-    padding: 13px;
+    width: 28%;
+    top: -20px;
+    left: -500px;
 }
 
 }
 
-*/
+@media screen and (max-width: 1094px){
+	.slick-dots{
+    bottom: 3px;
+    width: 30%;
+    top: 10px;
+    left: -480px;
+}
+
+
+}
+
+@media screen and (max-width: 1030px){
+	.slick-dots{
+    bottom: 3px;
+    width: 30%;
+    top: 10px;
+    left: -470px;
+}
+}
+
+@media screen and (max-width: 1024px){
+.slick-dots{
+    bottom: 3px;
+    width: 38%;
+    top: -3px;
+    left: -420px;
+}
+}
+
+@media screen and (max-width: 960px){
+.slick-dots{
+    bottom: 3px;
+    width: 38%;
+    top: 15px;
+    left: -400px;
+}
+
+}
+
+@media screen and (max-width: 900px){
+.slick-dots{
+    bottom: 3px;
+    width: 45%;
+    top: 40px;
+    left: -370px;
+}
+}
+
+@media screen and (max-width: 889px){
+.slick-dots{
+    bottom: 3px;
+    width: 45%;
+    top: 60px;
+    left: -368px;
+}
+
+}
 
 @media screen and (max-width: 850px){
 .nav-galeria{
@@ -127,5 +183,114 @@ ul.slick-dots li button{
 .icon_right img{
 	width: 29%;
 }
+
+.slick-dots{
+    bottom: 3px;
+    width: 28%;
+    top: -370px;
+    left: 1px;
 }
+}
+
+@media screen and (max-width: 724px){
+.slick-dots{
+    bottom: 3px;
+    width: 30%;
+    top: -330px;
+    left: 1px;
+}
+}
+
+@media screen and (max-width: 644px){
+.slick-dots{
+    bottom: 3px;
+    width: 35%;
+    top: -310px;
+    left: 1px;
+}
+}
+
+@media screen and (max-width: 620px){
+.slick-dots{
+    bottom: 3px;
+    width: 35%;
+    top: -300px;
+    left: 1px;
+}
+
+.nav-galeria{
+	margin-top: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 535px){
+.slick-dots{
+    bottom: 3px;
+    width: 40%;
+    top: -270px;
+    left: 1px;
+}
+
+.nav-galeria{
+	margin-top: 60px;
+}
+ul.dot-container li button{
+	height: 12px;
+	width: 12px;
+}
+.Next{
+	bottom: 10px;
+	padding: 18px;
+}
+
+.Prev{
+	left: 0;
+	top: 8px;
+    padding: 18px;
+}
+}
+
+@media screen and (max-width: 476px){
+.slick-dots{
+    bottom: 3px;
+    width: 45%;
+    top: -385px;
+}
+
+.nav-galeria{
+	margin-top: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 420px){
+.slick-dots{
+    width: 55%;
+    top: -350px;
+}
+ul.dot-container li button{
+	margin-left: 8px;
+}
+.nav-galeria{
+	margin-top: 60px;
+}
+
+}
+
+@media screen and (max-width: 390px){
+.slick-dots{
+    width: 60%;
+     top: 0;
+}
+
+.nav-galeria{
+	margin-top: 30px;
+}
+
+}
+
+
 
