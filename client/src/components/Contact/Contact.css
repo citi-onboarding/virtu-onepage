@@ -3,6 +3,9 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
     margin-bottom: 210px;
 }
 
@@ -128,6 +131,7 @@ input:-webkit-autofill:active  {
     -webkit-text-fill-color: white !important;
 }
 
+/* SECOND PART */
 #contact-section .links-section {
     width: 510px;
     height: 430px;
@@ -152,4 +156,18 @@ input:-webkit-autofill:active  {
     text-decoration: none;
     color: #010101;
     ;
+}
+
+#contact-section #ball-form {
+    position: absolute;
+    top: -15px;
+    left: 192px;
+    transform: rotate(95.46deg);
+    /* margin-right: 192px; */
+}
+
+#contact-section #lines-form {
+    position: absolute;
+    bottom: 16px;
+    left: 164px;
 }
