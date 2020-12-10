@@ -12,18 +12,37 @@ function Contact() {
         <form>
             <fieldset>
                 <legend>Fale conosco</legend>
-                <div className="name-telephone">
-                    <input type="text" placeholder="Nome" name="name" id="name"/>
-                    <input type="text" name="telephone" placeholder="Telefone"/>
+
+                <div className="input-items">
+                    <div className="name-telephone-container">
+                        <div className="input-line-container">
+                            <input type="text" placeholder="Nome" name="name" id="name"/>
+                            <div className="white-line"></div>
+                        </div>
+
+                        <div className="input-line-container">
+                            <input type="text" name="telephone" placeholder="Telefone"/>
+                            <div className="white-line"></div>
+                        </div>
+                    </div>
+
+                    <div className="input-line-container">
+                        <input type="text" name="email" id="email" placeholder="Email"/>
+                        <div className="white-line"></div>
+                    </div>
+
+                    <div className="input-line-container">        
+                        <select name="services" id="services">
+                            <option value="" disabled hidden>Serviço</option>
+                        </select>
+                        <div className="white-line"></div>
+                    </div>
+
+                    <div className="input-line-container">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>    
+                        <div className="white-line"></div>
+                    </div>
                 </div>
-
-                <input type="text" name="email" id="email"/>
-                <select name="services" id="services">
-                    <option value="" disabled hidden >Serviço</option>
-
-                </select>
-
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
 
                 <button type="submit">Enviar</button>
             </fieldset>
