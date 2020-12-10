@@ -73,10 +73,14 @@
 
 #contact-section form fieldset .input-items .input-line-container select {
     width: 100%;
-    background-color: var(--red-bright);
     border: 0;
     outline: none;
     margin-top: 30px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: url('../../assets/arrow downSVG.svg') no-repeat right var(--red-bright);
+
 }
 
 #contact-section form fieldset .input-items .input-line-container textarea {
@@ -171,3 +175,4 @@ input:-webkit-autofill:active  {
     bottom: 16px;
     left: 164px;
 }
+
