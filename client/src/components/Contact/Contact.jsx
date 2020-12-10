@@ -48,28 +48,27 @@ function Contact() {
             </fieldset>
         </form>
 
-        {/* <div className="links-section">
+        <div className="links-section">
             <h2>Entre em contato</h2>
 
-            <ul>
-                <li>
-                    <img src={icon_linkedin} alt="linkedin"/>
-                    <a href="#">.../company/virtu-consultoriapolitica</a>
-                </li>
-                <li>
-                    <img src={icon_instagram} alt="instagram"/>
-                    <a href="#">@virtupolitica</a>
-                </li>
-                <li>
-                    <img src={icon_email} alt="email"/>
-                    <a href="#">virtu@email.com</a>
-                </li>
-                <li>
-                    <img src={icon_adress} alt="endereço"/>
-                    <a href="#">Av. Professor Luiz Freire, Cidade Universitaria, CFCH, Recife - PE</a>
-                </li>
-            </ul>
-        </div> */}
+            <div className="link-image-container">
+                <img src={icon_linkedin} alt="linkedin"/>
+                <a href="#">.../company/virtu-consultoriapolitica</a>
+            </div>
+            <div className="link-image-container">
+                <img src={icon_instagram} alt="instagram"/>
+                <a href="#">@virtupolitica</a>
+            </div>
+            <div className="link-image-container">
+                <img src={icon_email} alt="email"/>
+                <a href="#">virtu@email.com</a>
+            </div>
+            <div className="link-image-container">
+                <img src={icon_adress} alt="endereço"/>
+                <a href="#">Av. Professor Luiz Freire, Cidade Universitaria, CFCH, Recife - PE</a>
+            </div>
+            
+        </div>
     </div>
   );
 }

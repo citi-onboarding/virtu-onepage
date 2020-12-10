@@ -122,7 +122,34 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
+    box-shadow: none;
     -webkit-box-shadow: 0 0 0 30px var(--red-bright) inset !important;
     /*Change text in autofill textbox*/
     -webkit-text-fill-color: white !important;
+}
+
+#contact-section .links-section {
+    width: 510px;
+    height: 430px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 96px 84px 83px 90px;
+    margin-right: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#contact-section .links-section .link-image-container {
+    display: flex;
+    align-items: center;
+}
+
+#contact-section .links-section .link-image-container a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #010101;
+    ;
 }
