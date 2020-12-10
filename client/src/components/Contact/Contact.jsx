@@ -29,7 +29,7 @@ function Contact() {
                     </div>
 
                     <div className="input-line-container">
-                        <input type="text" name="email" id="email" placeholder="Email"/>
+                        <input type="text" name="email" placeholder="Email"/>
                         <div className="white-line"></div>
                     </div>
 
