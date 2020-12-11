@@ -9,6 +9,8 @@
         width: 90%;
         height: 548px;
         padding: 45px 41px 75px 41px;
+        display: flex;
+        justify-content: center;
     }
 
     #contact-section form fieldset {
@@ -16,6 +18,29 @@
         height: 428px;
     }
 
+    #contact-section #ball-form {
+        top: -142px;
+        left: initial;
+        transform: rotate(-41deg);
+        /* margin-right: 192px; */
+    }
+
+    #contact-section #lines-form {
+        bottom: -78px;
+        left: initial;
+    }
+
+    #contact-section .links-section {
+        width: 70%;
+        height: 337px;
+        margin-right: 0;
+        margin-top: -30px;
+        padding: 45px 32px;
+    }
+}
+
+
+@media(max-width: 414px) {
     #contact-section form fieldset legend {
         font-size: 28px;
         font-style: normal;
@@ -30,11 +55,8 @@
     }
 
     #contact-section .links-section {
-        width: 330px;
+        width: 80%;
         height: 337px;
-        margin-right: 0;
-        margin-top: -30px;
-        padding: 45px 32px;
     }
 
     #contact-section .links-section .link-image-container h2 {
@@ -43,15 +65,9 @@
         letter-spacing: 0em;
     }
 
-    #contact-section #ball-form {
-        top: -142px;
-        left: initial;
-        transform: rotate(-41deg);
-        /* margin-right: 192px; */
+    #contact-section .links-section .link-image-container a {
+        font-size: 14px;
+        line-height: 17px;
     }
 
-    #contact-section #lines-form {
-        bottom: -78px;
-        left: initial;
-    }
 }

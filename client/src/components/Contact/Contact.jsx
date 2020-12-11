@@ -54,8 +54,7 @@ function Contact() {
                                 onChange={(e) => {setService(e.target.value);} }
                             >
                                 <option value="" disabled hidden>Serviço</option>
-                                <option value="test">test</option>
-                                <option value="test2">test2</option>
+                                
                             </select>
 
                             <div className="white-line"></div>
