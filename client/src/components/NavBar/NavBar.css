@@ -175,7 +175,7 @@ html {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  margin-bottom: 45px;
+  margin-bottom: 150px;
 }
 
 .navbar-section .connect .sections .list .names li {
