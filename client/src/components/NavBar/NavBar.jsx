@@ -23,6 +23,7 @@ function NavBar() {
         <div className="sections" style={{display: (mode ? 'none' : 'flex')}} >
       
           <ul className="list">
+            <div className="names">
             <li>
               <a className = "current" href="">Quem Somos</a>
             </li>
@@ -38,11 +39,12 @@ function NavBar() {
             <li>
               <a href=""> Fale Conosco</a>
             </li>
+            </div>
             <div className="on-mobile">
+              <img id='logo-mobile' src={virtu_logo} alt=""/>
               <ul className="more-contact">
                 <li><p>@virtupolitica</p><img src={insta} alt="Instagram"/></li>
                 <li><p>virtu@email.com</p><img src={email} alt="Email"/> </li>
-                
               </ul>
             </div>
           </ul>

@@ -38,6 +38,10 @@ html {
   list-style: none;
 }
 
+.names {
+  display: flex;
+}
+
 .navbar-section .connect .icon {
   display: none;
   cursor: pointer;
@@ -57,13 +61,19 @@ html {
   cursor: pointer;
 }
 
+.navbar-section .connect .sections .list .on-mobile {
+  display: none;
+}
+
+#logo-mobile{
+  height: 60px;
+}
+
 .navbar-section .connect .sections .list .on-mobile ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-
-  display: none;
   height: 60px;
 }
 
@@ -131,13 +141,45 @@ html {
   .navbar-section .connect .sections {
     height: 100vh;
     position: fixed;
-    /* display: none; */
+    justify-content: space-around;
+    align-items: center;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
-    background-color: var(--white-dark);
+    background-color: #f5f5f5;
     transition: all 1s ease;
   }
+
+  .navbar-section .connect .sections .list {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }  
+
+  .names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 240px;
+    margin-top: 146px;
+  }
+
+  .navbar-section .connect .sections a {
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.navbar-section .connect .sections .list .on-mobile {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin-bottom: 45px;
+}
+
+.navbar-section .connect .sections .list .names li {
+  margin-top: 30px;
+}
 
 }
