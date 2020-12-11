@@ -25,11 +25,11 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-#contact-section form fieldset legend {
+#contact-section form fieldset h2 {
     width: 100%;
     font-family: acumin-pro, sans-serif;
     font-size: 32px;
@@ -59,7 +59,7 @@
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
-    background: url('../../assets/arrow downSVG.svg') no-repeat right var(--red-bright);
+    background: url('../../../assets/arrow downSVG.svg') no-repeat right var(--red-bright);
     font-family: acumin-pro, sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -149,7 +149,6 @@ input:-webkit-autofill:active  {
     margin-left: 20px;
     text-decoration: none;
     color: #010101;
-    ;
 }
 
 #contact-section #ball-form {

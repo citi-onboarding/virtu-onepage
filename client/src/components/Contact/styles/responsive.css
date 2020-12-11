@@ -1,0 +1,57 @@
+@media(max-width: 768px) {
+    #contact-section {
+        flex-direction: column;
+        margin-bottom: 129px;
+        width: 100%;
+    }
+
+    #contact-section form {
+        width: 90%;
+        height: 548px;
+        padding: 45px 41px 75px 41px;
+    }
+
+    #contact-section form fieldset {
+        width: 292.81px;
+        height: 428px;
+    }
+
+    #contact-section form fieldset legend {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    #contact-section form fieldset .input-items .name-telephone-container .input-line-container {
+        width: 134px !important;
+    }
+
+    #contact-section .links-section {
+        width: 330px;
+        height: 337px;
+        margin-right: 0;
+        margin-top: -30px;
+        padding: 45px 32px;
+    }
+
+    #contact-section .links-section .link-image-container h2 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+
+    #contact-section #ball-form {
+        top: -142px;
+        left: initial;
+        transform: rotate(-41deg);
+        /* margin-right: 192px; */
+    }
+
+    #contact-section #lines-form {
+        bottom: -78px;
+        left: initial;
+    }
+}

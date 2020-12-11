@@ -6,8 +6,10 @@ import icon_adress from '../../assets/Icone enderecoSVG.svg'
 import icon_ball from '../../assets/Grupo 6SVG.svg'
 import icon_lines from '../../assets/Grupo 5SVG.svg'
 
-import './Contact.css'
+import './styles/Contact.css'
+import './styles/responsive.css'
 import '../Input'
+
 import Input from '../Input';
 
 function Contact() {
@@ -21,7 +23,7 @@ function Contact() {
         <div id="contact-section">
             <form>
                 <fieldset>
-                    <legend>Fale conosco</legend>
+                    <h2>Fale conosco</h2>
 
                     <div className="input-items">
                         <div className="name-telephone-container">
