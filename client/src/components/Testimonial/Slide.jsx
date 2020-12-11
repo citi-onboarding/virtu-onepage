@@ -27,7 +27,6 @@ const Image = [
 export default class Slide extends React.Component{
 
 render(){
-  // Creating the components for the next and previous arrow
 function NextArrow(props) {
   return <div className={props.className} onClick={props.onClick} id={props.id} />;
 }
@@ -53,7 +52,6 @@ function PrevArrow(props) {
       <PrevArrow
         className="Prev"
         onClick={() => {
-          // when you lick in the arrow from the mobile version, it will simulate a click on the arrow from the web version
           document.querySelector(".slick-prev.slick-arrow").click();
         }}
       />
@@ -62,7 +60,6 @@ function PrevArrow(props) {
         className="Next"
         id="Next"
         onClick={() => {
-          // when you lick in the arrow from the mobile version, it will simulate a click on the arrow from the web version
           document.querySelector(".slick-next").click();
         }}
       />

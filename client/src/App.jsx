@@ -9,10 +9,10 @@ import {
 function App() {
   return (
     <>
-    <Testimonial />
     <NavBar />
     <Banner/>
     <OurHistory />
+    <Testimonial />
     <Footer/>
     </>
   );

@@ -72,19 +72,38 @@ React.useEffect(()=>{
 }, 
 [BackPosition])
 
+//ArrowForw
 React.useEffect(()=>{
-	
 	window.document.querySelector('.slick-next').addEventListener('click', ArrowForw)
 	return () =>{
 		window.removeEventListener('click', ArrowForw)
 	}
 })
 
+//ArrowBack
 React.useEffect(()=>{
-	
 	window.document.querySelector('.slick-prev').addEventListener('click', ArrowBack)
 	return () =>{
 		window.removeEventListener('click', ArrowBack)
+	}
+})
+
+
+let currentBullet = window.document.querySelector('.slick-active')
+const Goto = (Bullet) =>{
+if( currentBullet == Bullet ){
+setName(Name[0])
+setFunc(Func[0])
+setService(Service[0])
+setDescription(Description[0])
+}
+}
+//Bullets 
+React.useEffect(()=>{	
+	const bullets = window.document.querySelectorAll('.dot-container button')
+	bullets.item(0).addEventListener('click', Goto)
+	return () =>{
+		window.removeEventListener('click', Goto)
 	}
 })
 
