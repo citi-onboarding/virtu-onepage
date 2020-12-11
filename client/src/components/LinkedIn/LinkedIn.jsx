@@ -90,12 +90,10 @@ class LinkedIn extends Component {
             <img 
             src={arrow_left} 
             alt="Anterior"
-            onClick={event}
             />
             <img 
             src={arrow_right} 
             alt=""
-            onClick={event}
             />
           </div>
           </div>
