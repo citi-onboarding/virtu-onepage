@@ -22,21 +22,11 @@ function NavBar() {
           <div className="sections">
             <ul className="list" style={{ display: mode ? "none" : "flex" }}>
               <div id="names">
-                <li>
-                  <a href="#aboutus">Quem Somos</a>
-                </li>
-                <li>
-                  <a href="#services">Serviços</a>
-                </li>
-                <li>
-                  <a href="#linkedin">LinkedIn</a>
-                </li>
-                <li>
-                  <a href="#testimonials">Depoimentos</a>
-                </li>
-                <li>
-                  <a href="#contact"> Fale Conosco</a>
-                </li>
+                <li><a href="#aboutus">Quem Somos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#linkedin">LinkedIn</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact"> Fale Conosco</a></li>
               </div>
               <div className="on-mobile">
                 <img id="logo-mobile" src={virtu_logo} alt="" />
