@@ -20,24 +20,24 @@ function NavBar() {
         <div className="icon" onClick = {() => setMode(!mode)} >
         { mode ?  <img src={menu} alt="Menu"/>  : <img src={ex} alt="Sair" /> }
           </div>
-        <div className="sections" style={{display: (mode ? 'none' : 'flex')}} >
+        <div className="sections" >
       
-          <ul className="list">
-            <div className="names">
+          <ul className="list" style={{display: (mode ? 'none' : 'flex')}} >
+            <div id="names">
             <li>
-              <a className = "current" href="">Quem Somos</a>
+              <a href="#aboutus">Quem Somos</a>
             </li>
             <li>
-              <a href="">Serviços</a>
+              <a href="#services">Serviços</a>
             </li>
             <li>
-              <a href="">Posts</a>
+              <a href="#linkedin">LinkedIn</a>
             </li>
             <li>
-              <a href="">Depoimentos</a>
+              <a href="#testimonials">Depoimentos</a>
             </li>
             <li>
-              <a href=""> Fale Conosco</a>
+              <a href="#contact"> Fale Conosco</a>
             </li>
             </div>
             <div className="on-mobile">
