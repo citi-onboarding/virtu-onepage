@@ -9,48 +9,52 @@ import email from "../../assets/Icone e-mail.svg";
 import "./NavBar.css";
 
 function NavBar() {
+  const [mode, setMode] = useState({ menu });
 
-  const [mode, setMode] = useState({menu});
-  
   return (
-    <> 
-    <header className="navbar-section">
-      <div className="connect">
-        <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
-        <div className="icon" onClick = {() => setMode(!mode)} >
-        { mode ?  <img src={menu} alt="Menu"/>  : <img src={ex} alt="Sair" /> }
+    <>
+      <header className="navbar-section">
+        <div className="connect">
+          <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
+          <div className="icon" onClick={() => setMode(!mode)}>
+            {mode ? <img src={menu} alt="Menu" /> : <img src={ex} alt="Sair" />}
           </div>
-        <div className="sections" >
-      
-          <ul className="list" style={{display: (mode ? 'none' : 'flex')}} >
-            <div id="names">
-            <li>
-              <a href="#aboutus">Quem Somos</a>
-            </li>
-            <li>
-              <a href="#services">Serviços</a>
-            </li>
-            <li>
-              <a href="#linkedin">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#testimonials">Depoimentos</a>
-            </li>
-            <li>
-              <a href="#contact"> Fale Conosco</a>
-            </li>
-            </div>
-            <div className="on-mobile">
-              <img id='logo-mobile' src={virtu_logo} alt=""/>
-              <ul className="more-contact">
-                <li><p>@virtupolitica</p><img src={insta} alt="Instagram"/></li>
-                <li><p>virtu@email.com</p><img src={email} alt="Email"/> </li>
-              </ul>
-            </div>
-          </ul>
+          <div className="sections">
+            <ul className="list" style={{ display: mode ? "none" : "flex" }}>
+              <div id="names">
+                <li>
+                  <a href="#aboutus">Quem Somos</a>
+                </li>
+                <li>
+                  <a href="#services">Serviços</a>
+                </li>
+                <li>
+                  <a href="#linkedin">LinkedIn</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Depoimentos</a>
+                </li>
+                <li>
+                  <a href="#contact"> Fale Conosco</a>
+                </li>
+              </div>
+              <div className="on-mobile">
+                <img id="logo-mobile" src={virtu_logo} alt="" />
+                <ul className="more-contact">
+                  <li>
+                    <p>@virtupolitica</p>
+                    <img src={insta} alt="Instagram" />
+                  </li>
+                  <li>
+                    <p>virtu@email.com</p>
+                    <img src={email} alt="Email" />{" "}
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
     </>
   );
 }
