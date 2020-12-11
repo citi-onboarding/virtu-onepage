@@ -1,20 +1,34 @@
-import React from 'react';
-import CardService from '../CardService'
-import tasks from '../../assets/tasks 1.svg'
-import tasks_white from '../../assets/tasks 1 white.svg'
-import group_focal from '../../assets/education 1SVG.svg'
-import information from '../../assets/information 1SVG.svg'
-import conference from '../../assets/conference 1SVG.svg'
-import building1 from '../../assets/building 1SVG.svg'
-import building2 from '../../assets/building 2SVG.svg'
-import contract from '../../assets/contract 1SVG.svg'
+import React, { useEffect, useState } from 'react';
+import CardService from '../CardService';
+import tasks from '../../assets/tasks 1.svg';
+import tasks_white from '../../assets/tasks 1 white.svg';
+import group_focal from '../../assets/education 1SVG.svg';
+import information from '../../assets/information 1SVG.svg';
+import conference from '../../assets/conference 1SVG.svg';
+import building1 from '../../assets/building 1SVG.svg';
+import building2 from '../../assets/building 2SVG.svg';
+import contract from '../../assets/contract 1SVG.svg';
+import url from '../../global/globalVars';
+import axios from 'axios';
 
-import './styles/OurServices.css'
-import './styles/responsive.css'
+import './styles/OurServices.css';
+import './styles/responsive.css';
 
 const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
 function OurServices() {
+
+    const [services, setServices] = useState([]);
+    async function loadServices() {
+        const res = await axios.get(`${url}/api/ourservices`)
+        setServices(res.data);
+        console.log(res.data);
+    }
+
+    useEffect(() => {
+        loadServices();
+    }, []);
+
     return (
         <div className="our-services-section">
             <div className="red-section-top">
