@@ -3,6 +3,9 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
+const OurServices = keystone.list('Servicos')
+
+require('dotenv').config();
 
 module.exports = (app) => {
   app.use(cors());
@@ -18,6 +21,13 @@ module.exports = (app) => {
       } else {
         res.send(data);
       }
+    });
+  });
+
+  app.get('/api/ourservices', (req, res) => {
+    OurServices.model.find((err, data) => {
+      if (err) return res.apiError('database error', err);
+      res.send(data);
     });
   });
 

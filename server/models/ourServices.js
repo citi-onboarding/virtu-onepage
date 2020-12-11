@@ -1,7 +1,7 @@
 const keystone = require('keystone');
 const { Types } = keystone.Field;
 
-const ourServices = new keystone.List('Services', {
+const ourServices = new keystone.List('Servicos', {
 	map: { name: 'title' }
   });
 
