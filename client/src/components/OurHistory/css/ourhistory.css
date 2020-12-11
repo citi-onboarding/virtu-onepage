@@ -1,0 +1,154 @@
+
+/* Style ourhistory section  */
+*{
+  	font-family: acumin-pro, sans-serif;
+ }
+
+.clear{
+	clear: both;
+}
+ .container{
+ 	max-width: 1920px;
+ 	padding: 0 2%;
+ 	margin: 0 auto;
+ }
+
+section{
+	margin-top: 184px;
+	margin-bottom: 224px;
+}
+ .call{
+ 	text-align: center;
+ 	width: 60%;
+ 	margin: 45px auto;
+ }
+
+ .call h1{
+ 	margin: 27px 0;
+ 	font-size: 32px;
+ 	line-height: 38.4px;
+ }
+
+ .box-parent{
+ 	display: flex;
+ 	flex-wrap: nowrap;
+ 	padding-left: 166px;
+
+ }
+
+.img-mid{
+text-align: center;
+}
+
+.img-left{
+	display: inline-block;
+	position: relative;
+	bottom: -110px;
+	margin-left: 30px;
+}
+
+.img-right{
+	 position: relative;
+    top: -370px;
+
+}
+.img-right img{
+transform: translateX(8px) rotate(-90deg) translateY(1px);
+position: absolute;
+right: -21%;
+    width: 54%
+}
+
+@media screen and (max-width: 1200px){
+ .box-parent{
+ 	flex-wrap: nowrap;
+ 	padding-left: 70px;
+ }
+
+.img-right img{
+right: -22%;
+width: 55%;
+}
+
+.call{
+ 	width: 70%;
+ }
+
+ .img-left{
+	position: relative;
+	bottom: -80px;
+	margin-left: 30px;
+}
+
+}
+
+@media screen and (max-width: 1120px){
+ .box-parent{
+ 	padding-left: 20px;
+ }
+
+.img-right img{
+right: -19%;
+width: 50%;
+transform: translateX(8px) rotate(-90deg) translateY(10px);
+}
+
+
+}
+
+@media screen and (max-width: 1024px){
+ .box-parent{
+ 	padding-left: 20px;
+ }
+
+.img-right img{
+right: -15%;
+width: 45%;
+}
+
+
+}
+
+@media screen and (max-width: 1100px){
+.img-right img{
+display: none;
+}
+.call{
+ 	width: 80%;
+ }
+
+}
+
+
+@media screen and (max-width: 980px){
+.img-left{
+	bottom: -70px;
+	margin-left: 35px;
+}
+}
+
+@media screen and (max-width: 780px){
+.box-parent{
+ 	flex-wrap: wrap;
+ }
+.img-mid{
+text-align: right;
+}
+
+.img-left{
+	bottom: -20px;
+	margin-left: 43px;
+}
+
+.call{
+ 	width: 85%;
+ }
+
+}
+
+@media screen and (max-width: 500px){
+ .call h1{
+ 	font-size: 28px;
+ 	line-height: 33.6px;
+ }
+}

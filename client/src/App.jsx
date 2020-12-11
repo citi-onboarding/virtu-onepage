@@ -1,12 +1,19 @@
 import {
-  Testimonial, Footer
+  Testimonial, 
+  Footer, 
+  OurHistory, 
+  NavBar,
+  Banner,
 } from './components';
 
 function App() {
   return (
     <>
-      <Testimonial />
-      <Footer/>
+    <Testimonial />
+    <NavBar />
+    <Banner/>
+    <OurHistory />
+    <Footer/>
     </>
   );
 }
