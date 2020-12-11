@@ -1,0 +1,10 @@
+.input-line-container input {
+    background-color: var(--red-bright);
+    border: 0;
+    outline: none;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}

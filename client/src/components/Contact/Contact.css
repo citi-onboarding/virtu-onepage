@@ -51,26 +51,6 @@
     justify-content: space-between;
 }
 
-#contact-section form fieldset .input-items .input-line-container input {
-    background-color: var(--red-bright);
-    border: 0;
-    outline: none;
-    font-family: acumin-pro, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: white;
-}
-
-#contact-section form fieldset .input-items .input-line-container input[type=text] {
-    width: 180px;
-}
-
-#contact-section form fieldset .input-items .input-line-container input[name=email] {
-    width: 100%;
-    margin-top: 30px;
-}
-
 #contact-section form fieldset .input-items .input-line-container select {
     width: 100%;
     border: 0;
@@ -80,6 +60,11 @@
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
     background: url('../../assets/arrow downSVG.svg') no-repeat right var(--red-bright);
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
 
 }
 
@@ -90,6 +75,11 @@
     outline: none;
     height: 112px;
     margin-top: 30px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
 }
 
 #contact-section form fieldset button {

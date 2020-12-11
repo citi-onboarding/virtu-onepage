@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import icon_linkedin from '../../assets/Icone LinkedinSVG.svg'
 import icon_instagram from '../../assets/Icone InstaSVG.svg'
 import icon_email from '../../assets/Icone e-mailSVG.svg'
@@ -7,8 +7,16 @@ import icon_ball from '../../assets/Grupo 6SVG.svg'
 import icon_lines from '../../assets/Grupo 5SVG.svg'
 
 import './Contact.css'
+import '../Input'
+import Input from '../Input';
 
 function Contact() {
+    const [service, setService] = useState('');
+    const [name, setName] = useState('');
+    const [telephone, setTelephone] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
   return (
     <div id="contact-section">
         <form>
@@ -17,31 +25,34 @@ function Contact() {
 
                 <div className="input-items">
                     <div className="name-telephone-container">
-                        <div className="input-line-container">
-                            <input type="text" placeholder="Nome" name="name" id="name"/>
-                            <div className="white-line"></div>
-                        </div>
+                        <Input name="name" placeholder="Nome" width="180px"
+                            onChange={(e) => {setName(e.target.value)}}
+                        />
 
-                        <div className="input-line-container">
-                            <input type="text" name="telephone" placeholder="Telefone"/>
-                            <div className="white-line"></div>
-                        </div>
+                        <Input name="telephone" placeholder="Telefone" width="180px"
+                            onChange={(e) => {setTelephone(e.target.value)}}
+                        />
                     </div>
 
-                    <div className="input-line-container">
-                        <input type="text" name="email" placeholder="Email"/>
-                        <div className="white-line"></div>
-                    </div>
+                    <Input name="email" placeholder="Email" width="100%" marginTop="30px" 
+                        onChange={(e) => {setEmail(e.target.value)}}
+                    />
 
                     <div className="input-line-container">        
-                        <select name="services" id="services">
+                        <select value={service} name="services"
+                         onChange={(e) => { setService(e.target.value) }}>
                             <option value="" disabled hidden>Serviço</option>
+                            <option value="test">test</option>
+                            <option value="test2">test2</option>
                         </select>
+
                         <div className="white-line"></div>
                     </div>
 
                     <div className="input-line-container">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>    
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"
+                            onChange={(e) => { setMessage(e.target.value) }}
+                        />    
                         <div className="white-line"></div>
                     </div>
                 </div>
