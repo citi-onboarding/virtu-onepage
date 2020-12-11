@@ -9,7 +9,6 @@ html {
 .navbar-section {
   height: 75px;
   width: 100%;
-
   background: var(--white-dark);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -39,7 +38,7 @@ html {
   list-style: none;
 }
 
-.navbar-section .connect .sections .icon {
+.navbar-section .connect .icon {
   display: none;
   cursor: pointer;
 }
@@ -56,6 +55,27 @@ html {
 
   text-decoration: none;
   cursor: pointer;
+}
+
+.navbar-section .connect .sections .list .on-mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  display: none;
+  height: 60px;
+}
+
+.navbar-section .connect .sections .list .on-mobile ul li {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-section .connect .sections .list .on-mobile ul li p {
+  padding-right: 10px;
+  font-size: 14px;
+  font-family: acumin-pro, sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -100,11 +120,24 @@ html {
     grid-template-columns: 9% 82% 9%;
   }
 
-  .navbar-section .connect .sections .list {
-    display: none;
+  .navbar-section .connect .icon {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 35px;
+    z-index: 11;
   }
 
-  .navbar-section .connect .sections .icon {
-    display: block;
+  .navbar-section .connect .sections {
+    height: 100vh;
+    position: fixed;
+    /* display: none; */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--white-dark);
+    transition: all 1s ease;
   }
+
 }
