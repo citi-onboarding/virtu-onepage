@@ -1,4 +1,5 @@
 import {
+  Testimonial, 
   Footer, 
   OurHistory, 
   NavBar,
@@ -14,6 +15,7 @@ function App() {
     <Banner/>
     <OurHistory />
     <OurServices/>
+    <Testimonial />
     <Contact/>
     <Footer/>
     </>

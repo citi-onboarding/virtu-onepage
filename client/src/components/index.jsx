@@ -1,4 +1,5 @@
 import Footer from './Footer';
+import Testimonial from './Testimonial';
 import OurHistory from './OurHistory'
 import NavBar from './NavBar'
 import OurServices from './OurServices'
@@ -12,5 +13,6 @@ export {
     NavBar,
     Banner,
     OurServices,
-    Contact
+    Contact,
+    Testimonial
 };
