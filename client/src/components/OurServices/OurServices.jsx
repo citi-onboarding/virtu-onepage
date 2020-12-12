@@ -34,8 +34,35 @@ function OurServices() {
             <div className="red-section-top">
                 <h1>Saiba quais serviços que nós oferecemos</h1>
             </div>
+
+            {services.map((service, index) => {
+                return (
+                    (index+1 !== services.length) ?
+                        (<CardService
+                            title={service.title}
+                            description={service.description}
+                            image={service.image[0].url}
+                            bckColor="white"
+                        />)
+                    :
+                        (
+                            <div className="red-section-bottom">
+                                <CardService
+                                    title={service.title}
+                                    description={service.description}
+                                    image={service.image[0].url}
+                                    textColor="white"
+                                    borderColor="white"
+                                    bckColor="#D55140"
+                                    id="white-card"
+                                />
+                            </div> 
+                        )
+
+                );
+            })}
             
-            <CardService
+            {/* <CardService
                 title="Pesquisa de Opinião"
                 description={lorem}
                 image={tasks}
@@ -91,7 +118,7 @@ function OurServices() {
                     bckColor="#D55140"
                     id="white-card"
                 />
-            </div>            
+            </div>*/}
         </div>
     );
 }
