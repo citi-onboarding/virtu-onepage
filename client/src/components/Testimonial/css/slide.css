@@ -1,0 +1,296 @@
+
+.nav-galeria{
+	width: 60%;
+	padding-left: 60px;
+}
+
+
+.slick-cloned > div, .slick-active > div{
+	margin: -10px;
+}
+
+.slick-slide{
+	transform: scale(0.8);
+	transition: all ease 0.5%;
+}
+
+.slick-current {
+	transform: scale(0.95);
+	position: relative;
+}
+.slick-prev{
+	display: none;
+}
+
+.icon_right{
+	text-align: right;
+    margin: 11px 0;
+    position: relative;
+    top: -25px;
+}
+.slick-dots{
+	position: relative;
+    bottom: 3px;
+    display: block;
+    background-color: #ffffff05;
+    width: 28%;
+    top: -20px;
+    left: -528px;
+    z-index: 3;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.dot-container li{
+	display: inline-block;
+	margin: 15px 5px;
+}
+ul.dot-container li button{
+	height: 14px;
+	width: 14px;
+	margin: 0 5px;
+	background: rgba(153, 18, 0, 0.5);
+	display: inline-block;
+	border-radius: 10px;
+	position: relative;
+	top: -8px;
+	cursor: pointer;
+	outline: 0;
+	border:0;
+}
+.slick-dots li.slick-active button{
+    background: rgba(153, 18, 0, 0.75);
+    height: 16px;
+    width: 16px;
+}
+
+.slick-dots li button, .slick-next, .slick-prev{
+	font-size: 0;
+}
+
+.Next{
+	background-image: url('../images/arrow rightSVG.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0;
+	outline: 0;
+	background-color: #ffffff05;
+	background-position: center;
+	position: absolute;
+	bottom: 10px;
+	padding: 20px;
+	right: -8px;
+	bottom: 7px;
+    cursor: pointer;
+    z-index: 333;
+}
+
+.Prev{
+	background-image: url('../images/arrowLeft.svg');
+	position: absolute;
+	left: 0;
+	top: 8px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 333;
+}
+
+
+
+@media screen and (max-width: 1135px){
+.slick-dots{
+    bottom: 3px;
+    width: 28%;
+    top: -20px;
+    left: -500px;
+}
+
+}
+
+@media screen and (max-width: 1094px){
+	.slick-dots{
+    bottom: 3px;
+    width: 30%;
+    top: 10px;
+    left: -480px;
+}
+
+
+}
+
+@media screen and (max-width: 1030px){
+	.slick-dots{
+    bottom: 3px;
+    width: 30%;
+    top: 10px;
+    left: -470px;
+}
+}
+
+@media screen and (max-width: 1024px){
+.slick-dots{
+    bottom: 3px;
+    width: 38%;
+    top: -3px;
+    left: -420px;
+}
+}
+
+@media screen and (max-width: 960px){
+.slick-dots{
+    bottom: 3px;
+    width: 38%;
+    top: 15px;
+    left: -400px;
+}
+
+}
+
+@media screen and (max-width: 900px){
+.slick-dots{
+    bottom: 3px;
+    width: 45%;
+    top: 40px;
+    left: -370px;
+}
+}
+
+@media screen and (max-width: 889px){
+.slick-dots{
+    bottom: 3px;
+    width: 45%;
+    top: 60px;
+    left: -368px;
+}
+
+}
+
+@media screen and (max-width: 850px){
+.nav-galeria{
+	width: 84%;
+	padding-left: 0px;
+}
+
+
+.icon_right{
+    margin: -37px 0;
+    top: -230px;
+}
+
+.icon_right img{
+	width: 29%;
+}
+
+.slick-dots{
+    bottom: 3px;
+    width: 28%;
+    top: -370px;
+    left: 1px;
+}
+}
+
+@media screen and (max-width: 724px){
+.slick-dots{
+    bottom: 3px;
+    width: 30%;
+    top: -330px;
+    left: 1px;
+}
+}
+
+@media screen and (max-width: 644px){
+.slick-dots{
+    bottom: 3px;
+    width: 35%;
+    top: -310px;
+    left: 1px;
+}
+}
+
+@media screen and (max-width: 620px){
+.slick-dots{
+    bottom: 3px;
+    width: 35%;
+    top: -300px;
+    left: 1px;
+}
+
+.nav-galeria{
+	margin-top: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 535px){
+.slick-dots{
+    bottom: 3px;
+    width: 40%;
+    top: -270px;
+    left: 1px;
+}
+
+.nav-galeria{
+	margin-top: 60px;
+}
+ul.dot-container li button{
+	height: 12px;
+	width: 12px;
+}
+.Next{
+	bottom: 10px;
+	padding: 18px;
+}
+
+.Prev{
+	left: 0;
+	top: 8px;
+    padding: 18px;
+}
+}
+
+@media screen and (max-width: 476px){
+.slick-dots{
+    bottom: 3px;
+    width: 45%;
+    top: -385px;
+}
+
+.nav-galeria{
+	margin-top: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 420px){
+.slick-dots{
+    width: 55%;
+    top: -350px;
+}
+ul.dot-container li button{
+	margin-left: 8px;
+}
+.nav-galeria{
+	margin-top: 60px;
+}
+
+}
+
+@media screen and (max-width: 390px){
+.slick-dots{
+    width: 60%;
+     top: 0;
+}
+
+.nav-galeria{
+	margin-top: 30px;
+}
+
+}
+
+
+
