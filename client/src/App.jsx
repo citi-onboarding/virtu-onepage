@@ -5,7 +5,7 @@ import {
   NavBar,
   Banner,
   OurServices,
-  Contact
+  Contact,
 } from './components';
 
 function App() {

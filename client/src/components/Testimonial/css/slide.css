@@ -69,7 +69,7 @@ ul.dot-container li button{
 }
 
 .Next{
-	background-image: url(../images/arrow rightSVG.svg);
+	background-image: url('../images/arrow rightSVG.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	border: 0;

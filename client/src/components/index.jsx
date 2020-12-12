@@ -14,5 +14,5 @@ export {
     Banner,
     OurServices,
     Contact,
-    Testimonial
+    Testimonial,
 };
