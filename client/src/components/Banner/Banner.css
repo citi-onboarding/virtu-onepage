@@ -8,8 +8,6 @@
 .banner-section::before {
   content: "";
 
-  height: 100vh;
-
   background-image: url("../../assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,6 +95,7 @@
   grid-column: 4;
   width: 22vw;
   min-width: 240px;
+  
 
   display: flex;
   justify-content: center;
