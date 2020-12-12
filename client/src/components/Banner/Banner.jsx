@@ -19,7 +19,7 @@ function Banner() {
         <h1>{title}</h1>
         <p>{text}</p>
         <button>
-          <h3 className="button-text">Nossos serviços</h3>
+          <a href="#services" className="button-text">Nossos serviços</a>
         </button>
       </div>
       <div className="rectangle">
