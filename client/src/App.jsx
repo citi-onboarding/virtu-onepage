@@ -4,6 +4,7 @@ import {
   OurHistory, 
   NavBar,
   Banner,
+  OurServices
 } from './components';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Banner/>
     <OurHistory />
     <Testimonial />
+    <OurServices/>
     <Footer/>
     </>
   );
