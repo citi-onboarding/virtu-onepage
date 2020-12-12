@@ -20,7 +20,7 @@ function NavBar() {
             {mode ? <img src={menu} alt="Menu" /> : <img src={ex} alt="Sair" />}
           </div>
           <div className="sections">
-            <ul className="list" style={{ display: mode ? "none" : "flex" }}>
+            <ul className="list" style={{ display: mode ? "flex" : "flex" }}>
               <div id="names">
                 <li><a href="#aboutus">Quem Somos</a></li>
                 <li><a href="#services">Serviços</a></li>
