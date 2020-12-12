@@ -19,7 +19,7 @@ section{
 }
  .call{
  	text-align: center;
- 	width: 60%;
+ 	width: 46%;
  	margin: 45px auto;
  }
 
@@ -32,8 +32,9 @@ section{
  .box-parent{
  	display: flex;
  	flex-wrap: nowrap;
- 	padding-left: 166px;
-
+ 	display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
  }
 
 .img-mid{

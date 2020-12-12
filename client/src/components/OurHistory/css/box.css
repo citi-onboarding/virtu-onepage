@@ -35,16 +35,9 @@ background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
   margin: 15px 0;
 }
 
-@media screen and (max-width: 1200px){
-	.box-single{
-	width: 25%;
-}
-
-}
-
-@media screen and (max-width: 1120px){
+@media screen and (min-width: 1700px){
 .box-single{
-	width: 26%;
+	width: 300px;
 }
 
 }
