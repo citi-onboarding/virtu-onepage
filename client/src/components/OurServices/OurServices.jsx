@@ -35,8 +35,7 @@ function OurServices() {
                             bckColor="white"
                         />)
                     :
-                        (
-                            <div className="red-section-bottom">
+                        (<div className="red-section-bottom">
                                 <CardService
                                     title={service.title}
                                     description={service.description}
@@ -46,8 +45,7 @@ function OurServices() {
                                     bckColor="#D55140"
                                     id="white-card"
                                 />
-                            </div> 
-                        )
+                        </div>)
 
                 );
             })}
