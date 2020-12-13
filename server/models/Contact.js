@@ -1,7 +1,7 @@
 const keystone = require('keystone');
 const { Types } = keystone.Field;
 
-const Contact = new keystone.List('Contact');
+const Contact = new keystone.List('Contato');
 
 Contact.add ({
 	instagramLink: {
