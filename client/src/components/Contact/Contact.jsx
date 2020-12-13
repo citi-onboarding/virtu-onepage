@@ -26,23 +26,26 @@ function Contact() {
     const [emailAdress, setEmailAdress] = useState('');
     const [adress, setAdress] = useState('');
 
-    function getLastArrayelement(str, separator) {
-        const v1 = str.split(separator)[str.length -1];
-        const v2 = str.split(separator)[str.length -2];
+    const [services, setServices] = useState([]);
+
+    function getLastArrayelement(str) {
+        const v1 = str.split('/')[str.length -1];
+        const v2 = str.split('/')[str.length -2];
         console.log('v1:', v1)
         console.log('v2:', v2)
         if (v1 === "") {
-            console.log(v2);
+            console.log('la',v2);
             return v2;
         }
         else {
-            console.log(v1)
+            console.log('la2', v1)
             return v1;
         }
     }
 
-    function correctEmail(email) {
-
+    async function loadServices() {
+        const res = await axios.get(`${url}/api/ourservices`)
+        setServices(res.data);
     }
 
     async function loadContacts() {
@@ -56,6 +59,7 @@ function Contact() {
 
     useEffect(() => {
         loadContacts();
+        loadServices();
     }, [])
 
     return (
@@ -88,11 +92,11 @@ function Contact() {
                         />
 
                         <div className="input-line-container">        
-                            <select 
-                                name="services"
-                                onChange={(e) => {setService(e.target.value);} }
-                            >
-                                <option value="" disabled hidden>Serviço</option>
+                            <select  name="services" placeholder="Serviços" onChange={(e) => {setService(e.target.value);} }>
+                                <option key="servicos" hidden>Serviços</option>
+                                {services.map(service_it => {
+                                    return <option key={service_it.title} value={service_it.title}>{service_it.title}</option>
+                                })}
                                 
                             </select>
 
