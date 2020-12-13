@@ -28,19 +28,12 @@ function Contact() {
 
     const [services, setServices] = useState([]);
 
-    function getLastArrayelement(str) {
-        const v1 = str.split('/')[str.length -1];
-        const v2 = str.split('/')[str.length -2];
-        console.log('v1:', v1)
-        console.log('v2:', v2)
-        if (v1 === "") {
-            console.log('la',v2);
-            return v2;
-        }
-        else {
-            console.log('la2', v1)
-            return v1;
-        }
+    function getLastArrayelement(str, separator) {
+        const arr = str.split(separator);
+        const v1 = arr[arr.length - 1];
+        const v2 = arr[arr.length - 2];
+
+        return v1 === "" ? v2 : v1;
     }
 
     async function loadServices() {
@@ -124,7 +117,7 @@ function Contact() {
                 </div>
                 <div className="link-image-container">
                     <img src={icon_instagram} alt="instagram"/>
-                    <a target="blank" href={instagram}>{instagram}</a>
+                    <a target="blank" href={instagram}>{`@${getLastArrayelement(instagram, '/')}`}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_email} alt="email"/>
