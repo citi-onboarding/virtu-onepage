@@ -43,7 +43,7 @@ function Contact() {
             alert('Contato efetuado!')
         }
         catch (err) {
-
+            console.log(err);
             alert('Erro. Tente novamente')
         }
     }
