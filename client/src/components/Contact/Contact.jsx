@@ -28,12 +28,25 @@ function Contact() {
 
     const [services, setServices] = useState([]);
 
-    function getLastArrayelement(str, separator) {
-        const arr = str.split(separator);
+    function getLastArrayelement(url, separator) {
+
+        const arr = url.split(separator);
         const v1 = arr[arr.length - 1];
         const v2 = arr[arr.length - 2];
 
-        return v1 === "" ? v2 : v1;
+        if (v1 === "") {
+            // const url_encoded = encodeURIComponent(v2);
+            const url_decoded = decodeURIComponent(v2);
+            return url_decoded;
+        }
+        else {
+            // const url_encoded = encodeURIComponent(v1);
+            const url_decoded = decodeURIComponent(v1);
+            return url_decoded;
+        }
+        
+
+        // return v1 === "" ? v2 : v1;
     }
 
     async function loadServices() {
@@ -113,7 +126,7 @@ function Contact() {
 
                 <div className="link-image-container">
                     <img src={icon_linkedin} alt="linkedin"/>
-                    <a target="blank" href={linkedin}>{linkedin}</a>
+                    <a target="blank" href={linkedin}>{getLastArrayelement(linkedin, '/')}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_instagram} alt="instagram"/>
