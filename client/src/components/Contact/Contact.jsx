@@ -24,10 +24,34 @@ function Contact() {
     const [linkedin, setLinkedin] = useState('');
     const [instagram, setInstagram] = useState('');
     const [emailAdress, setEmailAdress] = useState('');
+    const [adress, setAdress] = useState('');
+
+    function getLastArrayelement(str, separator) {
+        const v1 = str.split(separator)[str.length -1];
+        const v2 = str.split(separator)[str.length -2];
+        console.log('v1:', v1)
+        console.log('v2:', v2)
+        if (v1 === "") {
+            console.log(v2);
+            return v2;
+        }
+        else {
+            console.log(v1)
+            return v1;
+        }
+    }
+
+    function correctEmail(email) {
+
+    }
 
     async function loadContacts() {
         const res = await axios.get(`${url}/api/contact`);
-        console.log(res.data);
+        // const validation_instagram = /^\s*(http\:\/\/)?instagram\.com\/[a-z\A-Z\d\-]{1,255}\s*$/;
+        setLinkedin(res.data[0].linkedinLink);
+        setInstagram(res.data[0].instagramLink);
+        setEmailAdress(res.data[0].email);
+        setAdress(res.data[0].adress);
     }
 
     useEffect(() => {
@@ -92,19 +116,19 @@ function Contact() {
 
                 <div className="link-image-container">
                     <img src={icon_linkedin} alt="linkedin"/>
-                    <a href="#">.../company/virtu-consultoriapolitica</a>
+                    <a target="blank" href={linkedin}>{linkedin}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_instagram} alt="instagram"/>
-                    <a href="#">@virtupolitica</a>
+                    <a target="blank" href={instagram}>{instagram}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_email} alt="email"/>
-                    <a href="#">virtu@email.com</a>
+                    <a target="blank" href={`mailto:${emailAdress}`}>{emailAdress}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_adress} alt="endereço"/>
-                    <a href="#">Av. Professor Luiz Freire, Cidade Universitaria, CFCH, Recife - PE</a>
+                    <a target="blank" href={`https://maps.google.com/?q=1200 ${adress}`}>{adress}</a>
                 </div>
             </div>
 
