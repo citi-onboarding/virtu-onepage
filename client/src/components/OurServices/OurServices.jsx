@@ -61,64 +61,6 @@ function OurServices() {
 
                 );
             })}
-            
-            {/* <CardService
-                title="Pesquisa de Opinião"
-                description={lorem}
-                image={tasks}
-                bckColor="white"
-            />
-            <CardService
-                title="Grupo focal"
-                description={lorem}
-                image={group_focal}
-                bckColor="white"
-            />
-
-            <CardService
-                title="Memorandum"
-                description={lorem}
-                image={information}
-                bckColor="white"
-            />
-            <CardService
-                title="Consultoria de campanha"
-                description={lorem}
-                image={conference}
-                bckColor="white"
-            />
-            <CardService
-                title="Fortalecimento Institucional"
-                description={lorem}
-                image={building1}
-                bckColor="white"
-            />
-
-        
-            <CardService
-                title="Acomp. dos poderes"
-                description={lorem}
-                image={contract}
-                bckColor="white"
-            />
-            <CardService
-                title="Capacitação Institucional"
-                description={lorem}
-                image={building2}
-                bckColor="white"
-            />
-
-            <div className="red-section-bottom">
-                <CardService
-                    title="Pesquisa de Opinião"
-                    description={lorem}
-                    image={tasks_white}
-                    textColor="white"
-                    borderColor="white"
-                    bckColor="#D55140"
-                    id="white-card"
-                />
-            </div>*/}
         </div>
     );
 }

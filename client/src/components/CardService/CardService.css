@@ -37,11 +37,13 @@
     line-height: 19px;
 }
 
-.card-service p+p {
+.card-service a {
+    text-decoration: none;
     display: block;
     width: 100%;
     text-align: right;
     margin-top: 15px;
+    color: var(--black-virtu);
 }
 
 @media(max-width: 768px) {
