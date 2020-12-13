@@ -1,3 +1,4 @@
+const nodemailer = require('nodemailer');
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
@@ -38,6 +39,34 @@ module.exports = (app) => {
       res.send(data);
     });
   });
+
+  app.post('/api/makecontact', async (req, res) => {
+
+    const { name, telephone, email, service, message } = req.body;
+   
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false, 
+      auth: {
+        user: process.env.EMAIL_FROM, 
+        pass: process.env.PASSWORD, 
+      },
+    });
+
+    await transporter.sendMail({
+      from: process.env.EMAIL_TO, 
+      to: process.env.EMAIL_TO, 
+      subject: 'Novo contato de cliente', 
+      html: `<p> Nome: ${name} </p>
+             <p> Telefone: ${telephone} </p>
+             <p> Email: ${email} </p>
+             <p> Serviço: ${service} </p>
+             <p> Mensagem: ${message} </p>`,
+    });
+
+    res.send('enviado');
+  })
 
   app.get('*', (req, res) => {
 		res.redirect('/');

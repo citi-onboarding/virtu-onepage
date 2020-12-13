@@ -28,6 +28,26 @@ function Contact() {
 
     const [services, setServices] = useState([]);
 
+    async function handleSumbit(e) {
+        try {
+            e.preventDefault();
+
+            await axios.post(`${url}/api/makecontact`, {
+                name,
+                telephone,
+                email: emailContact,
+                service,
+                message
+            })
+
+            alert('Contato efetuado!')
+        }
+        catch (err) {
+
+            alert('Erro. Tente novamente')
+        }
+    }
+
     function getLastArrayelement(url, separator) {
 
         const arr = url.split(separator);
@@ -70,7 +90,7 @@ function Contact() {
 
     return (
         <div id="contact-section">
-            <form>
+            <form onSubmit={handleSumbit} >
                 <fieldset>
                     <h2>Fale conosco</h2>
 
@@ -98,7 +118,7 @@ function Contact() {
                         />
 
                         <div className="input-line-container">        
-                            <select  name="services" placeholder="Serviços" onChange={(e) => {setService(e.target.value);} }>
+                            <select  name="services" value={service} onChange={(e) => {setService(e.target.value);} }>
                                 <option key="servicos" hidden>Serviços</option>
                                 {services.map(service_it => {
                                     return <option key={service_it.title} value={service_it.title}>{service_it.title}</option>
