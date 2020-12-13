@@ -32,12 +32,12 @@ module.exports = (app) => {
     });
   });
 
-  app.get('api/contact', (req,res) => {
+  app.get('/api/contact', (req, res) => {
     Contact.model.find((err, data) => {
       if (err) return res.apiError('database error', err);
       res.send(data);
-    })
-  })
+    });
+  });
 
   app.get('*', (req, res) => {
 		res.redirect('/');

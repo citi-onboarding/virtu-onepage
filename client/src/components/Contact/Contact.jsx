@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import icon_linkedin from '../../assets/Icone LinkedinSVG.svg'
 import icon_instagram from '../../assets/Icone InstaSVG.svg'
 import icon_email from '../../assets/Icone e-mailSVG.svg'
@@ -11,13 +11,28 @@ import './styles/responsive.css'
 import '../Input'
 
 import Input from '../Input';
+import axios from 'axios';
+import url from '../../global/globalVars';
 
 function Contact() {
     const [service, setService] = useState('');
     const [name, setName] = useState("");
     const [telephone, setTelephone] = useState('');
-    const [email, setEmail] = useState('');
+    const [emailContact, setEmailContact] = useState('');
     const [message, setMessage] = useState('');
+
+    const [linkedin, setLinkedin] = useState('');
+    const [instagram, setInstagram] = useState('');
+    const [emailAdress, setEmailAdress] = useState('');
+
+    async function loadContacts() {
+        const res = await axios.get(`${url}/api/contact`);
+        console.log(res.data);
+    }
+
+    useEffect(() => {
+        loadContacts();
+    }, [])
 
     return (
         <div id="contact-section">
@@ -44,8 +59,8 @@ function Contact() {
                             />
                         </div>
 
-                        <Input name="email" placeholder="Email" width="100%" marginTop="30px" value={email} 
-                            funcOnChange={(e) => {setEmail(e.target.value)}}
+                        <Input name="email" placeholder="Email" width="100%" marginTop="30px" value={emailContact} 
+                            funcOnChange={(e) => {setEmailContact(e.target.value)}}
                         />
 
                         <div className="input-line-container">        

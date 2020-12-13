@@ -12,7 +12,6 @@ function OurServices() {
     async function loadServices() {
         const res = await axios.get(`${url}/api/ourservices`)
         setServices(res.data);
-        console.log(res.data);
     }
 
     useEffect(() => {
