@@ -1,8 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-
-.navbar-section .connect .sections .list .current {
+.current {
   font-weight: 600;
 }
 
@@ -38,9 +37,6 @@ html {
   list-style: none;
 }
 
-#names {
-  display: flex;
-}
 
 .navbar-section .connect .icon {
   display: none;
@@ -100,25 +96,25 @@ html {
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1060px) {
   .navbar-section {
     grid-template-columns: 10% 80% 10%;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .navbar-section {
     grid-template-columns: 5% 90% 5%;
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 840px) {
   .navbar-section {
     grid-template-columns: 3% 94% 3%;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 790px) {
   .navbar-section {
     grid-template-columns: auto auto auto;
   }

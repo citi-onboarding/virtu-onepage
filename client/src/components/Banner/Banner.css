@@ -8,13 +8,15 @@
 .banner-section::before {
   content: "";
 
+  /* height: 100%; */
+
   background-image: url("../../assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 
   position: absolute;
-  top:75px;
+  top: 75px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -95,6 +97,8 @@
   grid-column: 4;
   width: 22vw;
   min-width: 240px;
+
+  height: 100%;
   
 
   display: flex;
@@ -161,6 +165,12 @@
 
   .banner-section .text button a {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-section .rectangle {
+    height: 98%;
   }
 }
 
