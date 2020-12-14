@@ -14,7 +14,7 @@ const title = ["Aplicamos ciência e construímos resultados"];
 
 function Banner() {
   return (
-    <div className="banner-section">
+    <div id="banner" className="banner-section">
       <div className="text">
         <h1>{title}</h1>
         <p>{text}</p>

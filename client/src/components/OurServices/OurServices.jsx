@@ -16,7 +16,7 @@ const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 function OurServices() {
     return (
-        <div className="our-services-section">
+        <section id="ourServices">
             <div className="red-section-top">
                 <h1>Saiba quais serviços que nós oferecemos</h1>
             </div>
@@ -78,7 +78,7 @@ function OurServices() {
                     id="white-card"
                 />
             </div>            
-        </div>
+        </section>
     );
 }
 
