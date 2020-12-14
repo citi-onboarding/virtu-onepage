@@ -47,21 +47,21 @@ function NavBar() {
 
             <div className={ icon ? 'closed-menu' : 'open-menu'}>
 
-                <ul>
+                <ul id="list" >
                 <li>
-                    <a href="#ourhistory">Quem Somos</a>
+                    <a href="#ourhistory" onClick={() => setIcon(!icon)} >Quem Somos</a>
                 </li>
                 <li>
-                    <a href="#services">Serviços</a>
+                    <a href="#services" onClick={() => setIcon(!icon)} >Serviços</a>
                 </li>
                 <li>
-                    <a href="#linkedin">LinkedIn</a>
+                    <a href="#linkedin" onClick={() => setIcon(!icon)} >LinkedIn</a>
                 </li>
                 <li>
-                    <a href="#testimonials">Depoimentos</a>
+                    <a href="#testimonials" onClick={() => setIcon(!icon)} >Depoimentos</a>
                 </li>
                 <li>
-                    <a href="#contact-section"> Fale Conosco</a>
+                    <a href="#contact-section" onClick={() => setIcon(!icon)} > Fale Conosco</a>
                 </li>
                 </ul>
 

@@ -145,12 +145,17 @@ html {
     z-index: 10;
   }
 
-  .open-menu ul {
+  .on-mobile ul {
+    list-style: none;
+  }
+
+  #list {
     height: 240px;
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: space-around;
+    align-items: center;
   }
 
   .open-menu a {
@@ -170,4 +175,30 @@ html {
   .on-mobile {
     display: block;
   }
+
+  .on-mobile footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .on-mobile footer .more-contact {
+    width: 150px;
+    height: 57px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .on-mobile footer .more-contact li {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .on-mobile footer .more-contact li p {
+    font-size: 14px;
+  }
+
 }
