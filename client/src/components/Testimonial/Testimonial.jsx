@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
-import ReactDOM from 'react'
+import React, {useState, useEffect} from 'react'
 import Slide from './Slide'
 import './css/testimonial.css'
 import ClientDescription from './Client-Description'
-
+/*
 const Name = [
     'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
 ]
@@ -20,8 +19,9 @@ const Service = [
 const Description = [
 	'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '4Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 ]
-
+*/
 function Testimonial(){
+/*
 const [currentName, setName] = useState('')
 const [currentFunc, setFunc] = useState('')
 const [currentService, setService] = useState('')
@@ -106,21 +106,13 @@ React.useEffect(()=>{
 		window.removeEventListener('click', Goto)
 	}
 })
-
+*/
 return(
 <section id="testimonial">
 	<div className="container">
  		<div className="parent-box">
 	 		<div className="box-right">
 				<h1>Depoimentos <br></br> dos nossos clientes</h1>
-      				<ClientDescription 
-                      NameofClient={currentName}
-                      FuncofClient={currentFunc}
-                      Service={currentService}
-                      Description={currentDescription}
-                      Function={ArrowForw}
-      			     /> 	
-      			<div className="Arrows"></div>	
 			</div>
  						<Slide />
        </div>
