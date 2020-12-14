@@ -34,10 +34,6 @@ const text = [
   'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 ]
 
-const link = [
-  'https://react-slick.neostack.com/docs/get-started/'
-]
-
 function LinkedIn(){
     const[CurrentLinkedIn, setLinkedIn] = useState('')
 
@@ -89,12 +85,12 @@ function LinkedIn(){
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>
-          {CurrentLinkedIn?.map(({ linkProfile, titlePost, link, description }) => (
+          {CurrentLinkedIn?.map(({ _id,linkProfile, titlePost, link, description }) => (
             <div>
-            <Datas title={titleLinkedIn} text={text} link={link}/>
-            <Datas title={titleLinkedIn} text={text} link={link}/> 
-            <Datas title={titleLinkedIn} text={text} link={link}/>
-            <Datas title={titleLinkedIn} text={text} link={link}/>
+            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/>
+            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/> 
+            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/>
+            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/>
             </div>
            ))}
           </Slider>
