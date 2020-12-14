@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import virtu_logo from "../../assets/virtu-logo 3.svg";
 import menu from "../../assets/Menu.svg";
@@ -11,6 +11,15 @@ import "./NavBar.css";
 function NavBar() {
   const [icon, setIcon] = useState(true);
 
+useEffect(() => {
+    let currentWidth = window.innerWidth;
+if (currentWidth.innerText > 768) {
+    setIcon(true);
+}
+
+}, []);
+
+  
 
   window.addEventListener('scroll', function() { 
     if (window.scrollY >= 1080 && window.scrollY < 2160) {
