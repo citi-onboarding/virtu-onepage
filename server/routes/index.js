@@ -3,6 +3,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
+const LinkedIn = keystone.list('LinkedIn');
 
 module.exports = (app) => {
   app.use(cors());
@@ -20,6 +21,14 @@ module.exports = (app) => {
       }
     });
   });
+
+
+app.get('/api/linkedin', (req, res) =>{
+    LinkedIn.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
+    });
+});
 
   app.get('*', (req, res) => {
 		res.redirect('/');

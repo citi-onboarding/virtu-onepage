@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
+import axios from 'axios';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
@@ -37,9 +38,18 @@ const link = [
   'https://react-slick.neostack.com/docs/get-started/'
 ]
 
-class LinkedIn extends Component {
+function LinkedIn(){
+    const[CurrentLinkedIn, setLinkedIn] = useState('')
 
-  render() {
+    const LoadLinkedIn = async () =>{
+      const res = await axios.get('http://localhost:3001/api/linkedin')
+      setLinkedIn(res.data)
+    } 
+
+    useEffect(()=>{
+      LoadLinkedIn()
+    }, [])
+
     const settings = {
       centerMode: true,
       dots: true,
@@ -66,8 +76,7 @@ class LinkedIn extends Component {
     }
   ]
     };
-    
-    
+      
     return (
       <div className="LinkedIn-section">
         <div className="head">
@@ -80,10 +89,14 @@ class LinkedIn extends Component {
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>
+          {CurrentLinkedIn?.map(({ linkProfile, titlePost, link, description }) => (
+            <div>
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/> 
             <Datas title={titleLinkedIn} text={text} link={link}/>
             <Datas title={titleLinkedIn} text={text} link={link}/>
+            </div>
+           ))}
           </Slider>
           <div className="set-center">
             <div className="arrows">
@@ -102,7 +115,6 @@ class LinkedIn extends Component {
       </div>
     )
   }
-}
 
 
 export default LinkedIn;

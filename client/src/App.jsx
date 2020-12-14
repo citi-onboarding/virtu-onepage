@@ -3,11 +3,8 @@ import {
   OurHistory, 
   NavBar,
   Banner,
-<<<<<<< HEAD
   LinkedIn,
-=======
   OurServices
->>>>>>> fd7ac3c9459e1e87c83b639c243051237fbd0b3d
 } from './components';
 
 function App() {
@@ -16,11 +13,8 @@ function App() {
     <NavBar />
     <Banner/>
     <OurHistory />
-<<<<<<< HEAD
-    <LinkedIn />
-=======
     <OurServices/>
->>>>>>> fd7ac3c9459e1e87c83b639c243051237fbd0b3d
+    <LinkedIn />
     <Footer/>
     </>
   );
