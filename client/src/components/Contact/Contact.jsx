@@ -89,8 +89,8 @@ function Contact() {
     }, [])
 
     return (
-        <div id="contact-section">
-            <form onSubmit={handleSumbit} >
+        <section id="contact-section">
+            <form onSubmit={handleSumbit}>
                 <fieldset>
                     <h2>Fale conosco</h2>
 
@@ -164,7 +164,7 @@ function Contact() {
 
             <img src={icon_ball} alt="ball" id="ball-form"/>
             <img src={icon_lines} alt="lines" id="lines-form"/>
-        </div>
+        </section>
     );
 }
 
