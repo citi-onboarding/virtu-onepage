@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Slide from './Slide'
 import './css/testimonial.css'
-import ClientDescription from './Client-Description'
+/*import ClientDescription from './Client-Description'*/
 /*
 const Name = [
     'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
