@@ -10,58 +10,31 @@ import "./NavBar.css";
 
 function NavBar() {
   const [icon, setIcon] = useState(true);
-
-//   window.addEventListener('scroll', function() { 
-//     if (window.scrollY >= 0 && window.scrollY < 546) {
-//         document.querySelector('#names li:nth-child(1)').classList.add("current");
-//         document.querySelector('#names li:nth-child(2)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(3)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(4)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(5)').classList.remove("current");
-
-//     } if (window.scrollY > 546 && window.scrollY < 1680) {
-//         document.querySelector('#names li:nth-child(1)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(3)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(4)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(5)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(2)').classList.add("current");
-//     } if (window.scrollY > 1680 && window.scrollY < 2300) {
-//         document.querySelector('#names li:nth-child(2)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(4)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(5)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(1)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(3)').classList.add("current");
-
-//     } if (window.scrollY > 2300  && window.scrollY < 3130) {
-//         document.querySelector('#names li:nth-child(3)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(5)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(1)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(2)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(4)').classList.add("current");
-
-//     } if (window.scrollY > 3130) {
-//         document.querySelector('#names li:nth-child(4)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(1)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(2)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(3)').classList.remove("current");
-//         document.querySelector('#names li:nth-child(5)').classList.add("current");
-//     }
-//   });
+  const [mobile, setMobile] = useState(false);
 
   return (
     <>
       <header className="navbar-section">
         <div className="connect">
-                    <ul className="onWeb">
+                    <div className="on-web">
                         <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
+                        <ul>
                         <li><a href="#ourhistory">Quem Somos</a></li>
                         <li><a href="#services">Serviços</a></li>
                         <li><a href="#linkedin">LinkedIn</a></li>
                         <li><a href="#testimonials">Depoimentos</a></li>
                         <li><a href="#contact-section"> Fale Conosco</a></li>
-                    </ul>
+                        </ul>
+                    </div>
                         
                                 <div className="on-mobile">
+                                    <ul>
+                                        <li><a href="#ourhistory">Quem Somos</a></li>
+                                        <li><a href="#services">Serviços</a></li>
+                                        <li><a href="#linkedin">LinkedIn</a></li>
+                                        <li><a href="#testimonials">Depoimentos</a></li>
+                                        <li><a href="#contact-section"> Fale Conosco</a></li>
+                                    </ul>
                                         <img id="logo-mobile" src={virtu_logo} alt="" />
                                             <div className="icon" onClick={() => setIcon(!icon)}>
                                                 {icon ? <img src={menu} alt="Menu" /> : <img src={ex} alt="Sair" />}

@@ -112,6 +112,12 @@
   opacity: 1;
 }
 
+@media (max-width: 1000px) {
+  .banner-section .rectangle {
+    height: 98%;
+  }
+}
+
 @media (max-width: 768px) {
   .banner-section::before {
     content: "";
@@ -168,11 +174,7 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .banner-section .rectangle {
-    height: 98%;
-  }
-}
+
 
 @media (max-width: 705px) {
   .banner-section .text p {

@@ -31,19 +31,20 @@ html {
   align-items: center;
 }
 
-.navbar-section .connect .sections .list {
+.navbar-section .connect .on-web {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-section .connect .on-web ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
-
-.navbar-section .connect .icon {
-  display: none;
-  cursor: pointer;
-}
-
-.navbar-section .connect .sections a {
+.navbar-section .connect .on-web ul a {
   font-family: acumin-pro, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -57,15 +58,15 @@ html {
   cursor: pointer;
 }
 
-.navbar-section .connect .sections .list .on-mobile {
-  display: none;
-}
-
 #logo-mobile {
   height: 60px;
 }
 
-.navbar-section .connect .sections .list .on-mobile ul {
+.navbar-section .connect .on-mobile {
+  display: none;
+}
+
+.navbar-section .connect .on-mobile ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -85,13 +86,13 @@ html {
 }
 
 @media (max-width: 1200px) {
-  .navbar-section .connect .sections a {
+  .navbar-section .connect .on-web ul a {
     margin-left: 25px;
   }
 }
 
 @media (max-width: 1100px) {
-  .navbar-section .connect .sections a {
+  .navbar-section .connect .on-web ul a {
     margin-left: 20px;
   }
 }
