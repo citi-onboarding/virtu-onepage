@@ -78,11 +78,11 @@ function LinkedIn(){
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>
-          {linkedIn?.map(({ _id,linkProfile, titlePost, link, description }) => (
-            <div>
-            <Datas id={_id} title={titlePost} text={description} link={link}/>
-            </div>
-           ))}
+          {linkedIn?.map(linkedin_card =>{
+             return(
+            <Datas title={linkedin_card.titlePost} text={linkedin_card.description} link={linkedin_card.link}/>
+                  )
+           })}
           </Slider>
           <div className="set-center">
             <div className="arrows">
