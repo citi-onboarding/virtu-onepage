@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Box from './Box'
 import './css/ourhistory.css'
 import axios from 'axios'
@@ -32,7 +32,19 @@ const position = [
 'relative'
 ]
 
-const OurHistory = () => (
+function OurHistory (){
+const[ourhistory, setOurHistory] = useState([])
+
+    const LoadOurHistory = async () =>{
+      const res = await axios.get('http://localhost:3001/api/linkedin')
+      setOurHistory(res.data)
+    } 
+
+    useEffect(()=>{
+      LoadOurHistory()
+    }, [])
+
+return(
 <section id="ourhistory">
 	<div className="container">
 		<div className="img-left"><img src={vector_left} alt="vector"/></div>
