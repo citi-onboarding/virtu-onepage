@@ -20,7 +20,7 @@ function Contact() {
     const [message, setMessage] = useState('');
 
     return (
-        <div id="contact-section">
+        <section id="contact-section">
             <form>
                 <fieldset>
                     <h2>Fale conosco</h2>
@@ -95,7 +95,7 @@ function Contact() {
 
             <img src={icon_ball} alt="ball" id="ball-form"/>
             <img src={icon_lines} alt="lines" id="lines-form"/>
-        </div>
+        </section>
     );
 }
 
