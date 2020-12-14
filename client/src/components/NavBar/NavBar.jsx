@@ -20,7 +20,7 @@ if (currentWidth.innerText > 768) {
 }, []);
 
   
-
+// this is going to be fixed when all front is done.
   window.addEventListener('scroll', function() { 
     if (window.scrollY >= 0 && window.scrollY < 1080) {
       document.querySelector('#first a').classList.remove("current");
