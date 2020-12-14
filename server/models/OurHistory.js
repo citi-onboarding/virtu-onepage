@@ -2,9 +2,12 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const OurHistory = new keystone.List('Quem Somos')
+const ourHistory = new keystone.List('Quem Somos', {
+    map: { name: 'Visao' }
+  });
 
-OurHistory.add({
+
+ourHistory.add({
     Visao: {
         type: Types.Text,
         required: true,
@@ -27,4 +30,4 @@ OurHistory.add({
     }
 })
 
-OurHistory.register();
+ourHistory.register();
