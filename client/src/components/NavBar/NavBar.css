@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 .current {
-  font-weight: 1000;
+  font-weight: 600 !important;
   transition: 0.2s all;
 }
 
