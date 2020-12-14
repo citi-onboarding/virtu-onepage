@@ -11,27 +11,68 @@ import "./NavBar.css";
 function NavBar() {
   const [icon, setIcon] = useState(true);
 
+
+  window.addEventListener('scroll', function() { 
+    if (window.scrollY >= 1080 && window.scrollY < 2160) {
+        document.querySelector('#first a').classList.add("current");
+        document.querySelector('#second a').classList.remove("current");
+        document.querySelector('#third a').classList.remove("current");
+        document.querySelector('#fourth a').classList.remove("current");
+        document.querySelector('#fifth a').classList.remove("current");
+
+    } if (window.scrollY > 2160 && window.scrollY < 3240) {
+        document.querySelector('#first a').classList.remove("current");
+        document.querySelector('#second a').classList.add("current");
+        document.querySelector('#third a').classList.remove("current");
+        document.querySelector('#fourth a').classList.remove("current");
+        document.querySelector('#fifth a').classList.remove("current");
+        
+    } if (window.scrollY > 3240 && window.scrollY < 4320) {
+        document.querySelector('#first a').classList.remove("current");
+        document.querySelector('#second a').classList.remove("current");
+        document.querySelector('#third a').classList.add("current");
+        document.querySelector('#fourth a').classList.remove("current");
+        document.querySelector('#fifth a').classList.remove("current");
+        
+
+    } if (window.scrollY > 4320  && window.scrollY < 5400) {
+        document.querySelector('#first a').classList.remove("current");
+        document.querySelector('#second a').classList.remove("current");
+        document.querySelector('#third a').classList.remove("current");
+        document.querySelector('#fourth a').classList.add("current");
+        document.querySelector('#fifth a').classList.remove("current");
+        
+
+    } if (window.scrollY > 5400) {
+        document.querySelector('#first a').classList.remove("current");
+        document.querySelector('#second a').classList.remove("current");
+        document.querySelector('#third a').classList.remove("current");
+        document.querySelector('#fourth a').classList.remove("current");
+        document.querySelector('#fifth a').classList.add("current");
+    }
+  });
+
   return (
     <>
       <header className="navbar-section">
         <div className="connect">
           <div className="on-web">
             <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
-            <ul>
-              <li>
-                <a href="#ourhistory">Quem Somos</a>
+            <ul id="items" >
+              <li id="first">
+                <a  href="#ourhistory">Quem Somos</a>
               </li>
-              <li>
-                <a href="#services">Serviços</a>
+              <li id="second">
+                <a  href="#services">Serviços</a>
               </li>
-              <li>
-                <a href="#linkedin">LinkedIn</a>
+              <li id="third">
+                <a  href="#linkedin">LinkedIn</a>
               </li>
-              <li>
-                <a href="#testimonials">Depoimentos</a>
+              <li id="fourth">
+                <a  href="#testimonials">Depoimentos</a>
               </li>
-              <li>
-                <a href="#contact-section"> Fale Conosco</a>
+              <li id="fifth">
+                <a  href="#contact-section"> Fale Conosco</a>
               </li>
             </ul>
           </div>

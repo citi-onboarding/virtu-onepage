@@ -2,7 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 .current {
-  font-weight: 600;
+  font-weight: 1000;
+  transition: 0.2s all;
 }
 
 .navbar-section {
