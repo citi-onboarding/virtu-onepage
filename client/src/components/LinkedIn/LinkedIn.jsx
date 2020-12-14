@@ -26,16 +26,9 @@ const subtitle = [
   'Visitar LinkedIn'
 ]
 
-const titleLinkedIn = [
-  'Título do LinkedIn título do LinkedIn título do LinkedIn',
-]
-
-const text = [
-  'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
-]
 
 function LinkedIn(){
-    const[CurrentLinkedIn, setLinkedIn] = useState('')
+    const[linkedIn, setLinkedIn] = useState([])
 
     const LoadLinkedIn = async () =>{
       const res = await axios.get('http://localhost:3001/api/linkedin')
@@ -84,13 +77,13 @@ function LinkedIn(){
           <img id="circle" src={circle} alt=""/>
         </div>
         <div className="carousel">
-          <Slider className="slider" {...settings}>
-          {CurrentLinkedIn?.map(({ _id,linkProfile, titlePost, link, description }) => (
+          <Slider {...settings}>
+          {linkedIn?.map(({ _id,linkProfile, titlePost, link, description }) => (
             <div>
-            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/>
-            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/> 
-            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/>
-            <Datas id={_id} title={titleLinkedIn} text={text} link={link}/>
+            <Datas id={_id} title={titlePost} text={description} link={link}/>
+            <Datas id={_id} title={titlePost} text={description} link={link}/> 
+            <Datas id={_id} title={titlePost} text={description} link={link}/>
+            <Datas id={_id} title={titlePost} text={description} link={link}/>
             </div>
            ))}
           </Slider>
