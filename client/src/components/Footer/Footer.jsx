@@ -11,7 +11,7 @@ import code_logo from '../../assets/code-icon.svg'
 
 function Footer() {
   return (
-      <div className="footer-section">
+      <footer id="footer-section">
         <img src={logo_white} alt="logo branca"/>
         <p>Made with 
           <img src={hearth} alt="coracao" className="hearth-icon" />
@@ -19,7 +19,7 @@ function Footer() {
           <img src={code_logo} alt="code" className="code_icon" />
            by CITi
         </p>
-      </div>
+      </footer>
   )
 }
 
