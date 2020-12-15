@@ -20,10 +20,6 @@ const icons = [
     icon_eye, icon_hands, icon_arrow
 ]
 
-const text = [
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "texto2", "texto3"
-]
-
 const bgColor = [
 '#D55140'
 ]
