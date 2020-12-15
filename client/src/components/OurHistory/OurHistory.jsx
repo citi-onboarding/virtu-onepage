@@ -57,7 +57,7 @@ return(
 			<div className="box-parent">
 				<Box title={titles[2]} icons={icons[2]} text={Stories.Valores}  position={position[0]} />
 				<Box title={titles[0]} icons={icons[0]} text={Stories.Visao} bgColor={bgColor[0]}/>
-				<Box title={titles[1]} icons={icons[1]} text={Stories.Missão} position={position[0]} />
+				<Box title={titles[1]} icons={icons[1]} text={Stories.Missao} position={position[0]} />
 			</div>
 			)
 		})}
