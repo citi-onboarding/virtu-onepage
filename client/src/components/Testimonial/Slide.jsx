@@ -10,31 +10,6 @@ import './css/slide.css'
 import "slick-carousel/slick/slick.css"
 
 import icon_right from '../../assets/Group 4SVG.svg'
-import img_1 from './images/image 3.svg'
-import img_2 from './images/image 4.svg' 
-import img_3 from './images/image 5.svg'
-import img_4 from './images/image 3.svg'
-
-const Name = [
-    'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
-]
-
-const Func = [
-	'Candidata a vereadora', 'Outra função', 'Candidato a prefeito', 'Governadora'
-]
-
-const Image = [
-  img_1, img_2, img_3, img_4
-]
-
-
-const Service = [
-  'Pesquisa de opinião', 'outro serviço1', 'outro serviço2', 'outro serviço3'
-] 
-
-const Description = [
-  'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '4Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
-]
 
 function Slide(){
 
