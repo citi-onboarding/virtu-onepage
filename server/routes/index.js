@@ -3,9 +3,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
-const Testimonial = keystone.List('Depoimentos');
-
-require('dotenv').config();
+const Testimonial = keystone.list('Depoimentos');
 
 module.exports = (app) => {
   app.use(cors());
@@ -24,14 +22,15 @@ module.exports = (app) => {
     });
   });
 
-  app.get('/api/testimonial', (req, res) => {
-    Testimonial.model.find((err, data) => {
+
+app.get('/api/testimonial', (req, res) =>{
+    Testimonial.model.find((err, data) =>{
       if (err) return res.apiError('database error', err);
       res.send(data);
     });
 });
 
   app.get('*', (req, res) => {
-		res.redirect('/');
-	});
+    res.redirect('/');
+  });
 };
