@@ -129,38 +129,19 @@ return(
           focusOnSelect={false}
           arrows={false}
   >
-  <div className="ClientDescription-wraper">
+  {testimonial?.map( testimonies =>{
+          return(
+              (<div className="ClientDescription-wraper">
               <ClientDescription 
-                      NameofClient={Name[0]}
-                      FuncofClient={Func[0]}
-                      Service={Service[0]}
-                      Description={Description[0]}
+                      NameofClient={testimonies.title}
+                      FuncofClient={testimonies.subtitle}
+                      Service={testimonies.reason}
+                      Description={testimonies.description}
                  /> 
-   </div>
-   <div className="ClientDescription-wraper">
-              <ClientDescription 
-                      NameofClient={Name[1]}
-                      FuncofClient={Func[1]}
-                      Service={Service[1]}
-                      Description={Description[0]}
-                 /> 
-   </div>
-   <div className="ClientDescription-wraper">
-              <ClientDescription 
-                      NameofClient={Name[2]}
-                      FuncofClient={Func[2]}
-                      Service={Service[2]}
-                      Description={Description[2]}
-                 /> 
-   </div>
-   <div className="ClientDescription-wraper">
-              <ClientDescription 
-                      NameofClient={Name[3]}
-                      FuncofClient={Func[3]}
-                      Service={Service[3]}
-                      Description={Description[3]}
-                 /> 
-   </div>
+               </div>)
+             )
+           })}
+ 
   </Slider>
   </div>
   <div className="nav-galeria" >
@@ -172,40 +153,22 @@ return(
    ref={slider => (slider1 = slider)}
 
   >
-	<SlideCard 
 
-	
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-      Image={Image[0]}
+   {testimonial?.map( testimonies =>{
+          return(
+              (<div className="ClientDescription-wraper">
+              <SlideCard
 
 
-	/>
-	<SlideCard 
+                NameofClient={testimonies.title}
+                FuncofClient={testimonies.subtitle}
+                Image={testimonies.image[0]?.url}
 
-	
-      NameofClient={Name[1]}
-      FuncofClient={Func[1]}
-      Image={Image[1]}
 
-	/>
-  <SlideCard 
-
-  
-      NameofClient={Name[2]}
-      FuncofClient={Func[2]}
-      Image={Image[2]}
-
-  />
-	<SlideCard 
-
-	
-      NameofClient={Name[3]}
-      FuncofClient={Func[3]}
-      Image={Image[3]}
-
-	/>
-
+                />
+               </div>)
+             )
+           })}
 	</ Slider>
 
 </div>
