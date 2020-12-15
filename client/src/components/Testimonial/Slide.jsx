@@ -1,6 +1,7 @@
-import React, { Component, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import Slider from "react-slick"
 import SlideCard from './Slide-card'
+import axios from 'axios'
 
 import ClientDescription from './Client-Description'
 
@@ -37,6 +38,17 @@ const Description = [
 
 function Slide(){
 
+const[testimonial, setTestimonial] = useState([])
+
+const LoadTestimonial = async () =>{
+      const res = await axios.get('http://localhost:3001/api/testimonial')
+      setTestimonial(res.data)
+    } 
+
+    useEffect(()=>{
+      LoadTestimonial()
+    }, [])
+
 const [nav1, setNav1] = useState(null)
 const [nav2, setNav2] = useState(null)
     let slider1 = []
@@ -59,7 +71,6 @@ function PrevArrow(props) {
       centerMode: false,
       dots: true,
       arrows: true,
-      infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       focusOnSelect: true,
@@ -154,7 +165,7 @@ return(
   </div>
   <div className="nav-galeria" >
  <div  className="icon_right">
-<img src={icon_right} />
+<img src={icon_right} alt="Vetor" />
 </div>
 	<Slider  {...settings} className="one-slide"
    asNavFor={nav2}
