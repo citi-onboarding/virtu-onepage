@@ -1,10 +1,14 @@
 
 .nav-galeria{
-	width: 60%;
-	padding-left: 60px;
+	width: 50%;
 }
 
-
+.ClientDescription-wraper{
+    outline: none;
+}
+.Description-wraper{
+width:87%;
+}
 .slick-cloned > div, .slick-active > div{
 	margin: -10px;
 }
@@ -12,6 +16,7 @@
 .slick-slide{
 	transform: scale(0.8);
 	transition: all ease 0.5%;
+    outline: none;
 }
 
 .slick-current {

@@ -72,7 +72,7 @@ function PrevArrow(props) {
       <PrevArrow
         className="Prev"
         onClick={() => {
-          document.querySelector(".one-slide.slick-prev.slick-arrow").click();
+          document.querySelector(".slick-prev.slick-arrow").click();
         }}
       />
       <ul className="dot-container"> {dots} </ul>
@@ -107,19 +107,16 @@ function PrevArrow(props) {
       ]
    }
 return(
-<div className="nav-galeria" >
-<div  className="icon_right">
-<img src={icon_right} />
-</div>
+<>
+<div className="box-right">
+  <h1>Depoimentos <br></br> dos nossos clientes</h1>
   <Slider
-
           asNavFor={nav1}
           ref={slider => (slider2 = slider)}
           slidesToShow={1}
           swipeToSlide={false}
           focusOnSelect={false}
           arrows={false}
-
   >
   <div className="ClientDescription-wraper">
               <ClientDescription 
@@ -131,21 +128,34 @@ return(
    </div>
    <div className="ClientDescription-wraper">
               <ClientDescription 
-                      NameofClient={Name[0]}
-                      FuncofClient={Func[0]}
-                      Service={Service[0]}
+                      NameofClient={Name[1]}
+                      FuncofClient={Func[1]}
+                      Service={Service[1]}
                       Description={Description[0]}
                  /> 
    </div>
    <div className="ClientDescription-wraper">
               <ClientDescription 
-                      NameofClient={Name[0]}
-                      FuncofClient={Func[0]}
-                      Service={Service[0]}
-                      Description={Description[0]}
+                      NameofClient={Name[2]}
+                      FuncofClient={Func[2]}
+                      Service={Service[2]}
+                      Description={Description[2]}
+                 /> 
+   </div>
+   <div className="ClientDescription-wraper">
+              <ClientDescription 
+                      NameofClient={Name[3]}
+                      FuncofClient={Func[3]}
+                      Service={Service[3]}
+                      Description={Description[3]}
                  /> 
    </div>
   </Slider>
+  </div>
+  <div className="nav-galeria" >
+ <div  className="icon_right">
+<img src={icon_right} />
+</div>
 	<Slider  {...settings} className="one-slide"
    asNavFor={nav2}
    ref={slider => (slider1 = slider)}
@@ -188,6 +198,7 @@ return(
 	</ Slider>
 
 </div>
+</>
 )
 }
 

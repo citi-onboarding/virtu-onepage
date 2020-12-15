@@ -111,9 +111,6 @@ return(
 <section id="testimonial">
 	<div className="container">
  		<div className="parent-box">
-	 		<div className="box-right">
-				<h1>Depoimentos <br></br> dos nossos clientes</h1>
-			</div>
  						<Slide />
        </div>
 	</div>
