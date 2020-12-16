@@ -76,7 +76,6 @@ function Contact() {
 
     async function loadContacts() {
         const res = await axios.get(`${url}/api/contact`);
-        // const validation_instagram = /^\s*(http\:\/\/)?instagram\.com\/[a-z\A-Z\d\-]{1,255}\s*$/;
         setLinkedin(res.data[0].linkedinLink);
         setInstagram(res.data[0].instagramLink);
         setEmailAdress(res.data[0].email);
