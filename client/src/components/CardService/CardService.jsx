@@ -10,7 +10,7 @@ function CardService({ title, description, image, textColor, borderColor, bckCol
                 <h2 style={{color: textColor, backgroundColor: bckColor}} >{title}</h2>
             </div>
             <p style={{color: textColor}} >{description}</p>
-            <p style={{color: textColor}} >Saber mais</p>
+            <a href="#contact-section" style={{color: textColor}} >Saber mais</a>
 
         </div>
     );
