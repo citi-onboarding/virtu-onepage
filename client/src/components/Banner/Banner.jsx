@@ -1,10 +1,6 @@
 import React,{useEffect, useState} from "react";
 import axios from 'axios';
 
-
-
-// import { Container } from './styles';
-
 import "./Banner.css";
 
 import logo_white from "../../assets/virtu-logo 2.svg";
@@ -27,7 +23,6 @@ const LoadBanner = async () =>{
           return(
               ( <div style={{background: `url(${banners.image[0]?.url})`, backgroundRepeat: 'no-repeat',backgroundSize: 'cover', backgroundPosition: '32% 75px'}} className="img-bg"></div>) )
            })}
- 
       <div className="text">
       {banner?.map( banners =>{
           return((
