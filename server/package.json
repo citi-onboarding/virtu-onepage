@@ -24,6 +24,7 @@
     "dotenv": "^8.2.0",
     "keystone": "^4.2.1",
     "mongoose": "^5.10.15",
+    "nodemailer": "^6.4.17",
     "underscore": "^1.11.0"
   },
   "devDependencies": {
