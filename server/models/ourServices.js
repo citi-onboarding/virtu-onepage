@@ -8,14 +8,23 @@ const ourServices = new keystone.List('Servicos', {
 
 ourServices.add({
 	image: {
-   		type: Types.CloudinaryImages, require: true, index: true, initial: true,
- 		},
+		type: Types.CloudinaryImages,
+		require: true, 
+		index: true, 
+		initial: true,
+	},
 	title: {
-		type: Types.Text, required: true, index: true, initial: true,
-		},
+		type: Types.Text,
+		required: true,
+		index: true,
+		initial: true,
+	},
 	description: {
-		type: Types.Textarea, require: true, index: true, initial: true,
-		},
+		type: Types.Textarea,
+		require: true,
+		index: true,
+		initial: true,
+	},
 });
 
 ourServices.register();
