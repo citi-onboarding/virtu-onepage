@@ -8,13 +8,6 @@ import axios from 'axios';
 import "./Banner.css";
 
 import logo_white from "../../assets/virtu-logo 2.svg";
-import image from '../../assets/background.png'
-
-const text = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-];
-
-const title = ["Aplicamos ciência e construímos resultados"];
 
 function Banner() {
 const[banner, setBanner] = useState([])
@@ -32,7 +25,7 @@ const LoadBanner = async () =>{
     <div id="banner" className="banner-section">
     {banner?.map( banners =>{
           return(
-              ( <div style={{background: `url(${banners.image})`, backgroundRepeat: 'no-repeat',backgroundSize: 'cover', backgroundPosition: '32% 75px'}} className="img-bg" />) )
+              ( <div style={{background: `url(${banners.image[0]?.url})`, backgroundRepeat: 'no-repeat',backgroundSize: 'cover', backgroundPosition: '32% 75px'}} className="img-bg"></div>) )
            })}
  
       <div className="text">
