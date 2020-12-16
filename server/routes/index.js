@@ -1,4 +1,3 @@
-const nodemailer = require('nodemailer');
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
