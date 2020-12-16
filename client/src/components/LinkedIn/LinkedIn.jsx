@@ -74,7 +74,7 @@ function LinkedIn(){
             <h1>{title}</h1>
             <a href="">{subtitle}</a>
           </div>
-          <img id="circle" src={circle} alt=""/>
+          <img id="circle" src={circle} alt="Vector"/>
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>

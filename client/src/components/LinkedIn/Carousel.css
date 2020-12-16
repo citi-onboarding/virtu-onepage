@@ -1,14 +1,14 @@
+.carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .slider {
     position: relative;
 }
 
 .slick-slider {
     margin-top: 45px;
-}
-
-.slick-slider .slick-arrow {
-    display: flex;
-    justify-content: flex-start;
 }
 
 .slick-list {
@@ -22,25 +22,15 @@
     right: 5px;
 }
 
-.slick-initialized .slick-cloned {
-    display: none;
-    z-index: -1;
-}
 
-.slick-initialized .slick-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slick-active {
+.slick-current{
     border: 2px solid #010101;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px; 
 }
 
-.slick-center {
+.slick-active {
     background: linear-gradient(180deg, rgba(204, 23, 1, 0.8) 0%, rgba(153, 18, 0, 0.8) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -49,7 +39,7 @@
     color: white;
 }
 
-.slick-center a {
+.slick-active a {
     color: white;
 }
 
