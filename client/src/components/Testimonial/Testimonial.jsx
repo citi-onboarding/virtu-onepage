@@ -7,7 +7,7 @@ return(
 <section id="testimonial">
 	<div className="container">
  		<div className="parent-box">
- 						<Slide />
+			<Slide />
        </div>
 	</div>
 </section>
