@@ -104,7 +104,7 @@ ul.dot-container li button{
 @media screen and (max-width: 1135px){
 .slick-dots{
     width: 33%;
-    top: -20px;
+    top: -4px;
     left: -465px;
 }
 
@@ -113,8 +113,8 @@ ul.dot-container li button{
 @media screen and (max-width: 1094px){
 	.slick-dots{
     width: 35%;
-    top: -9px;
-    left: -454px;
+    top: -26px;
+    left: -450px;
 }
 
 
@@ -136,11 +136,11 @@ ul.dot-container li button{
 }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 962px){
 .slick-dots{
     width: 38%;
-    top: 15px;
-    left: -400px;
+    top: 6px;
+    left: -387px;
 }
 
 }
@@ -156,8 +156,8 @@ ul.dot-container li button{
 @media screen and (max-width: 900px){
 .slick-dots{
     width: 45%;
-    top: 40px;
-    left: -370px;
+    top: 6px;
+    left: -352px;
 }
 }
 
@@ -193,11 +193,24 @@ ul.dot-container li button{
 }
 }
 
+@media screen and (max-width: 850px){
+.slick-dots {
+    width: 30%;
+    top: -340px;
+    left: 1px;
+}
+}
 @media screen and (max-width: 724px){
 .slick-dots{
     width: 30%;
     top: -330px;
     left: 1px;
+}
+}
+
+@media screen and (max-width: 660px){
+.nav-galeria {
+    margin-top: 36px;
 }
 }
 
@@ -249,10 +262,14 @@ ul.dot-container li button{
 }
 }
 
-@media screen and (max-width: 476px){
+@media screen and (max-width: 479px){
 .slick-dots{
     width: 45%;
     top: -385px;
+}
+
+.dot-container{
+margin-left: 10px;
 }
 
 .nav-galeria{
