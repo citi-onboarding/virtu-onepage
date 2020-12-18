@@ -41,7 +41,7 @@ width:87%;
     width: 28%;
     top: -20px;
     left: -528px;
-    z-index: 3;
+    /* z-index: 3; */
     list-style-type: none;
     text-align: center;
 }
@@ -87,7 +87,6 @@ ul.dot-container li button{
 	right: -18px;
 	bottom: 7px;
     cursor: pointer;
-    z-index: 333;
 }
 
 .Prev{
@@ -100,7 +99,6 @@ ul.dot-container li button{
     background-position: center;
     background-size: contain;
     cursor: pointer;
-    z-index: 333;
 }
 
 
