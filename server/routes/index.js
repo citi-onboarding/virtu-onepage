@@ -7,6 +7,7 @@ const Post = keystone.list('Posts');
 const Testimonial = keystone.list('Depoimentos');
 const OurServices = keystone.list('Servicos')
 const Contact = keystone.list('Contato');
+const OurHistory = keystone.list('Quem Somos');
 
 require('dotenv').config();
 
@@ -27,6 +28,13 @@ module.exports = (app) => {
     });
   });
 
+  app.get('/api/OurHistory', (req, res) =>{
+    OurHistory.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
+    });
+  });
+  
   app.get('/api/testimonial', (req, res) =>{
     Testimonial.model.find((err, data) =>{
       if (err) return res.apiError('database error', err);
