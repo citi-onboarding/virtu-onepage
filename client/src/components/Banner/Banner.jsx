@@ -30,7 +30,7 @@ const LoadBanner = async () =>{
                <h1>{banners.title}</h1>
                 <p>{banners.description}</p>
                 <button>
-                    <a href="#services" className="button-text">Nossos serviços</a>
+                    <a href="#ourServices" className="button-text">Nossos serviços</a>
                 </button>
              </>
                 ))
