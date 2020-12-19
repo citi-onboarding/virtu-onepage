@@ -31,7 +31,7 @@ function LinkedIn(){
       centerMode: true,
       dots: true,
       slideToScroll: 1,
-      centerPadding: '60px',
+      centerPadding: '10px',
       slidesToShow: 3,
       responsive: [
     {

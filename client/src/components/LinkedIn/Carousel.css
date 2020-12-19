@@ -3,7 +3,8 @@
     flex-wrap: nowrap;
 }
 .LinkedIn-section{
-     max-width: 1300px;
+     max-width: 1200px;
+     margin: 0 auto;
 }
 .LinkedIn-section .carousel .slider {
    width: 100%;
@@ -24,14 +25,15 @@
     right: 5px;
 }
 
+.LinkedIn-section .carousel .slick-slide{
+     outline: 0;
+}
 
 .LinkedIn-section .carousel .slick-current{
     border: 2px solid #010101;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px; 
-    cursor: pointer;
-    outline: 0;
 }
 
 .LinkedIn-section .carousel .slick-center{
