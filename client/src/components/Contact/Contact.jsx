@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import icon_linkedin from '../../assets/Icone LinkedinSVG.svg'
 import icon_instagram from '../../assets/Icone InstaSVG.svg'
 import icon_email from '../../assets/Icone e-mailSVG.svg'
@@ -11,17 +11,85 @@ import './styles/responsive.css'
 import '../Input'
 
 import Input from '../Input';
+import axios from 'axios';
+import url from '../../global/globalVars';
 
 function Contact() {
     const [service, setService] = useState('');
     const [name, setName] = useState("");
     const [telephone, setTelephone] = useState('');
-    const [email, setEmail] = useState('');
+    const [emailContact, setEmailContact] = useState('');
     const [message, setMessage] = useState('');
 
+    const [linkedin, setLinkedin] = useState('');
+    const [instagram, setInstagram] = useState('');
+    const [emailAdress, setEmailAdress] = useState('');
+    const [adress, setAdress] = useState('');
+
+    const [services, setServices] = useState([]);
+
+    async function handleSumbit(e) {
+        try {
+            e.preventDefault();
+
+            await axios.post(`${url}/api/makecontact`, {
+                name,
+                telephone,
+                email: emailContact,
+                service,
+                message
+            })
+
+            alert('Contato efetuado!')
+        }
+        catch (err) {
+            console.log(err);
+            alert('Erro. Tente novamente')
+        }
+    }
+
+    function getLastArrayelement(url, separator) {
+
+        const arr = url.split(separator);
+        const v1 = arr[arr.length - 1];
+        const v2 = arr[arr.length - 2];
+
+        if (v1 === "") {
+            // const url_encoded = encodeURIComponent(v2);
+            const url_decoded = decodeURIComponent(v2);
+            return url_decoded;
+        }
+        else {
+            // const url_encoded = encodeURIComponent(v1);
+            const url_decoded = decodeURIComponent(v1);
+            return url_decoded;
+        }
+        
+
+        // return v1 === "" ? v2 : v1;
+    }
+
+    async function loadServices() {
+        const res = await axios.get(`${url}/api/ourservices`)
+        setServices(res.data);
+    }
+
+    async function loadContacts() {
+        const res = await axios.get(`${url}/api/contact`);
+        setLinkedin(res.data[0].linkedinLink);
+        setInstagram(res.data[0].instagramLink);
+        setEmailAdress(res.data[0].email);
+        setAdress(res.data[0].adress);
+    }
+
+    useEffect(() => {
+        loadContacts();
+        loadServices();
+    }, [])
+
     return (
-        <div id="contact-section">
-            <form>
+        <section id="contact-section">
+            <form onSubmit={handleSumbit}>
                 <fieldset>
                     <h2>Fale conosco</h2>
 
@@ -44,16 +112,16 @@ function Contact() {
                             />
                         </div>
 
-                        <Input name="email" placeholder="Email" width="100%" marginTop="30px" value={email} 
-                            funcOnChange={(e) => {setEmail(e.target.value)}}
+                        <Input name="email" placeholder="Email" width="100%" marginTop="30px" value={emailContact} 
+                            funcOnChange={(e) => {setEmailContact(e.target.value)}}
                         />
 
                         <div className="input-line-container">        
-                            <select 
-                                name="services"
-                                onChange={(e) => {setService(e.target.value);} }
-                            >
-                                <option value="" disabled hidden>Serviço</option>
+                            <select  name="services" value={service} onChange={(e) => {setService(e.target.value);} }>
+                                <option key="servicos" hidden>Serviços</option>
+                                {services.map(service_it => {
+                                    return <option key={service_it.title} value={service_it.title}>{service_it.title}</option>
+                                })}
                                 
                             </select>
 
@@ -77,25 +145,25 @@ function Contact() {
 
                 <div className="link-image-container">
                     <img src={icon_linkedin} alt="linkedin"/>
-                    <a href="#">.../company/virtu-consultoriapolitica</a>
+                    <a target="blank" href={linkedin}>{getLastArrayelement(linkedin, '/')}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_instagram} alt="instagram"/>
-                    <a href="#">@virtupolitica</a>
+                    <a target="blank" href={instagram}>{`@${getLastArrayelement(instagram, '/')}`}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_email} alt="email"/>
-                    <a href="#">virtu@email.com</a>
+                    <a target="blank" href={`mailto:${emailAdress}`}>{emailAdress}</a>
                 </div>
                 <div className="link-image-container">
                     <img src={icon_adress} alt="endereço"/>
-                    <a href="#">Av. Professor Luiz Freire, Cidade Universitaria, CFCH, Recife - PE</a>
+                    <a target="blank" href={`https://maps.google.com/?q=1200 ${adress}`}>{adress}</a>
                 </div>
             </div>
 
             <img src={icon_ball} alt="ball" id="ball-form"/>
             <img src={icon_lines} alt="lines" id="lines-form"/>
-        </div>
+        </section>
     );
 }
 

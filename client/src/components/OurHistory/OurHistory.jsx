@@ -26,7 +26,7 @@ const[ourhistory, setOurHistory] = useState([])
 
 return(
 <section id="ourhistory">
-	<div className="container">
+	<div className="container-ourhistory">
 		<div className="img-left"><img src={vector_left} alt="vector"/></div>
 		{ourhistory?.map(Stories => { 
 			return(	 

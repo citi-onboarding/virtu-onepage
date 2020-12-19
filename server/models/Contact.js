@@ -1,20 +1,28 @@
 const keystone = require('keystone');
 const { Types } = keystone.Field;
 
-const Contact = new keystone.List('Contact');
+const Contact = new keystone.List('Contato');
 
 Contact.add ({
 	instagramLink: {
-		type: Types.Url, required: true, index: true, initial: true, 
+		type: Types.Url,
+		
+		
 	},
-    	linkedinLink: {
-		type: Types.Url, required: true, index: true, initial: true, 
+	linkedinLink: {
+		type: Types.Url,
+		
+		 
 	},
     	email: {
-		type: Types.Text, required: true, index: true, initial: true,
+		type: Types.Text,
+		
+		
 	},
     	adress: {
-		type: Types.Text, initial: true, required: true, index: true,
+		type: Types.Text,
+		
+		
 		}
 });
 

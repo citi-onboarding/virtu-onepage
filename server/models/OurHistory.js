@@ -2,9 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const OurHistory = new keystone.List('Quem Somos', {
-    map: { name: 'Visao' }
-  });
+const OurHistory = new keystone.List('Quem Somos');
 
 
 
