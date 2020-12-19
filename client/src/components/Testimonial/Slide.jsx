@@ -63,7 +63,6 @@ function PrevArrow(props) {
       slidesToShow: 3,
       slidesToScroll: 1,
       focusOnSelect: true,
-      infinite: true,
       centerPadding: "60px",
       adaptiveHeight: false,
       speed: 500,
