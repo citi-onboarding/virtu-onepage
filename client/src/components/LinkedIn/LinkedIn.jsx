@@ -18,27 +18,15 @@ import Datas from './Datas'
 import './LinkedIn.css';
 import './Carousel.css';
 
-const title = [
-  'Conheça nosso LinkedIn'
+const text = [
+  'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 ]
 
-const subtitle = [
-  'Visitar LinkedIn'
+const link = [
+  'https://react-slick.neostack.com/docs/get-started/'
 ]
-
-  
 
 function LinkedIn(){
-   const[linkedIn, setLinkedIn] = useState([])
-   const LoadLinkedIn = async () =>{
-      const res = await axios.get('http://localhost:3001/api/linkedin')
-      setLinkedIn(res.data)
-    } 
-
-    useEffect(()=>{
-      LoadLinkedIn()
-    }, [])
-
     const settings = {
       centerMode: true,
       dots: true,
@@ -66,23 +54,22 @@ function LinkedIn(){
   ]
     };
       
-    return (
+     return (
       <div className="LinkedIn-section">
         <div className="head">
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
-            <h1>{title}</h1>
-            <a href="">{subtitle}</a>
+            <h1>Conheça nosso LinkedIn</h1>
+            <a href="">Visitar LinkedIn</a>
           </div>
-          <img id="circle" src={circle} alt="Vector"/>
+          <img id="circle" src={circle} alt="Vetor"/>
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>
-          {linkedIn?.map(linkedin_card =>{
-             return(
-            <Datas title={linkedin_card.titlePost} text={linkedin_card.description} link={linkedin_card.link}/>
-                  )
-           })}
+            <Datas title="Titulo mto bom" text={text} link={link}/>
+            <Datas title="Titulo mto bom" text={text} link={link}/> 
+            <Datas title="Titulo mto bom" text={text} link={link}/>
+            <Datas title="Titulo mto bom" text={text} link={link}/>
           </Slider>
           <div className="set-center">
             <div className="arrows">
@@ -101,6 +88,6 @@ function LinkedIn(){
       </div>
     )
   }
-
+}
 
 export default LinkedIn;
