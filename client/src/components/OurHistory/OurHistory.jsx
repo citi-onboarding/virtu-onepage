@@ -12,22 +12,6 @@ import icon_eye from '../../assets/eye 2SVG.svg'
 import icon_hands from '../../assets/handshake 2SVG.svg'
 import icon_arrow from'../../assets/arrowSVG.svg'
 
-const titles = [
-	"Visão", "Valores", "Missão"
-]
-
-const icons = [
-    icon_eye, icon_hands, icon_arrow
-]
-
-const bgColor = [
-'#D55140'
-]
-
-const position = [
-'relative'
-]
-
 function OurHistory (){
 const[ourhistory, setOurHistory] = useState([])
 
@@ -44,21 +28,21 @@ return(
 <section id="ourhistory">
 	<div className="container">
 		<div className="img-left"><img src={vector_left} alt="vector"/></div>
-{ourhistory?.map(Stories => { 
-		return(		 
-			<div className="call">
-				<h1>Conheça nossa história</h1>
-				<p>{Stories.NossaHistoria}</p>
-			</div>
- )
+		{ourhistory?.map(Stories => { 
+			return(	 
+				<div className="call">
+					<h1>Conheça nossa história</h1>
+					<p>{Stories.NossaHistoria}</p>
+				</div>
+			)
 		})}
-{ourhistory?.map(Stories => { 
-		return( 
-			<div className="box-parent">
-				<Box title={titles[2]} icons={icons[2]} text={Stories.Valores}  position={position[0]} />
-				<Box title={titles[0]} icons={icons[0]} text={Stories.Visao} bgColor={bgColor[0]}/>
-				<Box title={titles[1]} icons={icons[1]} text={Stories.Missao} position={position[0]} />
-			</div>
+		{ourhistory?.map(Stories => { 
+			return(
+				<div className="box-parent">
+					<Box title="Missão" icons={icon_arrow} text={Stories.Valores}  position="relative" />
+					<Box title="Visão" icons={icon_hands} text={Stories.Visao} bgColor="#D55140"/>
+					<Box title="Valores" icons={icon_eye} text={Stories.Missao} position="relative" />
+				</div>
 			)
 		})}
 	<div className="img-mid"><img src={vector_mid} alt="vector" /></div>
