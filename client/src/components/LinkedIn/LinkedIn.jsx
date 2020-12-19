@@ -33,6 +33,28 @@ function LinkedIn(){
       slideToScroll: 1,
       centerPadding: '10px',
       slidesToShow: 3,
+      focusOnSelect: true,
+      appendDots: (dots) => (
+        <div>
+            <PrevArrow
+                  className="Prev-CenterCarousel"
+              onClick={() => {
+              document.querySelector(".slick-prev.slick-arrow").click();
+              }}
+             />
+      <ul className="dot-container"> {dots} </ul>
+      <NextArrow
+        className="Next-CenterCarousel"
+        id="Next-center"
+        onClick={() => {
+          document.querySelector(".slick-next").click();
+        }}
+      />
+    </div>
+  ),
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+
       responsive: [
     {
       breakpoint: 768,
