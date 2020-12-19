@@ -27,6 +27,14 @@ const link = [
 
 
 function LinkedIn(){
+
+function NextArrowCenter(props) {
+  return <div className={props.className} onClick={props.onClick} id={props.id} />;
+}
+
+function PrevArrowCenter(props) {
+  return <div className={props.className} onClick={props.onClick} />;
+}
     const settings = {
       centerMode: true,
       dots: true,
@@ -35,25 +43,25 @@ function LinkedIn(){
       slidesToShow: 3,
       focusOnSelect: true,
       appendDots: (dots) => (
-        <div>
-            <PrevArrow
+        <div className="assets-container">
+            <PrevArrowCenter
                   className="Prev-CenterCarousel"
               onClick={() => {
               document.querySelector(".slick-prev.slick-arrow").click();
               }}
              />
-      <ul className="dot-container"> {dots} </ul>
-      <NextArrow
-        className="Next-CenterCarousel"
-        id="Next-center"
-        onClick={() => {
-          document.querySelector(".slick-next").click();
-        }}
-      />
-    </div>
+      <ul className="dot-container-CenterCarousel"> {dots} </ul>
+          <NextArrowCenter
+            className="Next-CenterCarousel"
+            id="Next-center"
+            onClick={() => {
+            document.querySelector(".slick-next").click();
+            }}
+            />
+        </div>
   ),
-  nextArrow: <NextArrow />,
-  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrowCenter />,
+  prevArrow: <PrevArrowCenter />,
 
       responsive: [
     {
@@ -83,7 +91,7 @@ function LinkedIn(){
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
             <h1>Conheça nosso LinkedIn</h1>
-            <a href="">Visitar LinkedIn</a>
+            <a href="#">Visitar LinkedIn</a>
           </div>
           <img id="circle" src={circle} alt="Vetor"/>
         </div>
@@ -94,18 +102,6 @@ function LinkedIn(){
             <Datas title="Titulo mto bom3" text={text} link={link}/>
             <Datas title="Titulo mto bom4" text={text} link={link}/>
           </Slider>
-          <div className="set-center">
-            <div className="arrows">
-            <img 
-            src={arrow_left} 
-            alt="Anterior"
-            />
-            <img 
-            src={arrow_right} 
-            alt=""
-            />
-          </div>
-          </div>
           
         </div>
       </div>

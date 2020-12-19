@@ -100,7 +100,7 @@
     background-image: url('../../assets/Vector (3).svg');
 }
 
-.LinkedIn-section .carousel .slick-prev, .slick-next {
+.LinkedIn-section .carousel .slick-prev, .LinkedIn-section .carousel .slick-next {
     font-size: 0;
     line-height: 0;
     position: absolute;
@@ -115,4 +115,28 @@
     border: none;
     outline: none;
     background: transparent;
+}
+
+.LinkedIn-section .carousel .Next-CenterCarousel{
+    background: red;
+    padding: 30px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.LinkedIn-section .carousel .Prev-CenterCarousel{
+    background: red;
+    padding: 30px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.LinkedIn-section .carousel .slick-dots{
+background-color: green;
+margin: 0 auto;
+position: relative;
+width: 240px;
 }
