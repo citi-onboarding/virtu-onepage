@@ -30,6 +30,7 @@ function LinkedIn(){
     const settings = {
       centerMode: true,
       dots: true,
+      slideToScroll: 1,
       centerPadding: '60px',
       slidesToShow: 3,
       responsive: [
@@ -66,10 +67,10 @@ function LinkedIn(){
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>
-            <Datas title="Titulo mto bom" text={text} link={link}/>
-            <Datas title="Titulo mto bom" text={text} link={link}/> 
-            <Datas title="Titulo mto bom" text={text} link={link}/>
-            <Datas title="Titulo mto bom" text={text} link={link}/>
+            <Datas title="Titulo mto bom1" text={text} link={link}/>
+            <Datas title="Titulo mto bom2" text={text} link={link}/> 
+            <Datas title="Titulo mto bom3" text={text} link={link}/>
+            <Datas title="Titulo mto bom4" text={text} link={link}/>
           </Slider>
           <div className="set-center">
             <div className="arrows">

@@ -47,18 +47,20 @@ text-align: center;
 	margin-left: 30px;
 }
 
+/*
 .img-right{
 	 position: relative;
     top: -370px;
 
 }
+
 .img-right img{
 transform: translateX(8px) rotate(-90deg) translateY(450px);
 position: absolute;
 right: -21%;
     width: 54%
 }
-
+*/
 @media screen and (max-width: 1200px){
  .box-parent{
  	flex-wrap: nowrap;
