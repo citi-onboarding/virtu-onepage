@@ -68,6 +68,7 @@
     justify-content: flex-end;
     grid-area: red-top;
     margin-bottom: 45px;
+    padding-right: 88px;
     /* min-width: 0; */
     /* grid-column: 1/3; */
 }

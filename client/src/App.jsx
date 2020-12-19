@@ -11,7 +11,7 @@ import {
 function App() {
   return (
     <>
-    <NavBar />
+    
     <Banner/>
     <OurHistory />
     <OurServices/>
