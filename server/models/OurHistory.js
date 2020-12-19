@@ -2,7 +2,9 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const OurHistory = new keystone.List('QuemSomos')
+const OurHistory = new keystone.List('Quem Somos');
+
+
 
 OurHistory.add({
     Visao: {

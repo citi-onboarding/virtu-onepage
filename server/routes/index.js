@@ -3,8 +3,10 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
+const Testimonial = keystone.list('Depoimentos');
 const OurServices = keystone.list('Servicos')
 const Contact = keystone.list('Contato');
+const OurHistory = keystone.list('Quem Somos');
 const Banner = keystone.list('Banner');
 
 require('dotenv').config();
@@ -23,6 +25,20 @@ module.exports = (app) => {
       } else {
         res.send(data);
       }
+    });
+  });
+
+  app.get('/api/OurHistory', (req, res) =>{
+    OurHistory.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
+    });
+  });
+  
+  app.get('/api/testimonial', (req, res) =>{
+    Testimonial.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
     });
   });
 
@@ -81,6 +97,6 @@ module.exports = (app) => {
   })
 
   app.get('*', (req, res) => {
-		res.redirect('/');
-	});
+    res.redirect('/');
+  });
 };
