@@ -40,6 +40,13 @@ module.exports = (app) => {
     });
   });
 
+  app.get('/api/Banner', (req, res) =>{
+    Banner.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
+    });
+  });
+
   app.post('/api/makecontact', async (req, res) => {
 
     const { name, telephone, email, service, message } = req.body;
