@@ -21,11 +21,11 @@ const LoadTestimonial = async () =>{
     } 
 
     useEffect(()=>{
-      LoadTestimonial()
+        LoadTestimonial()
     }, [])
 
-const [nav1, setNav1] = useState(null)
-const [nav2, setNav2] = useState(null)
+    const [nav1, setNav1] = useState(null)
+    const [nav2, setNav2] = useState(null)
     let slider1 = []
     let slider2 = []
 
@@ -49,7 +49,6 @@ function PrevArrow(props) {
       slidesToShow: 3,
       slidesToScroll: 1,
       focusOnSelect: true,
-      infinite: true,
       centerPadding: "60px",
       adaptiveHeight: false,
       speed: 500,
@@ -121,7 +120,7 @@ return(
   </div>
   <div className="nav-galeria" >
  <div  className="icon_right">
-<img src={icon_right} alt="Vetor" />
+<img src={icon_right} alt="icone_direita" />
 </div>
 	<Slider  {...settings} className="one-slide"
    asNavFor={nav2}
