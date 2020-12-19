@@ -1,7 +1,7 @@
 .datas {
     height: 192px;
     width: 330px;
-    margin: 50px auto;
+     margin: 26px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

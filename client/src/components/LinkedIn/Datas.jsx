@@ -8,7 +8,7 @@ export default class Datas extends React.Component{
     <div className="datas">
         <h2>{this.props.title}</h2>
         <p>{this.props.text}</p>
-        <a href={this.props.link}>Ler o post completo</a>
+        <a href={this.props.link} target="_blank">Ler o post completo</a>
     </div>
     )
     }

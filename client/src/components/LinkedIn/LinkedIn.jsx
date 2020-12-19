@@ -39,7 +39,7 @@ function PrevArrowCenter(props) {
       centerMode: true,
       dots: true,
       slideToScroll: 1,
-      centerPadding: '10px',
+      centerPadding: '0.9px',
       slidesToShow: 3,
       focusOnSelect: true,
       appendDots: (dots) => (
