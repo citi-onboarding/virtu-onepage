@@ -5,7 +5,7 @@ import './css/testimonial.css'
 function Testimonial(){
 return(
 <section id="testimonial">
-	<div className="container">
+	<div className="container-testimonial">
  		<div className="parent-box">
 			<Slide />
        </div>

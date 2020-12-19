@@ -7,16 +7,15 @@
 .clear{
 	clear: both;
 }
- .container{
+ .container-ourhistory{
  	max-width: 1920px;
  	padding: 0 2%;
  	margin: 0 auto;
  }
 
-section{
+#ourhistory {
 	margin-top: 184px;
 	margin-bottom: 224px;
-	max-width: 1260px;
 }
  .call{
  	text-align: center;
