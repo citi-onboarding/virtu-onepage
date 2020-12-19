@@ -1,3 +1,8 @@
+*{
+     font-family: acumin-pro, sans-serif;
+     box-sizing: border-box;
+}
+
 body {
     background-color: var(--white-dark);
 }
@@ -36,13 +41,11 @@ body {
 
 .LinkedIn-section .head .title h1 {
     font-size: 38px;
-    font-family: acumin-pro, sans-serif;
     margin-bottom: 30px;
 }
 
 .LinkedIn-section .head .title a {
-    font-size: 18px;
-    font-family: acumin-pro, sans-serif;  
+    font-size: 18px;  
     color: black;
 }
 

@@ -25,6 +25,7 @@ const link = [
   'https://react-slick.neostack.com/docs/get-started/'
 ]
 
+
 function LinkedIn(){
     const settings = {
       centerMode: true,
