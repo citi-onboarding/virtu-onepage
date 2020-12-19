@@ -1,5 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
@@ -88,6 +87,5 @@ function LinkedIn(){
       </div>
     )
   }
-}
 
 export default LinkedIn;
