@@ -7,10 +7,11 @@ font-family: acumin-pro, sans-serif;
 }
 
 section{
-	margin: 300px 0;
+	margin: 300px auto;
 }
 
 .parent-box{
+	padding: 0 10px;
 	display: flex;
 	flex-wrap: nowrap;
 }
