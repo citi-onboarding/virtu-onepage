@@ -79,13 +79,13 @@ if (currentWidth.innerText > 768) {
                 <a  href="#ourhistory">Quem Somos</a>
               </li>
               <li id="second">
-                <a  href="#services">Serviços</a>
+                <a  href="#ourServices">Serviços</a>
               </li>
               <li id="third">
                 <a  href="#linkedin">LinkedIn</a>
               </li>
               <li id="fourth">
-                <a  href="#testimonials">Depoimentos</a>
+                <a  href="#testimonial">Depoimentos</a>
               </li>
               <li id="fifth">
                 <a  href="#contact-section"> Fale Conosco</a>
