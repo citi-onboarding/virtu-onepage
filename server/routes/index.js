@@ -1,4 +1,3 @@
-const nodemailer = require('nodemailer');
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
@@ -8,6 +7,7 @@ const Testimonial = keystone.list('Depoimentos');
 const OurServices = keystone.list('Servicos')
 const Contact = keystone.list('Contato');
 const OurHistory = keystone.list('Quem Somos');
+const Banner = keystone.list('Banner');
 
 require('dotenv').config();
 
@@ -51,6 +51,13 @@ module.exports = (app) => {
 
   app.get('/api/contact', (req, res) => {
     Contact.model.find((err, data) => {
+      if (err) return res.apiError('database error', err);
+      res.send(data);
+    });
+  });
+
+  app.get('/api/Banner', (req, res) =>{
+    Banner.model.find((err, data) =>{
       if (err) return res.apiError('database error', err);
       res.send(data);
     });
