@@ -1,4 +1,4 @@
-@media(max-width: 768px) {
+@media(max-width: 1120px) {
     .card-service {
         transform: scale(1.3);
     }

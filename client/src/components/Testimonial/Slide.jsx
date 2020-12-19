@@ -1,32 +1,39 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
 import Slider from "react-slick"
 import SlideCard from './Slide-card'
+import axios from 'axios'
+
+import ClientDescription from './Client-Description'
 
 
 import './css/slide.css'
 import "slick-carousel/slick/slick.css"
 
 import icon_right from '../../assets/Group 4SVG.svg'
-import img_1 from './images/image 3.svg'
-import img_2 from './images/image 4.svg' 
-import img_3 from './images/image 5.svg'
-import img_4 from './images/image 3.svg'
 
-const Name = [
-    'Isabela Souza', 'Jorge André', 'Walter Lima', 'Ana Maria'
-]
+function Slide(){
 
-const Func = [
-	'Candidata a vereadora', 'Outra função', 'Candidato a prefeito', 'Governadora'
-]
+const[testimonial, setTestimonial] = useState([])
 
-const Image = [
-  img_1, img_2, img_3, img_4
-]
+const LoadTestimonial = async () =>{
+      const res = await axios.get('http://localhost:3001/api/testimonial')
+      setTestimonial(res.data)
+    } 
 
-export default class Slide extends React.Component{
+    useEffect(()=>{
+        LoadTestimonial()
+    }, [])
 
-render(){
+    const [nav1, setNav1] = useState(null)
+    const [nav2, setNav2] = useState(null)
+    let slider1 = []
+    let slider2 = []
+
+    React.useEffect(() => {
+        setNav1(slider1)
+        setNav2(slider2)
+    }, [slider1, slider2])
+
 function NextArrow(props) {
   return <div className={props.className} onClick={props.onClick} id={props.id} />;
 }
@@ -39,11 +46,9 @@ function PrevArrow(props) {
       centerMode: false,
       dots: true,
       arrows: true,
-      infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       focusOnSelect: true,
-      infinite: true,
       centerPadding: "60px",
       adaptiveHeight: false,
       speed: 500,
@@ -87,48 +92,63 @@ function PrevArrow(props) {
       ]
    }
 return(
-<div className="nav-galeria" >
-<div  className="icon_right">
-<img src={icon_right} />
+<>
+<div className="box-right">
+  <h1>Depoimentos <br></br> dos nossos clientes</h1>
+  <Slider
+          asNavFor={nav1}
+          ref={slider => (slider2 = slider)}
+          slidesToShow={1}
+          swipeToSlide={false}
+          focusOnSelect={false}
+          arrows={false}
+  >
+  {testimonial?.map( testimonies =>{
+          return(
+              (<div className="ClientDescription-wraper">
+              <ClientDescription 
+                      NameofClient={testimonies.title}
+                      FuncofClient={testimonies.subtitle}
+                      Service={testimonies.reason}
+                      Description={testimonies.description}
+                 /> 
+               </div>)
+             )
+           })}
+ 
+  </Slider>
+  </div>
+  <div className="nav-galeria" >
+ <div  className="icon_right">
+<img src={icon_right} alt="icone_direita" />
 </div>
-	<Slider  {...settings}>
-	<SlideCard 
+	<Slider  {...settings} className="one-slide"
+   asNavFor={nav2}
+   ref={slider => (slider1 = slider)}
 
-	
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-      Image={Image[0]}
+  >
+
+   {testimonial?.map( testimonies =>{
+          return(
+              (<div className="ClientDescription-wraper">
+              <SlideCard
 
 
-	/>
-	<SlideCard 
+                NameofClient={testimonies.title}
+                FuncofClient={testimonies.subtitle}
+                Image={testimonies.image[0]?.url}
 
-	
-      NameofClient={Name[1]}
-      FuncofClient={Func[1]}
-      Image={Image[1]}
 
-	/>
-  <SlideCard 
-
-  
-      NameofClient={Name[2]}
-      FuncofClient={Func[2]}
-      Image={Image[2]}
-
-  />
-	<SlideCard 
-
-	
-      NameofClient={Name[3]}
-      FuncofClient={Func[3]}
-      Image={Image[3]}
-
-	/>
-
+                />
+               </div>)
+             )
+           })}
 	</ Slider>
 
 </div>
+</>
 )
 }
-}
+
+export default Slide
+

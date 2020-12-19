@@ -1,16 +1,17 @@
 *{
 font-family: acumin-pro, sans-serif;
 }
-.container{
-	max-width: 1200px;
+.container-testimonial {
+	max-width: 1260px;
 	margin: 0 auto;
 }
 
-section{
-	margin: 300px 0;
+#testimonial {
+	margin: 300px auto;
 }
 
 .parent-box{
+	padding: 0 10px;
 	display: flex;
 	flex-wrap: nowrap;
 }
