@@ -35,10 +35,10 @@ const Description = [
   'Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '3Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '4Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 ]
 
-function Slide(){
+function Slide() {
 
-const [nav1, setNav1] = useState(null)
-const [nav2, setNav2] = useState(null)
+    const [nav1, setNav1] = useState(null)
+    const [nav2, setNav2] = useState(null)
     let slider1 = []
     let slider2 = []
 
@@ -153,46 +153,46 @@ return(
   </div>
   <div className="nav-galeria" >
  <div  className="icon_right">
-<img src={icon_right} />
+<img src={icon_right} alt="icone_direita" />
 </div>
 	<Slider  {...settings} className="one-slide"
    asNavFor={nav2}
    ref={slider => (slider1 = slider)}
 
-  >
-	<SlideCard 
+    >
+        <SlideCard 
 
-	
-      NameofClient={Name[0]}
-      FuncofClient={Func[0]}
-      Image={Image[0]}
+        
+        NameofClient={Name[0]}
+        FuncofClient={Func[0]}
+        Image={Image[0]}
 
 
-	/>
-	<SlideCard 
+        />
+        <SlideCard 
 
-	
-      NameofClient={Name[1]}
-      FuncofClient={Func[1]}
-      Image={Image[1]}
+        
+        NameofClient={Name[1]}
+        FuncofClient={Func[1]}
+        Image={Image[1]}
 
-	/>
-  <SlideCard 
+        />
+    <SlideCard 
 
-  
-      NameofClient={Name[2]}
-      FuncofClient={Func[2]}
-      Image={Image[2]}
+    
+        NameofClient={Name[2]}
+        FuncofClient={Func[2]}
+        Image={Image[2]}
 
-  />
-	<SlideCard 
+    />
+        <SlideCard 
 
-	
-      NameofClient={Name[3]}
-      FuncofClient={Func[3]}
-      Image={Image[3]}
+        
+        NameofClient={Name[3]}
+        FuncofClient={Func[3]}
+        Image={Image[3]}
 
-	/>
+        />
 
 	</ Slider>
 
