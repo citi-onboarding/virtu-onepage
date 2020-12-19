@@ -5,6 +5,7 @@
 .LinkedIn-section{
      max-width: 1280px;
      margin: 0 auto;
+     padding: 0 40px;
 }
 .LinkedIn-section .carousel .slider {
    width: 100%;
@@ -156,4 +157,8 @@ background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
 margin: 0 auto;
 position: relative;
 width: 200px;
+}
+
+@media screen and (max-width: 768px){
+    
 }

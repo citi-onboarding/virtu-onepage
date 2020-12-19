@@ -69,8 +69,8 @@ function PrevArrowCenter(props) {
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3,
+        centerPadding: '0px',
+        slidesToShow: 1,
       }
     },
     {
