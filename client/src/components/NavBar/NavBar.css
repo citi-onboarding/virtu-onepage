@@ -17,7 +17,7 @@ html {
   align-items: center;
 
   position: fixed;
-  z-index: 2;
+  z-index: 4;
 }
 
 #logo {
