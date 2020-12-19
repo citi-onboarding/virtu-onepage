@@ -34,7 +34,7 @@ const position = [
 
 const OurHistory = () => (
 <section id="ourhistory">
-	<div className="container">
+	<div className="container-ourhistory">
 		<div className="img-left"><img src={vector_left} alt="vector"/></div>
 			<div className="call">
 				<h1>Conheça nossa história</h1>

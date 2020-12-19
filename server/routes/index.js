@@ -4,6 +4,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
+const Testimonial = keystone.list('Depoimentos');
 const OurServices = keystone.list('Servicos')
 const Contact = keystone.list('Contato');
 
@@ -23,6 +24,13 @@ module.exports = (app) => {
       } else {
         res.send(data);
       }
+    });
+  });
+
+  app.get('/api/testimonial', (req, res) =>{
+    Testimonial.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
     });
   });
 
@@ -74,6 +82,6 @@ module.exports = (app) => {
   })
 
   app.get('*', (req, res) => {
-		res.redirect('/');
-	});
+    res.redirect('/');
+  });
 };
