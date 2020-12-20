@@ -129,13 +129,12 @@ background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
     cursor: pointer;
     padding: 20px;
     width: 20px;
-    position: absolute;
-    right: 0;
-    top: 20px;
     background-image: url('../../assets/arrow rightSVG.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
+   background-position: right;
+   float: right;
+    margin: -6px -26px;
 }
 
 .LinkedIn-section .carousel .Prev-CenterCarousel{
@@ -143,9 +142,7 @@ background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
     cursor: pointer;
     padding: 20px;
     width: 20px;
-    position: absolute;
-    left: 0;
-    top: 19px;
+    margin: -61px -32px;
     background-image: url('../../assets/Vector (3).svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,10 +151,16 @@ background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
 
 .LinkedIn-section .carousel .slick-dots{
 /*background-color: green;*/
-margin: 0 auto;
+margin: 80px auto;
 position: relative;
-width: 200px;
+width: max-content;
 }
+
+.dot-container-CenterCarousel{
+        width: max-content;
+}
+
+
 
 @media screen and (max-width: 768px){
     

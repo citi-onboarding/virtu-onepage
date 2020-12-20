@@ -101,6 +101,11 @@ function PrevArrowCenter(props) {
             <Datas title="Titulo mto bom2" text={text} link={link}/> 
             <Datas title="Titulo mto bom3" text={text} link={link}/>
             <Datas title="Titulo mto bom4" text={text} link={link}/>
+             <Datas title="Titulo mto bom4" text={text} link={link}/>
+              <Datas title="Titulo mto bom4" text={text} link={link}/>
+               <Datas title="Titulo mto bom4" text={text} link={link}/>
+                <Datas title="Titulo mto bom4" text={text} link={link}/>
+                  <Datas title="Titulo mto bom4" text={text} link={link}/>
           </Slider>
           
         </div>
