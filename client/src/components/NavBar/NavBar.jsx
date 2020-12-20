@@ -22,7 +22,7 @@ function NavBar() {
           </div>
           <div className="sections">
             <ul className="list" style={{ display: mode ? "flex" : "flex" }}>
-              <Scrollscpy id="names" items={['ourhistory', 'ourServices', 'testimonial', 'contact-section' ]} currentClassName="spyclass" >
+              <Scrollscpy className="names" items={['ourhistory', 'ourServices', 'testimonial', 'contact-section' ]} currentClassName="spyclass" >
                   <li><a href="#ourhistory">Quem Somos</a></li>
                   <li><a href="#ourServices">Serviços</a></li>
                   {/* <li><a href="#linkedin">LinkedIn</a></li> */}

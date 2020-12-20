@@ -38,10 +38,6 @@ html {
   list-style: none;
 }
 
-#names {
-  display: flex;
-}
-
 .navbar-section .connect .icon {
   display: none;
   cursor: pointer;
@@ -88,9 +84,17 @@ html {
   font-family: acumin-pro, sans-serif;
 }
 
-.spyclass {
-  color: red;
+.navbar-section .connect .sections .list .names {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
+
+/* This will happen when the scroll is on the respective section */
+/* .spyclass a {
+  font-weight: 700 !important;
+} */
 
 @media (max-width: 1200px) {
   .navbar-section .connect .sections a {
@@ -161,7 +165,7 @@ html {
     height: 100vh;
   }
 
-  #names {
+  .names {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -183,5 +187,11 @@ html {
 
   .navbar-section .connect .sections .list .names li {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .spyclass a {
+    font-weight: 700 !important;
   }
 }
