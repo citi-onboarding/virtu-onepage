@@ -1,6 +1,6 @@
 #ourServices {
     position: relative;
-    height: 845px;
+    /* height: 845px; */
     /* max-width: 1140px; */
     max-width: 100%;
     margin: 0 auto;
@@ -92,4 +92,10 @@
     right: 0;
     /* box-sizing: initial; */
     /* min-width: 0; */
+}
+
+#ourServices .line_5 {
+    position: absolute;
+    bottom: -660px;
+    left: 0;
 }
