@@ -5,6 +5,7 @@ import menu from "../../assets/Menu.svg";
 import ex from "../../assets/Ex.png";
 import insta from "../../assets/Icone InstaSVG.svg";
 import email from "../../assets/Icone e-mail.svg";
+import Scrollscpy from 'react-scrollspy';
 
 import "./NavBar.css";
 
@@ -21,13 +22,13 @@ function NavBar() {
           </div>
           <div className="sections">
             <ul className="list" style={{ display: mode ? "flex" : "flex" }}>
-              <div id="names">
-                <li><a href="#aboutus">Quem Somos</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#linkedin">LinkedIn</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#contact"> Fale Conosco</a></li>
-              </div>
+              <Scrollscpy id="names" items={['ourhistory', 'ourServices', 'testimonial', 'contact-section' ]} currentClassName="spyclass" >
+                  <li><a href="#ourhistory">Quem Somos</a></li>
+                  <li><a href="#ourServices">Serviços</a></li>
+                  {/* <li><a href="#linkedin">LinkedIn</a></li> */}
+                  <li><a href="#testimonial">Depoimentos</a></li>
+                  <li><a href="#contact-section"> Fale Conosco</a></li>
+              </Scrollscpy>
               <div className="on-mobile">
                 <img id="logo-mobile" src={virtu_logo} alt="" />
                 <ul className="more-contact">

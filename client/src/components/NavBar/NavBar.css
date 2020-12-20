@@ -88,6 +88,10 @@ html {
   font-family: acumin-pro, sans-serif;
 }
 
+.spyclass {
+  color: red;
+}
+
 @media (max-width: 1200px) {
   .navbar-section .connect .sections a {
     margin-left: 25px;
