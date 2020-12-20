@@ -82,7 +82,7 @@ function PrevArrowCenter(props) {
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
             <h1>Conheça nosso LinkedIn</h1>
-            <a href="#">Visitar LinkedIn</a>
+            <a href="https://www.linkedin.com/company/virtu-consultoriapolitica">Visitar LinkedIn</a>
           </div>
           <img id="circle" src={circle} alt="Vetor"/>
         </div>
