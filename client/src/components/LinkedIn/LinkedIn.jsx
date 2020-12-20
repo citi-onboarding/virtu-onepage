@@ -65,21 +65,12 @@ function PrevArrowCenter(props) {
 
       responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 888,
       settings: {
         arrows: true,
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 1,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 0
       }
     }
   ]
@@ -101,11 +92,6 @@ function PrevArrowCenter(props) {
             <Datas title="Titulo mto bom2" text={text} link={link}/> 
             <Datas title="Titulo mto bom3" text={text} link={link}/>
             <Datas title="Titulo mto bom4" text={text} link={link}/>
-             <Datas title="Titulo mto bom4" text={text} link={link}/>
-              <Datas title="Titulo mto bom4" text={text} link={link}/>
-               <Datas title="Titulo mto bom4" text={text} link={link}/>
-                <Datas title="Titulo mto bom4" text={text} link={link}/>
-                  <Datas title="Titulo mto bom4" text={text} link={link}/>
           </Slider>
           
         </div>

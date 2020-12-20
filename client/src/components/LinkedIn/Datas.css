@@ -27,3 +27,45 @@
     font-weight: 400px;
     color: black;
 }
+
+
+@media screen and (max-width: 1056px){
+    .datas{
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 988px){
+    .datas{
+        padding: 30px;
+    }  
+}
+
+@media screen and (max-width: 950px){
+ .datas h2 {
+    line-height: 67px;
+}
+}
+
+@media screen and (max-width: 888px){
+.datas h2 {
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0em;
+
+}
+
+ .datas{
+        padding: 0px;
+    }  
+.datas p {
+font-size: 14px;
+line-height: 17px;
+}
+
+.datas a {
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+}

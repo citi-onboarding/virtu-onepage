@@ -13,6 +13,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: space-around;
+      max-width: 1280px;
+     margin: 0 auto;
+     padding: 0 40px;
 }
 
 .LinkedIn-section .head {
@@ -62,18 +65,49 @@ body {
 
 .LinkedIn-section .carousel .set-center .navigate {
     width: 120px;
-
     margin-top: 30px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 
-.LinkedIn-section .carousel .arrows {
-    width: 91px;
+@media screen and (max-width: 768px){
+#lines {
+    position: relative;
+    bottom: 148px;
+    left: 150px;
+}
+#circle {
+    position: relative;
+    right: 110px;
+    top: 155px;
+    z-index: 6;
+}
+}
 
-    display: flex;
-    justify-content: space-between;
+@media screen and (max-width: 500px){
+#circle {
+    position: relative;
+    right: 160px;
+    top: 151px;
+    z-index: 5;
+}
+}
+@media screen and (max-width: 476px){
+#circle {
+    position: relative;
+    right: 158px;
+    top: 151px;
+    z-index: 5;
+}
+}
+
+@media screen and (max-width: 430px){
+#circle {
+  display: none;
+}
+#lines {
+   display: none;
+}
 }
