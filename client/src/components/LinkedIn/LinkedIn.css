@@ -89,25 +89,37 @@ body {
 @media screen and (max-width: 500px){
 #circle {
     position: relative;
-    right: 160px;
-    top: 151px;
+    right: 140px;
+    top: 140px;
     z-index: 5;
+}
+#lines{
+    width: 120px;
+    bottom: 128px;
 }
 }
 @media screen and (max-width: 476px){
 #circle {
     position: relative;
-    right: 158px;
+    right: 120px;
     top: 151px;
     z-index: 5;
+}
+#lines{
+    width: 120px;
+    bottom: 128px;
 }
 }
 
 @media screen and (max-width: 430px){
 #circle {
-  display: none;
+    position: relative;
+    right: 180px;
+    top: 140px;
+    z-index: 5;
 }
-#lines {
-   display: none;
+#lines{
+    left: 200px;
 }
+
 }
