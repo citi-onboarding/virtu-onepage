@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn install && cd ./client && yarn server && cd ../server && node index.js",
-    "install": "cd ./client && yarn && cd ../server && yarn"
+    "start": "yarn install_script && cd ./client && yarn server && cd ../server && node index.js",
+    "install_script": "cd ./client",
+    "dev_server": "cd ./server && node index.js && cd ..",
+    "dev_client": "cd ./client && yarn start"
   },
   "repository": {
     "type": "git",
@@ -29,10 +31,6 @@
     "underscore": "^1.11.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "nodemon": "^2.0.6",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
