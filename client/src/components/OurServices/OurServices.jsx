@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import CardService from '../CardService';
 import url from '../../global/globalVars';
 import axios from 'axios';
+import line_5 from '../../assets/Caminho 5 rotate-right.png'
+import img_test from '../../assets/background.png'
 
 import './styles/OurServices.css';
 import './styles/responsive.css';
@@ -47,7 +49,9 @@ function OurServices() {
                         </div>)
 
                         );
-            })}      
+            })}
+            
+            <img src={line_5} alt="caminho" className="line_5"/>
         </section>
     );
 }
