@@ -1,0 +1,125 @@
+*{
+     font-family: acumin-pro, sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-dark);
+}
+
+.LinkedIn-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+      max-width: 1280px;
+     margin: 0 auto;
+     padding: 0 40px;
+}
+
+.LinkedIn-section .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle {
+    width: 93.5px;
+    margin-left: 215px;
+}
+
+#lines {
+    width: 150px;
+    margin-right: 184px;
+}
+
+.LinkedIn-section .head .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkedIn-section .head .title h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.LinkedIn-section .head .title a {
+    font-size: 18px;  
+    color: black;
+}
+
+.LinkedIn-section .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LinkedIn-section .carousel .set-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkedIn-section .carousel .set-center .navigate {
+    width: 120px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px){
+#lines {
+    position: relative;
+    bottom: 148px;
+    left: 150px;
+}
+#circle {
+    position: relative;
+    right: 110px;
+    top: 155px;
+    z-index: 6;
+}
+}
+
+@media screen and (max-width: 500px){
+#circle {
+    position: relative;
+    right: 140px;
+    top: 140px;
+    z-index: 5;
+}
+#lines{
+    width: 120px;
+    bottom: 128px;
+}
+}
+@media screen and (max-width: 476px){
+#circle {
+    position: relative;
+    right: 120px;
+    top: 151px;
+    z-index: 5;
+}
+#lines{
+    width: 120px;
+    bottom: 128px;
+}
+}
+
+@media screen and (max-width: 430px){
+#circle {
+    position: relative;
+    right: 180px;
+    top: 140px;
+    z-index: 5;
+}
+#lines{
+    left: 200px;
+}
+
+}

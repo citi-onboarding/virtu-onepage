@@ -1,0 +1,218 @@
+.carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.LinkedIn-section .carousel .slider {
+   width: 100%;
+}
+
+.LinkedIn-section .carousel .slick-slider {
+    margin-top: 45px;
+}
+
+.LinkedIn-section .carousel .slick-list {
+    padding: 0;
+}
+
+.LinkedIn-section .carousel .slick-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5px;
+}
+
+.LinkedIn-section .carousel .slick-slide{
+     outline: 0;
+    border: 2px solid rgba(1, 1, 1, 1);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    height: 240px;
+    border-radius: 10px;
+    z-index: 2;
+}
+.LinkedIn-section .carousel .slick-center .datas{
+    margin: 50px auto;
+}
+
+.LinkedIn-section .carousel .slick-center{ 
+   background-color: #cc1701;
+    background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 0;
+    height: 300px;
+    width: 420px;
+    color: white;
+    z-index: 4;
+    transform: scale(1.08,1);
+}
+
+.LinkedIn-section .carousel .slick-center a{
+    color: white;
+}
+
+.LinkedIn-section .carousel .slick-dots li.slick-active button:before {
+    height: 13px;
+    opacity: .75;
+    color: #991220;
+}
+
+.LinkedIn-section .carousel .slick-dots li button:before {
+    font-size: 13px;
+    line-height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .5;
+    color: #991220;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.LinkedIn-section .carousel .slick-next::before, .slick-prev::before {
+	padding: 17px;
+	background-image: url('../../assets/arrow rightSVG.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0;
+    outline: 0;
+    opacity: 0.75;
+    display: none;
+	background-position: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.LinkedIn-section .carousel .slick-prev:before, .LinkedIn-section .carousel .slick-next:before {
+    font-family: 'slick';
+    font-size: 25px;
+    line-height: 1;
+    opacity: 1;
+    display: none;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.LinkedIn-section .carousel .slick-prev::before{
+    background-image: url('../../assets/Vector (3).svg');
+}
+
+.LinkedIn-section .carousel .slick-prev, .LinkedIn-section .carousel .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.LinkedIn-section .carousel .Next-CenterCarousel{
+    /*background: red;*/
+    cursor: pointer;
+    padding: 20px;
+    width: 20px;
+    background-image: url('../../assets/arrow rightSVG.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+   background-position: right;
+   float: right;
+    margin: -6px -26px;
+}
+
+.LinkedIn-section .carousel .Prev-CenterCarousel{
+    /*background: red;*/
+    cursor: pointer;
+    padding: 20px;
+    width: 20px;
+    margin: -61px -32px;
+    background-image: url('../../assets/Vector (3).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+     background-position: right;
+}
+
+.LinkedIn-section .carousel .slick-dots{
+/*background-color: green;*/
+margin: 80px auto;
+position: relative;
+width: max-content;
+}
+
+.dot-container-CenterCarousel{
+        width: max-content;
+}
+
+
+
+@media screen and (max-width: 1156px){
+    .LinkedIn-section{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1056px){
+    .LinkedIn-section .head .title h1 {
+    font-size: 28px;
+}
+}
+
+
+@media screen and (max-width: 950px){
+  .LinkedIn-section .head .title h1 {
+    font-size: 28px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 888px){
+.LinkedIn-section {
+    padding: 0 10px;
+}
+
+.LinkedIn-section .carousel {
+    width: 500px;
+    margin: 0 auto;
+}
+.LinkedIn-section .carousel .slick-center{ 
+    border-radius: 10px;
+    transform: scale(1,1);
+}
+.LinkedIn-section .carousel .slick-center a{
+font-size: 16px;
+line-height: 19.2px;
+}
+
+.LinkedIn-section .carousel .slick-slide{
+    background-color: #cc1701;
+    background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    color: white;
+    outline: 0;
+}
+}
+
+@media screen and (max-width: 768px){
+.LinkedIn-section .head .title a {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 500px){
+.LinkedIn-section .carousel {
+    width: 90%;
+    margin: 0 auto;
+}
+}
