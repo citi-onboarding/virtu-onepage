@@ -42,6 +42,7 @@ width:87%;
     list-style-type: none;
     text-align: center;
     margin: 30px -550px;
+    position: relative;
 }
 
 #testimonial .parent-box  ul.dot-container li{
@@ -98,83 +99,165 @@ width:87%;
     cursor: pointer;
 }
 
+@media screen and (max-width: 1150px){
+#testimonial .parent-box .slick-dots{
+    top: -4px;
+    left: -465px;
+    margin: 50px 0;
+}
+
+}
+
+@media screen and (max-width: 1094px){
+#testimonial .parent-box .slick-dots{
+    top: 0px;
+    left: -450px;
+}
+
+
+}
+
+@media screen and (max-width: 1030px){
+#testimonial .parent-box .slick-dots{
+    top: 20px;
+    left: -470px;
+}
+}
+
+@media screen and (max-width: 1024px){
+#testimonial .parent-box  .slick-dots{
+    top: -5px;
+    left: -400px;
+}
+}
+
+@media screen and (max-width: 962px){
+#testimonial .parent-box .slick-dots{
+    top: 6px;
+    left: -387px;
+}
+
+}
+
+@media screen and (max-width: 938px){
+#testimonial .parent-box  .slick-dots {
+    top: 8px;
+    left: -365px;
+}
+}
+
+@media screen and (max-width: 900px){
+#testimonial .parent-box .slick-dots{
+    top: 6px;
+    left: -352px;
+}
+}
+
+@media screen and (max-width: 889px){
+#testimonial .parent-box  .slick-dots{
+    top: 9px;
+    left: -348px;
+}
+
+}
 @media screen and (max-width: 850px){
-.nav-galeria{
-	width: 84%;
-	padding-left: 0px;
-}
-
-
-.icon_right{
-    margin: -37px 0;
-    top: -230px;
-}
-
-.icon_right img{
-	width: 25%;
-}
+#testimonial .parent-box  .slick-dots {
+    top: -340px;
+        left: 120px;
+    margin-left: -104px;
 
 }
-
-@media screen and (max-width: 660px){
 .nav-galeria {
-    margin-top: 36px;
+   width: 80%;
+   margin-top: -96px;
+}
+#testimonial .parent-box .icon_right {
+    text-align: right;
+    margin: 11px 0;
+    position: relative;
+    top: -180px;
+}
+}
+@media screen and (max-width: 724px){
+#testimonial .parent-box  .slick-dots{
+  top: -300px;
+    left: 118px;
+}
+}
+
+@media screen and (max-width: 644px){
+#testimonial .parent-box .slick-dots{
+   top: -276px;
+    left: 121px;
 }
 }
 
 @media screen and (max-width: 620px){
-.nav-galeria{
-	margin-top: 60px;
+#testimonial .parent-box .slick-dots{
+   left: 121px;
 }
-
 }
-
 
 @media screen and (max-width: 535px){
-.nav-galeria{
-	margin-top: 60px;
-}
-ul.dot-container li button{
-	height: 12px;
-	width: 12px;
-}
-.Next{
-	bottom: 10px;
-	padding: 18px;
+#testimonial .parent-box  .slick-dots{
+   top: -238px;
+    left: 118px;
 }
 
-.Prev{
-	left: 0;
-	top: 8px;
-    padding: 18px;
+#testimonial .parent-box  ul.dot-container li button{
+	height: 12px;
+	width: 12px;
 }
 }
 
 @media screen and (max-width: 479px){
-.dot-container{
+#testimonial .parent-box  .slick-dots{
+    top: -385px;
+}
+
+#testimonial .parent-box .dot-container{
 margin-left: 10px;
 }
-
-.nav-galeria{
-	margin-top: 60px;
+.nav-galeria {
+    margin-top: -80px;
 }
 
 }
 
 
-@media screen and (max-width: 420px){
-ul.dot-container li button{
+@media screen and (max-width: 425px){
+#testimonial .parent-box .slick-dots{
+    top: -344px;
+}
+#testimonial .parent-box ul.dot-container li button{
 	margin-left: 8px;
 }
-.nav-galeria{
-	margin-top: 60px;
-}
 
+#testimonial .parent-box .icon_right {
+    top: -340px;
+}
 }
 
 @media screen and (max-width: 390px){
+#testimonial .parent-box .slick-dots{
+     top: -20px;
+}
+
+#testimonial .parent-box .icon_right {
+    top: -340px;
+}
 .nav-galeria{
-	margin-top: 30px;
+	margin-top: -120px;
+}
+#testimonial .parent-box .slick-dots{
+    top: 20px;
+}
+}
+
+@media screen and (max-width: 280px){
+
+#testimonial .parent-box .icon_right {
+   display: none;
 }
 
 }
