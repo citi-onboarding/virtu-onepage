@@ -135,8 +135,8 @@ return(
 
 
                 NameofClient={testimonies.title}
-                FuncofClient={testimonies.subtitle}
                 Image={testimonies.image[0]?.url}
+                FuncofClient={testimonies.subtitle}
 
 
                 />
