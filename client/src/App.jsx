@@ -12,14 +12,14 @@ import {
 function App() {
   return (
     <>
-    <NavBar />
-    <Banner/>
-    <OurHistory />
-    <OurServices/>
-    <LinkedIn />
-    <Testimonial />
-    <Contact/>
-    <Footer/>
+      <NavBar />
+      <Banner/>
+      <OurHistory />
+      <OurServices/>
+      <LinkedIn />
+      <Testimonial />
+      <Contact/>
+      <Footer/>
     </>
   );
 }
