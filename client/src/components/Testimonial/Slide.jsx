@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Slider from "react-slick"
 import SlideCard from './Slide-card'
 import axios from 'axios'
+import url from '../../global/globalVars';
 
 import ClientDescription from './Client-Description'
 
@@ -16,7 +17,7 @@ function Slide(){
 const[testimonial, setTestimonial] = useState([])
 
 const LoadTestimonial = async () =>{
-      const res = await axios.get('http://localhost:3001/api/testimonial')
+      const res = await axios.get(`${url}/api/testimonial`)
       setTestimonial(res.data)
     } 
 

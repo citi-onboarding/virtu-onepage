@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from "react";
 import axios from 'axios';
+import url from '../../global/globalVars';
 
 import "./Banner.css";
 
@@ -9,7 +10,7 @@ function Banner() {
 const[banner, setBanner] = useState([])
 
 const LoadBanner = async () =>{
-      const res = await axios.get('http://localhost:3001/api/banner')
+      const res = await axios.get(`${url}/api/banner`)
       setBanner(res.data)
     } 
 
