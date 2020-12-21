@@ -57,7 +57,7 @@ function PrevArrow(props) {
       <PrevArrow
         className="Prev"
         onClick={() => {
-          document.querySelector(".slick-prev.slick-arrow").click();
+          document.querySelector("#testimonial .parent-box .slick-prev.slick-arrow").click();
         }}
       />
       <ul className="dot-container"> {dots} </ul>
@@ -65,7 +65,7 @@ function PrevArrow(props) {
         className="Next"
         id="Next"
         onClick={() => {
-          document.querySelector(".slick-next").click();
+          document.querySelector("#testimonial .parent-box .slick-next").click();
         }}
       />
     </div>
