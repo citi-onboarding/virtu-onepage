@@ -8,6 +8,7 @@ const OurServices = keystone.list('Servicos')
 const Contact = keystone.list('Contato');
 const OurHistory = keystone.list('Quem Somos');
 const Banner = keystone.list('Banner');
+const Linkedin = keystone.list('LinkedIn');
 
 require('dotenv').config();
 
@@ -58,6 +59,13 @@ module.exports = (app) => {
 
   app.get('/api/Banner', (req, res) =>{
     Banner.model.find((err, data) =>{
+      if (err) return res.apiError('database error', err);
+      res.send(data);
+    });
+  });
+
+  app.get('/api/linkedin', (req, res) =>{
+    Linkedin.model.find((err, data) =>{
       if (err) return res.apiError('database error', err);
       res.send(data);
     });
