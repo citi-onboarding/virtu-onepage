@@ -33,7 +33,7 @@ function OurServices() {
                             title={service.title}
                             description={service.description}
                             image={service.image[0].url}
-                            bckColor="white"
+                            bckColor="#F5F5F5"
                         />)
                     :
                         (<div className="red-section-bottom">
@@ -51,7 +51,7 @@ function OurServices() {
                         );
             })}
             
-            <img src={line_5} alt="caminho" className="line_5"/>
+            {/* <img src={line_5} alt="caminho" className="line_5"/> */}
         </section>
     );
 }

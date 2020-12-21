@@ -6,7 +6,7 @@ import url from '../../global/globalVars';
 
 
 import vector_left from '../../assets/Grupo 5SVG.svg'//triangulo
-import vector_right from '../../assets/Caminho 6SVG.svg' //caminho
+import vector_right from '../../assets/Caminho 6 rotate-left.png' //caminho
 import vector_mid from   '../../assets/Group 4SVG.svg'//triangulos meio
 
 import icon_eye from '../../assets/eye 2SVG.svg'
@@ -48,7 +48,7 @@ return(
 		})}
 	<div className="img-mid"><img src={vector_mid} alt="vector" /></div>
 </div>
-	<div className="img-right"><img src={vector_right} alt="vector"/></div>
+	<img className="img-right" src={vector_right} alt="vector"/>
 </section>
 )
 }
