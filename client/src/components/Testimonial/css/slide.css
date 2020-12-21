@@ -35,13 +35,15 @@ width:87%;
 }
 .dot-container{
     width: max-width;
+    position: relative;
+    bottom: 3px;
 }
 #testimonial .parent-box  .slick-dots{
     background-color: #ffffff05;
     width: max-content;
     list-style-type: none;
     text-align: center;
-    margin: 30px -550px;
+    margin: 15px -550px;
     position: relative;
 }
 
@@ -49,6 +51,7 @@ width:87%;
 	display: inline-block;
 	margin: 15px 5px;
 }
+/*
 #testimonial .parent-box ul.dot-container li button{
 	height: 14px;
 	width: 14px;
@@ -67,12 +70,12 @@ width:87%;
     height: 16px;
     width: 16px;
 }
-
+*/
 #testimonial .parent-box  .slick-dots li button, #testimonial .parent-box  .slick-next, #testimonial .parent-box  .slick-prev{
 	font-size: 0;
 }
 
-.Next{
+#testimonial .parent-box .Next{
 	background-image: url('../images/arrow rightSVG.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -80,16 +83,15 @@ width:87%;
 	outline: 0;
 	background-color: #ffffff05;
 	background-position: right;
-	margin: -48px 0;
-    margin-right: -22px;
+	margin: -26px 0;
+    margin-right: -29px;
     float: right;
 	padding: 20px;
     cursor: pointer;
 }
-
-.Prev{
+#testimonial .parent-box .Prev{
 	background-image: url('../images/arrowLeft.svg');
-	margin: -49px 0;
+	margin: -64px 0;
     padding: 20px;
     margin-left: -24px;
     width: 30px;
@@ -98,6 +100,29 @@ width:87%;
     background-size: contain;
     cursor: pointer;
 }
+
+#testimonial .parent-box  .slick-dots li button:before {
+    font-size: 13px;
+    line-height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .5;
+    color: #991220;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#testimonial .parent-box  .slick-dots li.slick-active button:before {
+    height: 13px;
+    opacity: .75;
+    color: #991220;
+}
+
 
 @media screen and (max-width: 1150px){
 #testimonial .parent-box .slick-dots{
