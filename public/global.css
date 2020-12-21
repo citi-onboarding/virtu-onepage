@@ -1,0 +1,19 @@
+:root {
+    --red-bright: #CC1701;
+    --red-dark: #991200;
+    --black-virtu: #010101;
+    --white-dark: #F5F5F5;
+    --salmon: #D55140;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  font-family: acumin-pro, sans-serif;
+}
