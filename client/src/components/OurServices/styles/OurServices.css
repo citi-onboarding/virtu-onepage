@@ -1,6 +1,6 @@
 #ourServices {
     position: relative;
-    height: 845px;
+    /* height: 845px; */
     /* max-width: 1140px; */
     max-width: 100%;
     margin: 0 auto;
@@ -68,6 +68,7 @@
     justify-content: flex-end;
     grid-area: red-top;
     margin-bottom: 45px;
+    padding-right: 88px;
     /* min-width: 0; */
     /* grid-column: 1/3; */
 }
@@ -91,4 +92,10 @@
     right: 0;
     /* box-sizing: initial; */
     /* min-width: 0; */
+}
+
+#ourServices .line_5 {
+    position: absolute;
+    bottom: -660px;
+    left: 0;
 }

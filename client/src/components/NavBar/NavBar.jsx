@@ -1,47 +1,67 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import virtu_logo from "../../assets/virtu-logo 3.svg";
 import menu from "../../assets/Menu.svg";
 import ex from "../../assets/Ex.png";
 import insta from "../../assets/Icone InstaSVG.svg";
 import email from "../../assets/Icone e-mail.svg";
+import Scrollscpy from 'react-scrollspy';
 
 import "./NavBar.css";
 
 function NavBar() {
-  const [mode, setMode] = useState({ menu });
+  const [icon, setIcon] = useState(true);
 
   return (
     <>
       <header className="navbar-section">
         <div className="connect">
-          <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
-          <div className="icon" onClick={() => setMode(!mode)}>
-            {mode ? <img src={menu} alt="Menu" /> : <img src={ex} alt="Sair" />}
+          <div className="on-web">
+            <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
+            <Scrollscpy items={['ourhistory', 'ourServices', 'linkedin' ,'testimonial', 'contact-section' ]} currentClassName="spyclass" >
+                  <li><a href="#ourhistory">Quem Somos</a></li>
+                  <li><a href="#ourServices">Serviços</a></li>
+                  <li><a href="#linkedin">LinkedIn</a></li>
+                  <li><a href="#testimonial">Depoimentos</a></li>
+                  <li><a href="#contact-section"> Fale Conosco</a></li>
+              </Scrollscpy>
           </div>
-          <div className="sections">
-            <ul className="list" style={{ display: mode ? "flex" : "flex" }}>
-              <div id="names">
-                <li><a href="#aboutus">Quem Somos</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#linkedin">LinkedIn</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#contact"> Fale Conosco</a></li>
-              </div>
-              <div className="on-mobile">
+
+          <div className="on-mobile">
+            <div className="icon" onClick={() => setIcon(!icon)}>
+              {icon ? (
+                <img src={menu} alt="Menu" />
+              ) : (
+                <img src={ex} alt="Sair" />
+              )}
+            </div>
+
+            <div className={ icon ? 'closed-menu' : 'open-menu'}>
+
+              <ul className="list">
+                  <li><a href="#ourhistory" onClick={() => setIcon(!icon)}>Quem Somos</a></li>
+                  <li><a href="#ourServices" onClick={() => setIcon(!icon)}>Serviços</a></li>
+                  <li><a href="#linkedin" onClick={() => setIcon(!icon)}>LinkedIn</a></li>
+                  <li><a href="#testimonial" onClick={() => setIcon(!icon)}>Depoimentos</a></li>
+                  <li><a href="#contact-section" onClick={() => setIcon(!icon)}> Fale Conosco</a></li>
+              </ul>
+
+              <footer>
                 <img id="logo-mobile" src={virtu_logo} alt="" />
                 <ul className="more-contact">
-                  <li>
+                    <li>
                     <p>@virtupolitica</p>
                     <img src={insta} alt="Instagram" />
-                  </li>
-                  <li>
+                    </li>
+                    <li>
                     <p>virtu@email.com</p>
-                    <img src={email} alt="Email" />{" "}
-                  </li>
+                    <img src={email} alt="Email" />
+                    </li>
                 </ul>
-              </div>
-            </ul>
+              </footer>
+
+            </div>
+
           </div>
         </div>
       </header>

@@ -7,7 +7,7 @@
 
 .banner-section .img-bg{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -88,6 +88,8 @@
   grid-column: 4;
   width: 22vw;
   min-width: 240px;
+
+  height: 100%;
   
 
   display: flex;
@@ -99,6 +101,12 @@
   width: 57.1%;
   max-width: 240px;
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .banner-section .rectangle {
+    height: 98%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -156,6 +164,8 @@
     font-size: 16px;
   }
 }
+
+
 
 @media (max-width: 705px) {
   .banner-section .text p {

@@ -4,6 +4,7 @@ import {
   OurHistory, 
   NavBar,
   Banner,
+  LinkedIn,
   OurServices,
   Contact,
 } from './components';
@@ -11,13 +12,14 @@ import {
 function App() {
   return (
     <>
-   <NavBar /> 
-    <Banner/>
-    <OurHistory />
-    <OurServices/>
-    <Testimonial />
-    <Contact/>
-    <Footer/>
+      <NavBar />
+      <Banner/>
+      <OurHistory />
+      <OurServices/>
+      <LinkedIn />
+      <Testimonial />
+      <Contact/>
+      <Footer/>
     </>
   );
 }
