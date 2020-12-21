@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
@@ -6,6 +6,8 @@ import arrow_left from '../../assets/Vector (3).svg'
 import arrow_right from '../../assets/arrow rightSVG.svg'
 import elipse1 from '../../assets/Ellipse 3.png'
 import elipse2 from '../../assets/Ellipse 2.png'
+import axios from 'axios'
+import url from '../../global/globalVars';
 
 
 import Slider from 'react-slick';
@@ -28,13 +30,33 @@ const link = [
 
 function LinkedIn(){
 
-function NextArrowCenter(props) {
-  return <div className={props.className} onClick={props.onClick} id={props.id} />;
-}
+    const [posts, setPosts] = useState([]);
+    const [contact, setContact] = useState([]);
 
-function PrevArrowCenter(props) {
-  return <div className={props.className} onClick={props.onClick} />;
-}
+    function NextArrowCenter(props) {
+      return <div className={props.className} onClick={props.onClick} id={props.id} />;
+    }
+
+    function PrevArrowCenter(props) {
+      return <div className={props.className} onClick={props.onClick} />;
+    }
+
+    async function loadPosts() {
+        const res = await axios.get(`${url}/api/linkedin`)
+        setPosts(res.data);
+        console.log(res.data);
+    }
+
+    async function loadContacts() {
+        const res = await axios.get(`${url}/api/contact`)
+        setContact(res.data);
+    }
+
+    useEffect(() => {
+        loadPosts();
+        loadContacts();
+    }, [])
+
     const settings = {
       centerMode: true,
       dots: true,
@@ -82,16 +104,21 @@ function PrevArrowCenter(props) {
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
             <h1>Conheça nosso LinkedIn</h1>
-            <a href="https://www.linkedin.com/company/virtu-consultoriapolitica" target="_blank">Visitar LinkedIn</a>
+            <a href={contact.linkedinLink} target="blank">Visitar LinkedIn</a>
           </div>
           <img id="circle" src={circle} alt="Vetor"/>
         </div>
         <div className="carousel">
           <Slider className="slider" {...settings}>
-            <Datas title="Titulo mto bom1" text={text} link={link}/>
+              {posts.map((post) => {
+                  return (
+                    <Datas title={post.titlePost} text={post.description} link={post.link}/>
+                  );
+              })}
+            {/* <Datas title="Titulo mto bom1" text={text} link={link}/>
             <Datas title="Titulo mto bom2" text={text} link={link}/> 
             <Datas title="Titulo mto bom3" text={text} link={link}/>
-            <Datas title="Titulo mto bom4" text={text} link={link}/>
+            <Datas title="Titulo mto bom4" text={text} link={link}/> */}
           </Slider>
           
         </div>
