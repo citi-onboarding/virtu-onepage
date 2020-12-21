@@ -18,7 +18,7 @@ function NavBar() {
         <div className="connect">
           <div className="on-web">
             <img id="logo" src={virtu_logo} alt="Logo da Virtù" />
-            <Scrollscpy items={['ourhistory', 'ourServices', 'linkedinSection' ,'testimonial', 'contact-section' ]} currentClassName="spyclass" >
+              <Scrollscpy items={['ourhistory', 'ourServices', 'linkedinSection' ,'testimonial', 'contact-section' ]} currentClassName="spyclass" >
                   <li><a href="#ourhistory">Quem Somos</a></li>
                   <li><a href="#ourServices">Serviços</a></li>
                   <li><a href="#linkedinSection ">LinkedIn</a></li>
