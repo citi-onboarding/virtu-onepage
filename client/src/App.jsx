@@ -1,10 +1,12 @@
 import {
+  Testimonial, 
   Footer, 
   OurHistory, 
   NavBar,
   Banner,
   LinkedIn,
   OurServices
+  Contact,
 } from './components';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
     <OurHistory />
     <OurServices/>
     <LinkedIn />
+    <Testimonial />
+    <Contact/>
     <Footer/>
     </>
   );
