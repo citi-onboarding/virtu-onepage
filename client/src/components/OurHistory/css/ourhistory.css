@@ -16,6 +16,7 @@
 #ourhistory {
 	margin-top: 184px;
 	margin-bottom: 224px;
+	position: relative;
 }
  .call{
  	text-align: center;
@@ -46,6 +47,12 @@ text-align: center;
 	position: relative;
 	bottom: -110px;
 	margin-left: 30px;
+}
+
+.img-right {
+	position: absolute;
+	top: 30%;
+	right: 0;
 }
 
 /*
@@ -89,12 +96,9 @@ width: 55%;
  .box-parent{
  	padding-left: 20px;
  }
-
-.img-right img{
-/* right: -19%; */
-width: 50%;
-transform: translateX(8px) rotate(-90deg) translateY(10px);
-}
+ .img-right {
+	 display: none;
+ }
 
 
 }
