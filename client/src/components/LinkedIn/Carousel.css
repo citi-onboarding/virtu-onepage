@@ -2,26 +2,26 @@
     display: flex;
     flex-wrap: nowrap;
 }
-.LinkedIn-section .carousel .slider {
+#linkedinSection .carousel .slider {
    width: 100%;
 }
 
-.LinkedIn-section .carousel .slick-slider {
+#linkedinSection .carousel .slick-slider {
     margin-top: 45px;
 }
 
-.LinkedIn-section .carousel .slick-list {
+#linkedinSection .carousel .slick-list {
     padding: 0;
 }
 
-.LinkedIn-section .carousel .slick-track {
+#linkedinSection .carousel .slick-track {
     display: flex;
     justify-content: center;
     align-items: center;
     right: 5px;
 }
 
-.LinkedIn-section .carousel .slick-slide{
+#linkedinSection .carousel .slick-slide{
      outline: 0;
     border: 2px solid rgba(1, 1, 1, 1);
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -29,11 +29,11 @@
     border-radius: 10px;
     z-index: 2;
 }
-.LinkedIn-section .carousel .slick-center .datas{
+#linkedinSection .carousel .slick-center .datas{
     margin: 50px auto;
 }
 
-.LinkedIn-section .carousel .slick-center{ 
+#linkedinSection .carousel .slick-center{ 
    background-color: #cc1701;
     background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -46,17 +46,17 @@
     transform: scale(1.08,1);
 }
 
-.LinkedIn-section .carousel .slick-center a{
+#linkedinSection .carousel .slick-center a{
     color: white;
 }
 
-.LinkedIn-section .carousel .slick-dots li.slick-active button:before {
+#linkedinSection .carousel .slick-dots li.slick-active button:before {
     height: 13px;
     opacity: .75;
     color: #991220;
 }
 
-.LinkedIn-section .carousel .slick-dots li button:before {
+#linkedinSection .carousel .slick-dots li button:before {
     font-size: 13px;
     line-height: 20px;
     position: absolute;
@@ -72,7 +72,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.LinkedIn-section .carousel .slick-next::before, .slick-prev::before {
+#linkedinSection .carousel .slick-next::before, .slick-prev::before {
 	padding: 17px;
 	background-image: url('../../assets/arrow rightSVG.svg');
 	background-repeat: no-repeat;
@@ -86,7 +86,7 @@
     z-index: 1;
 }
 
-.LinkedIn-section .carousel .slick-prev:before, .LinkedIn-section .carousel .slick-next:before {
+#linkedinSection .carousel .slick-prev:before, #linkedinSection .carousel .slick-next:before {
     font-family: 'slick';
     font-size: 25px;
     line-height: 1;
@@ -97,11 +97,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.LinkedIn-section .carousel .slick-prev::before{
+#linkedinSection .carousel .slick-prev::before{
     background-image: url('../../assets/Vector (3).svg');
 }
 
-.LinkedIn-section .carousel .slick-prev, .LinkedIn-section .carousel .slick-next {
+#linkedinSection .carousel .slick-prev, #linkedinSection .carousel .slick-next {
     font-size: 0;
     line-height: 0;
     position: absolute;
@@ -118,7 +118,7 @@
     background: transparent;
 }
 
-.LinkedIn-section .carousel .Next-CenterCarousel{
+#linkedinSection .carousel .Next-CenterCarousel{
     /*background: red;*/
     cursor: pointer;
     padding: 20px;
@@ -131,7 +131,7 @@
     margin: -6px -26px;
 }
 
-.LinkedIn-section .carousel .Prev-CenterCarousel{
+#linkedinSection .carousel .Prev-CenterCarousel{
     /*background: red;*/
     cursor: pointer;
     padding: 20px;
@@ -143,7 +143,7 @@
      background-position: right;
 }
 
-.LinkedIn-section .carousel .slick-dots{
+#linkedinSection .carousel .slick-dots{
 /*background-color: green;*/
 margin: 80px auto;
 position: relative;
@@ -157,44 +157,44 @@ width: max-content;
 
 
 @media screen and (max-width: 1156px){
-    .LinkedIn-section{
+    #linkedinSection{
         padding: 0;
     }
 }
 
 @media screen and (max-width: 1056px){
-    .LinkedIn-section .head .title h1 {
+    #linkedinSection .head .title h1 {
     font-size: 28px;
 }
 }
 
 
 @media screen and (max-width: 950px){
-  .LinkedIn-section .head .title h1 {
+  #linkedinSection .head .title h1 {
     font-size: 28px;
     text-align: center;
 }
 }
 
 @media screen and (max-width: 888px){
-.LinkedIn-section {
+#linkedinSection {
     padding: 0 10px;
 }
 
-.LinkedIn-section .carousel {
+#linkedinSection .carousel {
     width: 500px;
     margin: 0 auto;
 }
-.LinkedIn-section .carousel .slick-center{ 
+#linkedinSection .carousel .slick-center{ 
     border-radius: 10px;
     transform: scale(1,1);
 }
-.LinkedIn-section .carousel .slick-center a{
+#linkedinSection .carousel .slick-center a{
 font-size: 16px;
 line-height: 19.2px;
 }
 
-.LinkedIn-section .carousel .slick-slide{
+#linkedinSection .carousel .slick-slide{
     background-color: #cc1701;
     background-image: linear-gradient(180deg, #cc1701 2%, #991200 84%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -205,13 +205,13 @@ line-height: 19.2px;
 }
 
 @media screen and (max-width: 768px){
-.LinkedIn-section .head .title a {
+#linkedinSection .head .title a {
     font-size: 16px;
 }
 }
 
 @media screen and (max-width: 500px){
-.LinkedIn-section .carousel {
+#linkedinSection .carousel {
     width: 90%;
     margin: 0 auto;
 }

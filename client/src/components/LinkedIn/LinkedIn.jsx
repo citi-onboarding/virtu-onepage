@@ -77,7 +77,7 @@ function PrevArrowCenter(props) {
     };
       
      return (
-      <div className="LinkedIn-section">
+      <div id="linkedinSection">
         <div className="head">
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">

@@ -7,7 +7,7 @@ body {
     background-color: var(--white-dark);
 }
 
-.LinkedIn-section {
+#linkedinSection {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ body {
      padding: 0 40px;
 }
 
-.LinkedIn-section .head {
+#linkedinSection .head {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,36 +34,36 @@ body {
     margin-right: 184px;
 }
 
-.LinkedIn-section .head .title {
+#linkedinSection .head .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.LinkedIn-section .head .title h1 {
+#linkedinSection .head .title h1 {
     font-size: 38px;
     margin-bottom: 30px;
 }
 
-.LinkedIn-section .head .title a {
+#linkedinSection .head .title a {
     font-size: 18px;  
     color: black;
 }
 
-.LinkedIn-section .carousel {
+#linkedinSection .carousel {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.LinkedIn-section .carousel .set-center {
+#linkedinSection .carousel .set-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.LinkedIn-section .carousel .set-center .navigate {
+#linkedinSection .carousel .set-center .navigate {
     width: 120px;
     margin-top: 30px;
     display: flex;
