@@ -11,13 +11,13 @@ import {
 function App() {
   return (
     <>
-    <NavBar />
-    <Banner/>
-    <OurHistory />
-    <OurServices/>
-    <Testimonial />
-    <Contact/>
-    <Footer/>
+      <NavBar />
+      <Banner/>
+      <OurHistory />
+      <OurServices/>
+      <Testimonial />
+      <Contact/>
+      <Footer/>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import virtu_logo from "../../assets/virtu-logo 3.svg";
 import menu from "../../assets/Menu.svg";
@@ -11,63 +11,6 @@ import "./NavBar.css";
 
 function NavBar() {
   const [icon, setIcon] = useState(true);
-
-// useEffect(() => {
-//     let currentWidth = window.innerWidth;
-// if (currentWidth.innerText > 768) {
-//     setIcon(true);
-// }
-
-// }, []);
-
-  
-// // this is going to be fixed when all front is done.
-//   window.addEventListener('scroll', function() { 
-//     if (window.scrollY >= 0 && window.scrollY < 1080) {
-//       document.querySelector('#first a').classList.remove("current");
-//       document.querySelector('#second a').classList.remove("current");
-//       document.querySelector('#third a').classList.remove("current");
-//       document.querySelector('#fourth a').classList.remove("current");
-//       document.querySelector('#fifth a').classList.remove("current");
-
-//   } if (window.scrollY >= 1080 && window.scrollY < 1800) {
-//         document.querySelector('#first a').classList.add("current");
-//         document.querySelector('#second a').classList.remove("current");
-//         document.querySelector('#third a').classList.remove("current");
-//         document.querySelector('#fourth a').classList.remove("current");
-//         document.querySelector('#fifth a').classList.remove("current");
-
-//     } if (window.scrollY > 1800 && window.scrollY < 3240) {
-//         document.querySelector('#first a').classList.remove("current");
-//         document.querySelector('#second a').classList.add("current");
-//         document.querySelector('#third a').classList.remove("current");
-//         document.querySelector('#fourth a').classList.remove("current");
-//         document.querySelector('#fifth a').classList.remove("current");
-        
-//     } if (window.scrollY > 3240 && window.scrollY < 4320) {
-//         document.querySelector('#first a').classList.remove("current");
-//         document.querySelector('#second a').classList.remove("current");
-//         document.querySelector('#third a').classList.add("current");
-//         document.querySelector('#fourth a').classList.remove("current");
-//         document.querySelector('#fifth a').classList.remove("current");
-        
-
-//     } if (window.scrollY > 4320  && window.scrollY < 5400) {
-//         document.querySelector('#first a').classList.remove("current");
-//         document.querySelector('#second a').classList.remove("current");
-//         document.querySelector('#third a').classList.remove("current");
-//         document.querySelector('#fourth a').classList.add("current");
-//         document.querySelector('#fifth a').classList.remove("current");
-        
-
-//     } if (window.scrollY > 5400) {
-//         document.querySelector('#first a').classList.remove("current");
-//         document.querySelector('#second a').classList.remove("current");
-//         document.querySelector('#third a').classList.remove("current");
-//         document.querySelector('#fourth a').classList.remove("current");
-//         document.querySelector('#fifth a').classList.add("current");
-//     }
-//   });
 
   return (
     <>
