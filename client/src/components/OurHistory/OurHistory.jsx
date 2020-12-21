@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Box from './Box'
 import './css/ourhistory.css'
 import axios from 'axios'
+import url from '../../global/globalVars';
 
 
 import vector_left from '../../assets/Grupo 5SVG.svg'//triangulo
@@ -16,7 +17,7 @@ function OurHistory (){
 const[ourhistory, setOurHistory] = useState([])
 
     const LoadOurHistory = async () =>{
-      const res = await axios.get('http://localhost:3001/api/ourhistory')
+      const res = await axios.get(`${url}/api/ourhistory`)
       setOurHistory(res.data)
     } 
 
