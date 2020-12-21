@@ -1,21 +1,21 @@
-.mini-img-wraper{
+.nav-galeria .ClientDescription-wraper .mini-img-wraper{
 	padding:5px;
 	width: 100%;
 	cursor: pointer;
 }
 
-.mini-img-wraper h2{
+.nav-galeria .ClientDescription-wraper .mini-img-wraper h2{
 	margin-top: 5px;
     color: #CC1701;
 }
 
-.mini-client-img{
+.nav-galeria .ClientDescription-wraper .mini-client-img{
 	width: 100%;
 	position: relative;
 	padding-top:70%;
 	border-radius: 6px;
 }
-.mini-client-img img{
+.nav-galeria .ClientDescription-wraper .mini-client-img img{
 	border-radius: 10px;
 	position: absolute;
 	width: 100%;
@@ -24,11 +24,11 @@
 }
 
 @media screen and (max-width: 540px){
-.mini-img-wraper h2{
+.nav-galeria .ClientDescription-wraper .mini-img-wraper h2{
      font-size: 20px;
 	line-height: 24px;
 }
-.mini-img-wraper p{
+.nav-galeria .ClientDescription-wraper .mini-img-wraper p{
 	font-size: 16px; 
 	line-height: 19px;
 }
