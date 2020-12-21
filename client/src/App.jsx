@@ -5,7 +5,7 @@ import {
   NavBar,
   Banner,
   LinkedIn,
-  OurServices
+  OurServices,
   Contact,
 } from './components';
 
