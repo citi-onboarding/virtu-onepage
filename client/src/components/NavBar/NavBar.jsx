@@ -54,7 +54,7 @@ function NavBar() {
                     <img src={insta} alt="Instagram" />
                     </li>
                     <li>
-                    <p>virtu@email.com</p>
+                    <p>comercial@virtuconsultoria.com.br</p>
                     <img src={email} alt="Email" />
                     </li>
                 </ul>
