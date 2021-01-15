@@ -1,3 +1,3 @@
-const url = "https://virtu-consultoria.herokuapp.com";
+const url = "https://www.virtuconsultoria.com.br/";
 
 module.exports = url; 
