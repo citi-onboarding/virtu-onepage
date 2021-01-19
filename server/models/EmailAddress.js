@@ -6,7 +6,10 @@ const EmailAddress = new keystone.List('EndereçoEmail');
 EmailAddress.add ({
 	emailAddress: {
 		type: Types.text,			
-	}
+    },
+    emailPassword:{
+        type: Types.text,
+    }
 });
 
 EmailAddress.register();
