@@ -6,24 +6,19 @@ const Contact = new keystone.List('Contato');
 Contact.add ({
 	instagramLink: {
 		type: Types.Url,
-		
-		
 	},
 	linkedinLink: {
 		type: Types.Url,
-		
-		 
 	},
-    	email: {
+	email: {
 		type: Types.Text,
-		
-		
 	},
-    	adress: {
+	adress: {
 		type: Types.Text,
-		
-		
-		}
+	},
+	email_make_contact: {
+		type: Types.Text,
+	}
 });
 
 Contact.register();

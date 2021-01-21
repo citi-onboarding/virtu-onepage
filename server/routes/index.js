@@ -74,6 +74,15 @@ module.exports = (app) => {
   app.post('/api/makecontact', async (req, res) => {
 
     const { name, telephone, email, service, message } = req.body;
+    let data_contact;
+    Contact.model.find((err, data) => {
+      if (err) {
+        console.log('dei erro');
+        return;
+      }
+      data_contact = data;
+      console.log(data_contact);
+    })
    
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -86,8 +95,8 @@ module.exports = (app) => {
     });
     try {
       await transporter.sendMail({
-        from: process.env.EMAIL_TO, 
-        to: process.env.EMAIL_TO, 
+        from: process.env.EMAIL_FROM, 
+        to: data_contact.email_make_contact, 
         subject: 'Novo contato de cliente', 
         html: `<p> Nome: ${name} </p>
               <p> Telefone: ${telephone} </p>
@@ -96,7 +105,7 @@ module.exports = (app) => {
               <p> Mensagem: ${message} </p>`,
       });
   
-      res.status(200).send('enviado');
+      res.status(200).send('Enviado');
     }
     catch(err) {
       res.status(505).send('Algo deu errado')
