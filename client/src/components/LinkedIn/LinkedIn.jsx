@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import circle from '../../assets/Grupo 6.png'
 import lines from '../../assets/Grupo 5.png'
-import arrow_left from '../../assets/Vector (3).svg'
-import arrow_right from '../../assets/arrow rightSVG.svg'
-import elipse1 from '../../assets/Ellipse 3.png'
-import elipse2 from '../../assets/Ellipse 2.png'
+import line_right from '../../assets/Caminho down-rightSVG.svg'
 import axios from 'axios'
 import url from '../../global/globalVars';
 
@@ -114,13 +111,9 @@ function LinkedIn(){
                     <Datas title={post.titlePost} text={post.description} link={post.link}/>
                   );
               })}
-            {/* <Datas title="Titulo mto bom1" text={text} link={link}/>
-            <Datas title="Titulo mto bom2" text={text} link={link}/> 
-            <Datas title="Titulo mto bom3" text={text} link={link}/>
-            <Datas title="Titulo mto bom4" text={text} link={link}/> */}
-          </Slider>
-          
+          </Slider>  
         </div>
+        {/* <img src={line_right} alt="line_right"/> */}
       </div>
     )
   }

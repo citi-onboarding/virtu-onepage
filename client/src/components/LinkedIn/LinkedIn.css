@@ -13,9 +13,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: space-around;
-      max-width: 1280px;
-     margin: 0 auto;
-     padding: 0 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
 }
 
 #linkedinSection .head {
@@ -69,6 +70,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#linkedinSection .line_right {
+    position: absolute;
+    right: 0;
 }
 
 

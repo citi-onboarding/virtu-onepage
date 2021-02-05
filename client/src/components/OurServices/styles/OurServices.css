@@ -94,8 +94,9 @@
     /* min-width: 0; */
 }
 
-#ourServices .line_5 {
+#ourServices .line_left {
     position: absolute;
     bottom: -660px;
     left: 0;
+    z-index: 99;
 }
