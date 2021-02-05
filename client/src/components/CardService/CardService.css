@@ -32,6 +32,10 @@
     line-height: 26px;
 }
 
+.card-service .cs-title-image-container img {
+    width: 47px;
+}
+
 .card-service p {
     font-size: 16px;
     line-height: 19px;
