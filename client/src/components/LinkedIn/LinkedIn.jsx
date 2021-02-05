@@ -44,7 +44,6 @@ function LinkedIn(){
     async function loadPosts() {
         const res = await axios.get(`${url}/api/linkedin`)
         setPosts(res.data);
-        console.log(res.data);
     }
 
     async function loadContacts() {
