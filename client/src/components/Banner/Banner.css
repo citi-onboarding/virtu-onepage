@@ -53,8 +53,7 @@
   background: var(--red-bright);
 
   width: 61%;
-  margin-top: 30px;
-
+  margin: 15px 0;
   cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -111,13 +110,6 @@
 
 @media (max-width: 768px) {
   .banner-section::before {
-    content: "";
-
-    background-image: url("../../assets/background\ 2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
     position: absolute;
     top: 75px;
     bottom: 0;
@@ -184,7 +176,7 @@
 
 @media (max-width: 595px) {
   .banner-section .text p {
-    width: 55vw;
+    width: 80vw;
   }
 }
 
