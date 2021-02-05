@@ -1,15 +1,15 @@
 const keystone = require('keystone');
 const { Types } = keystone.Field;
 
-const EmailAddress = new keystone.List('EndereçoEmail');
+const EmailAddress = new keystone.List('Endereço Email');
 
 EmailAddress.add ({
 	emailAddress: {
-		type: Types.text,			
+        type: Types.Text, required: true, initial: true,		
     },
     emailPassword:{
-        type: Types.text,
-    }
+        type: Types.Text, required: true, initial: true,
+    },
 });
 
 EmailAddress.register();

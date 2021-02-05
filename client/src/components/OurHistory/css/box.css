@@ -4,6 +4,7 @@
 
 .box-single {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	text-align: center;
 	margin: 25px 30px;
@@ -23,6 +24,7 @@ background: linear-gradient(135deg, rgba(204,23,1,1) 16%, rgba(153,18,0,1) 62%);
 }
 .box-single img{
 	margin: 5px 0;
+	width: 120px;
 }
 .box-single h2{
 	font-size: 22px; 

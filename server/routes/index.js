@@ -11,7 +11,7 @@ const Contact = keystone.list('Contato');
 const OurHistory = keystone.list('Quem Somos');
 const Banner = keystone.list('Banner');
 const Linkedin = keystone.list('LinkedIn');
-const EmailAddress = keystone.list('EndereçoEmail');
+const EmailAddress = keystone.list('Endereço Email');
 
 require('dotenv').config();
 
