@@ -103,7 +103,7 @@ function LinkedIn(){
           <img id="lines" src={lines} alt="linhas abstratas"/>
           <div className="title">
             <h1>Conheça nosso LinkedIn</h1>
-            <a href={contact[0].linkedinLink} target="blank">Visitar LinkedIn</a>
+            <a href={contact[0]?.linkedinLink} target="blank">Visitar LinkedIn</a>
           </div>
           <img id="circle" src={circle} alt="Vetor"/>
         </div>
